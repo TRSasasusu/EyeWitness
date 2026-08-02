@@ -1,5 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "DialogueDictionary": {
+        "EW_SLATE_PROBE_OPTION": "ねぇSlate、大丈夫…？",
+        "EW_SLATE_PROBE_1": "ひよっ子よ、マシュマロを焼くときはたとえどのようなことがあれど、マシュマロを焼くことにすべてを注ぐんだ。そうすればこの程度のことで慌てるのは避けられる。",
+        "EW_SLATE_PROBE_2": "…決して腰が抜けて動けないというわけじゃないからな。",
+    },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",
         "EW_CAMP_PROBE_1": "空からキャンプファイヤーに落ちてきた探査機。",
