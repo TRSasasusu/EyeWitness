@@ -1,13 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "TimberHearth",
+  "starSystem": "SolarSystem",
   "Volumes": {
     "revealVolumes": [
       {
         "revealOn": "enter",
         "revealFor": "both",
         "reveals": [
-          "ew_camp_probe_1",
+          "ew_camp_probe_1"
         ],
         "parentPath": "Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH",
         "isRelativeToParent": true,
@@ -22,7 +23,7 @@
         "revealOn": "enter",
         "revealFor": "player",
         "reveals": [
-          "ew_camp_probe_2",
+          "ew_camp_probe_2"
         ],
         "parentPath": "Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH",
         "isRelativeToParent": true,
@@ -77,7 +78,7 @@
       {
         "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
         "xmlFile": "planets/dialogues/slate.xml"
-      },
+      }
     ]
   },
   "ShipLog": {

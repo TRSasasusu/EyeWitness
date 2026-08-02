@@ -17,7 +17,14 @@ namespace EyeWitness {
             Instance = this;
 
             ProbeTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH");
-            ProbeTH.SetActive(false);
+            if(ProbeTH != null) {
+                ProbeTH.SetActive(false);
+            }
+
+            //var textStatueIsland = SearchUtilities.Find("StatueIsland_Body/Sector_StatueIsland/text_statue_island");
+            //if(textStatueIsland != null) {
+            //    textStatueIsland.transform.localPosition = 
+            //}
         }
     }
 }

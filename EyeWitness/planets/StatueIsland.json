@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Statue Island",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)",
+        "parentPath": "Sector_StatueIsland/Sector_StatueIslandInterior",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.937,
+          "y": 0.6168,
+          "z": 35.3798
+        },
+        "rotation": {
+          "x": 355,
+          "y": 189.59,
+          "z": 0
+        },
+        "rename": "additional_whiteboard"
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "scroll",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/statue_island.xml",
+        "rename": "text_statue_island",
+        "parentPath": "Sector_StatueIsland/Sector_StatueIslandInterior",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -12.0889,
+          "y": 0.6745,
+          "z": 33.8974
+        },
+        "rotation": {
+          "x": 53.5973,
+          "y": 151.3018,
+          "z": 216.0658
+        },
+        "seed": 6
+      }
+    ]
+  }
+}
