@@ -8,8 +8,14 @@ namespace EyeWitness {
         public static EyeWitness Instance;
         public INewHorizons NewHorizons;
 
+        ModifyObjects _modifyObjects;
+
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
+        }
+
+        public static bool HasShipLog(string id) {
+            return PlayerData._currentGameSave.shipLogFactSaves.ContainsKey(id) && PlayerData._currentGameSave.shipLogFactSaves[id].revealOrder > -1;
         }
 
         public void Awake() {
@@ -21,7 +27,7 @@ namespace EyeWitness {
 
         public void Start() {
             // Starting here, you'll have access to OWML's mod helper.
-            ModHelper.Console.WriteLine($"My mod {nameof(EyeWitness)} is loaded!", MessageType.Success);
+            ModHelper.Console.WriteLine($"{nameof(EyeWitness)} is loaded!", MessageType.Success);
 
             // Get the New Horizons API and load configs
             NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
@@ -30,14 +36,21 @@ namespace EyeWitness {
             new Harmony("orclecle.EyeWitness").PatchAll(Assembly.GetExecutingAssembly());
 
             // Example of accessing game code.
-            OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen
-            LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
+            //OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen
+            //LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
+            NewHorizons.GetStarSystemLoadedEvent().AddListener(loadScene => {
+                if (loadScene == "SolarSystem") {
+                    _modifyObjects = new ModifyObjects();
+                }
+            });
         }
 
-        public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene) {
-            if (newScene != OWScene.SolarSystem) return;
-            ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
-        }
+        //public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene) {
+        //    if (newScene != OWScene.SolarSystem) return;
+        //    ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
+
+        //    //_modifyObjects = new ModifyObjects();
+        //}
     }
 
 }

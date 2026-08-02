@@ -1,0 +1,8 @@
+{
+	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "ShipLogDictionary": {
+        "EW_CAMP_PROBE": "落ちてきた探査機",
+        "EW_CAMP_PROBE_1": "空からキャンプファイヤーに落ちてきた探査機。",
+        "EW_CAMP_PROBE_2": "黄色いミストに触れたところ、航行記録に異常が生じ、見知らぬ記録が複数現れた。",
+    }
+}

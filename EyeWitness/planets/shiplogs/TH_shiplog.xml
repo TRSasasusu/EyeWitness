@@ -1,0 +1,15 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>TIMBER_HEARTH</ID>
+  <Entry>
+    <ID>ew_camp_probe</ID>
+    <Name>EW_CAMP_PROBE</Name>
+    <ExploreFact>
+      <ID>ew_camp_probe_1</ID>
+      <Text>EW_CAMP_PROBE_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_camp_probe_2</ID>
+      <Text>EW_CAMP_PROBE_2</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>
