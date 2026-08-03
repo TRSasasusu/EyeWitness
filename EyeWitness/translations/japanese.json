@@ -1,5 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "UIDictionary": {
+        "OPCMarker": "マーカー",
+    },
     "DialogueDictionary": {
         "EW_SLATE_PROBE_OPTION": "ねぇSlate、大丈夫…？",
         "EW_SLATE_PROBE_1": "ひよっ子よ、マシュマロを焼くときはたとえどのようなことがあれど、マシュマロを焼くことにすべてを注ぐんだ。そうすればこの程度のことで慌てるのは避けられる。",

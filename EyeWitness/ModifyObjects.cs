@@ -11,6 +11,7 @@ namespace EyeWitness {
         public static ModifyObjects Instance;
 
         public GameObject ProbeTH { get; private set; }
+        public MarkerItem MarkerItem { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -25,6 +26,11 @@ namespace EyeWitness {
             //if(textStatueIsland != null) {
             //    textStatueIsland.transform.localPosition = 
             //}
+
+            var markerItem = SearchUtilities.Find("OrbitalProbeCannon_Body/Sector_OrbitalProbeCannon/Sector_Module_Intact/pedestal_for_marker/OPCMarker");
+            if (markerItem != null) {
+                MarkerItem = markerItem.AddComponent<MarkerItem>();
+            }
         }
     }
 }
