@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "ORBITAL_PROBE_CANNON",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/pedestal_for_marker.prefab",
+        "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -10.0339,
+          "y": -1.332,
+          "z": 8.7319
+        },
+        "rotation": {
+          "x": 270,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/OPCMarker.prefab",
+        "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.4303,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  }
+}
