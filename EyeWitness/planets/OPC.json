@@ -10,8 +10,8 @@
         "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact",
         "isRelativeToParent": true,
         "position": {
-          "x": -10.0339,
-          "y": -1.332,
+          "x": -8.881,
+          "y": -4.881,
           "z": 8.7319
         },
         "rotation": {
@@ -23,10 +23,47 @@
       {
         "assetBundle": "planets/assetbundles/eyewitness",
         "path": "Assets/MyAssets/Prefabs/OPCMarker.prefab",
+        "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact/pedestal_for_marker",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 1.4303,
+          "z": 0
+        },
+        "keepLoaded": true
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/opc_control.xml",
+        "rename": "text_opc_control",
         "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact",
         "isRelativeToParent": true,
         "position": {
-          "x": 1.4303,
+          "x": -10.4348,
+          "y": -3.0591,
+          "z": 8.1713
+        },
+        "rotation": {
+          "x": 270,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/opc_control_computer.xml",
+        "rename": "text_opc_control_computer",
+        "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -6.8811,
+          "y": -6.9297,
+          "z": 8.7142
+        },
+        "rotation": {
+          "x": 270,
           "y": 0,
           "z": 0
         }
