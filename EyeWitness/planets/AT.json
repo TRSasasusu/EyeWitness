@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "TOWER_TWIN",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "warpReceivers": [
+      {
+        "frequency": "EW_BrambleTower",
+        "parentPath": "Sector_TowerTwin/BrambleTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -7.5792,
+          "y": -2.1461,
+          "z": 0.6573
+        }
+      }
+    ],
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/BrambleTower.prefab",
+        "position": {
+          "x": 97.2242,
+          "y": -1.1095,
+          "z": 10.8642
+        },
+        "rotation": {
+          "x": 270,
+          "y": 270,
+          "z": 0
+        },
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/BrambleRocks.prefab",
+        "position": {
+          "x": 97.2242,
+          "y": -1.1095,
+          "z": 10.8642
+        },
+        "rotation": {
+          "x": 270,
+          "y": 270,
+          "z": 0
+        },
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/BrambleRocksBroken.prefab",
+        "position": {
+          "x": 97.2242,
+          "y": -1.1095,
+          "z": 10.8642
+        },
+        "rotation": {
+          "x": 270,
+          "y": 270,
+          "z": 0
+        },
+        "keepLoaded": true
+      },
+    ]
+  }
+}

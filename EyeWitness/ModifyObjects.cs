@@ -12,6 +12,8 @@ namespace EyeWitness {
 
         public GameObject ProbeTH { get; private set; }
         public MarkerItem MarkerItem { get; private set; }
+        public GameObject BrambleRocks { get; private set; }
+        public GameObject BrambleRocksBroken { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -30,6 +32,12 @@ namespace EyeWitness {
             var markerItem = SearchUtilities.Find("OrbitalProbeCannon_Body/Sector_OrbitalProbeCannon/Sector_Module_Intact/pedestal_for_marker/OPCMarker");
             if (markerItem != null) {
                 MarkerItem = markerItem.AddComponent<MarkerItem>();
+            }
+
+            BrambleRocks = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocks");
+            BrambleRocksBroken = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken");
+            if(BrambleRocksBroken != null) {
+                BrambleRocksBroken.SetActive(false);
             }
         }
     }
