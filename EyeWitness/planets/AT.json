@@ -6,7 +6,7 @@
     "warpReceivers": [
       {
         "frequency": "EW_BrambleTower",
-        "parentPath": "Sector_TowerTwin/BrambleTower",
+        "parentPath": "Sector_TowerTwin/BrambleRocksBroken",
         "isRelativeToParent": true,
         "position": {
           "x": -7.5792,

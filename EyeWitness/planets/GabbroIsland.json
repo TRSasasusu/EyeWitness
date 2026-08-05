@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Gabbro Island",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/SignalForIsland.prefab",
+        "position": {
+          "x": 16.1316,
+          "y": 1.0064,
+          "z": 23.8314
+        }
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/sounds/signal_for_island.wav",
+        "frequency": "Island Search",
+        "detectionRadius": 30,
+        "rename": "signal_for_island_on_gabbro_island",
+        "name": "Base Signal",
+        "parentPath": "Sector_GabbroIsland/SignalForIsland",
+        "isRelativeToParent": true
+      }
+    ]
+  }
+}

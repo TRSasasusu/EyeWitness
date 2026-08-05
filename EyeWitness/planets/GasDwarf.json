@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Gas Dwarf",
+  "starSystem": "SolarSystem",
+  "canShowOnTitle": false,
+  "Base": {
+    "surfaceSize": 101,
+    "surfaceGravity": 0,
+  },
+  "Orbit": {
+    "semiMajorAxis": 2000,
+    "primaryBody": "GIANTS_DEEP",
+    "isMoon": true,
+    "isTidallyLocked": true
+  },
+  "Atmosphere": {
+    "clouds": {
+      "cloudsPrefab": "giantsDeep",
+      "hasLightning": false,
+      "tint": {
+        "r": 200,
+        "g": 255,
+        "b": 200,
+        "a": 255
+      },
+      "innerCloudRadius": 200,
+      "outerCloudRadius": 230,
+      "texturePath": "planets/textures/cloud.png"
+    }
+  },
+}
