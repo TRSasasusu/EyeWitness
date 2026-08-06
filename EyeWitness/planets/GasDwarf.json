@@ -25,7 +25,7 @@
       },
       "innerCloudRadius": 200,
       "outerCloudRadius": 230,
-      "texturePath": "planets/textures/cloud.png"
+      "texturePath": "planets/textures/cloud.png",
     }
   },
 }
