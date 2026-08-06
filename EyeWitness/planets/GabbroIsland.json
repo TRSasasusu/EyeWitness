@@ -24,6 +24,25 @@
         "parentPath": "Sector_GabbroIsland/SignalForIsland",
         "isRelativeToParent": true
       }
+    ],
+    "translatorText": [
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/signal_for_island.xml",
+        "rename": "text_signal_for_island",
+        "position": {
+          "x": 18.7491,
+          "y": 2.3848,
+          "z": 23.5967
+        },
+        "rotation": {
+          "x": 17.6275,
+          "y": 233.1718,
+          "z": 0
+        },
+        "seed": 1
+      }
     ]
   }
 }
