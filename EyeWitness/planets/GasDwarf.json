@@ -33,4 +33,12 @@
       "texturePath": "planets/textures/cloud.png",
     }
   },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/SkyIsland.prefab",
+      }
+    ]
+  }
 }

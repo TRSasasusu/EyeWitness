@@ -45,7 +45,7 @@ namespace EyeWitness {
             }
 
             _parentOfSignalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy");
-            _signalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/signal_for_island_on_sky_dummy");
+            _signalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy/signal_for_island_on_sky_dummy");
             if(_parentOfSignalForIslandOnSkyDummy != null) {
                 _signalForIslandOnSkyDummy = _parentOfSignalForIslandOnSkyDummy.transform.Find("signal_for_island_on_sky_dummy").gameObject;
                 _parentOfSignalForIslandOnSkyDummy.transform.localPosition = UnityEngine.Random.onUnitSphere * 900;
