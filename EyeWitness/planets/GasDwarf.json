@@ -8,10 +8,15 @@
     "surfaceGravity": 0,
   },
   "Orbit": {
-    "semiMajorAxis": 2000,
-    "primaryBody": "GIANTS_DEEP",
-    "isMoon": true,
-    "isTidallyLocked": true
+    //"semiMajorAxis": 2000,
+    //"primaryBody": "GIANTS_DEEP",
+    //"isMoon": true,
+    //"isTidallyLocked": true
+    "staticPosition": {
+      "y": 16457.5
+    },
+    "isStatic": true,
+    //"primaryBody": "SUN"
   },
   "Atmosphere": {
     "clouds": {

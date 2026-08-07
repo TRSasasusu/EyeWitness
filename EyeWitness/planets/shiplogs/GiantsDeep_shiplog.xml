@@ -1,0 +1,15 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>GIANTS_DEEP</ID>
+  <Entry>
+    <ID>ew_signal_for_island</ID>
+    <Name>EW_SIGNAL_FOR_ISLAND</Name>
+    <ExploreFact>
+      <ID>ew_signal_for_island_1</ID>
+      <Text>EW_SIGNAL_FOR_ISLAND_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_signal_for_island_2</ID>
+      <Text>EW_SIGNAL_FOR_ISLAND_2</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

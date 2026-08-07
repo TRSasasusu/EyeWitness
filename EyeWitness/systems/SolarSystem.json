@@ -3,6 +3,9 @@
   "entryPositions": [
     {
       "id": "ew_camp_probe"
+    },
+    {
+      "id": "ew_signal_for_island"
     }
   ]
 }

@@ -22,7 +22,8 @@
         "rename": "signal_for_island_on_gabbro_island",
         "name": "Base Signal",
         "parentPath": "Sector_GabbroIsland/SignalForIsland",
-        "isRelativeToParent": true
+        "isRelativeToParent": true,
+        "reveals": "ew_signal_for_island_1"
       }
     ],
     "translatorText": [

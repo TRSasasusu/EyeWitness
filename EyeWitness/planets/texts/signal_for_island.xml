@@ -18,4 +18,10 @@
     <ParentID>3</ParentID>
     <Text>EW_SIGNAL_FOR_ISLAND_4</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_signal_for_island_2</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>
