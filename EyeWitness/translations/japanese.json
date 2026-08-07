@@ -2,6 +2,8 @@
 	"$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "UIDictionary": {
         "OPCMarker": "マーカー",
+        "SHIP_LOG_ERROR_NOTIFICATION": "<![CDATA[<color=red>エラー:航行記録に不正な入力</color>]]>",
+        "WARP_DETECT_NOTIFICATION": "<![CDATA[<color=blue>情報:ワープパッドの位置を検知</color>]]>",
     },
     "DialogueDictionary": {
         "EW_SLATE_PROBE_OPTION": "ねぇSlate、大丈夫…？",
@@ -9,7 +11,7 @@
         "EW_SLATE_PROBE_2": "…決して腰が抜けて動けないというわけじゃないからな。",
 
         "EW_STATUE_ISLAND_1": "YARROW:Phlox、Daz、彫像の制作ありがとう。一つ伝え忘れたことがあったんだ:探査機追跡モジュールも彫像にリンクさせてほしい…Nomaiとリンクさせるより難しいなんてことはないよな？&lt;i&gt;&lt;/i&gt;",
-        "EW_STATUE_ISLAND_2": "DAZ:Yarrow、残念ながら僕らの記憶保存システムは対象が意識をもつ生命体であることを要件として持っているんだ。あれは唯一性が担保されているから、未来から記憶を受け取る際にどうしても必要になる。時間をかけて研究すれば回避できるかもしれないが…&lt;i&gt;&lt;/i&gt;",
+        "EW_STATUE_ISLAND_2": "DAZ:Yarrow、残念ながら僕らの記憶保存システムは対象が意識をもつ生命体であることを要件として持っているんだ。意識は唯一性が担保されているから、未来から記憶を受け取る際にアンカーとしてどうしても必要になる。時間をかけて研究すれば回避できるかもしれないが…&lt;i&gt;&lt;/i&gt;",
         "EW_STATUE_ISLAND_3": "YARROW:申し訳ない、伝え忘れたのは私の落ち度だ。だが、これ以上の遅延は避けたい。船の建造が本格的に始まれば、灰の双子星プロジェクトは当面の間、中断されることになってしまう。&lt;i&gt;&lt;/i&gt;",
         "EW_STATUE_ISLAND_4": "PHLOX:じゃあ解決策は、探査機追跡モジュールにNomaiの誰かの意識を封じ込めることになるわけだけど…俺は嫌だなあ、無数のループを誰とも共有できず、延々とあらゆる方向に撃ち出され続けるなんて。&lt;i&gt;&lt;/i&gt;",
         "EW_STATUE_ISLAND_5": "DAZ:仮説:Nomaiの精神構造では耐えられない。それに、肉体から切り離した精神をコンピュータに埋め込む技術も開発しなくちゃならない。その間、主を失った肉体を安全に保管する技術も。&lt;i&gt;&lt;/i&gt;",
@@ -33,15 +35,36 @@
         "EW_EYE_SHRINE_2": "COLEUS:なんだ、お前はまだ見たことがなかったのか。Yarrowは感銘を受けたと言っていたし、てっきりお前も見たのかと思っていたよ。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_3": "CYCAD:Yarrowは灰の双子星プロジェクトの中心人物だし、きっと眼にまつわる大事なことだろうから、先に見ていてもおかしくないと思います。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_4": "COLEUS:鍵は同時観測だ。この星系には2つの眼の祭壇地区があるだろう？それぞれに眼のシンボルが飾られているが、このシンボルを同時に観測するんだ。すると、空中都市の方で先に進めるようになる。&lt;i&gt;&lt;/i&gt;",
-        "EW_EYE_SHRINE_5": "CYCAD:なるほど！確かに量子らしい仕組みですね。&lt;i&gt;&lt;/i&gt;"
+        "EW_EYE_SHRINE_5": "CYCAD:なるほど！確かに量子らしいですね。それと、最初の巡礼では触れられない量子の月の秘密も知りたくて…もういなくなってる！…さすがはかつて量子のかけらとのもつれの法則を発見した師匠だ…量子のように神出鬼没。&lt;i&gt;&lt;/i&gt;"
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",
         "EW_CAMP_PROBE_1": "空からキャンプファイヤーに落ちてきた探査機。",
         "EW_CAMP_PROBE_2": "黄色いミストに触れたところ、航行記録に異常が生じ、見知らぬ記録が複数現れた。",
 
+        "EW_ERROR_STATUE_ISLAND": "彫+/の隠%;ス!-+ル",
+        "EW_ERROR_STATUE_ISLAND_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
+        "EW_ERROR_STATUE_ISLAND_2": "<![CDATA[<color=blue>情報:HUDマーカーは利用可能</color>]]>",
+
+        "EW_ERROR_EYE_SHRINE": "ホ|イト/[+の-れた#/+ール",
+        "EW_ERROR_EYE_SHRINE_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
+        "EW_ERROR_EYE_SHRINE_2": "<![CDATA[<color=blue>情報:HUDマーカーは利用可能</color>]]>",
+
+        "EW_ERROR_BRAMBLE_TOWER": "高エネ;+-研/#への道$-/キスト",
+        "EW_ERROR_BRAMBLE_TOWER_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
+        "EW_ERROR_BRAMBLE_TOWER_2": "<![CDATA[<color=blue>情報:HUDマーカーは利用可能</color>]]>",
+
+        "EW_STATUE_ISLAND": "彫像島の隠れたスクロール",
+        "EW_STATUE_ISLAND_1": "彫像の記憶保存システムには意識が不可欠であり、このままでは探査機追跡モジュールをリンクすることができない問題があった。",
+        "EW_STATUE_ISLAND_2": "巨人の大海の空島で見つかった情報生命体によってその問題が解決されるかもしれないとのことだった。",
+        "EW_STATUE_ISLAND_3": "空島を見つけるための信号は、巨人の大海にある洞窟に設置されている。",
+
         "EW_SIGNAL_FOR_ISLAND": "空島の信号",
+        "EW_SIGNAL_FOR_ISLAND_RUMOR1": "空島を見つけるための信号は、巨人の大海にある洞窟に設置されている。",
         "EW_SIGNAL_FOR_ISLAND_1": "空島を見つけるための信号を手に入れた。",
         "EW_SIGNAL_FOR_ISLAND_2": "巨人の大海の雲の中から出ずに信号を追うことで、空島を見つけることができる。",
+
+        "EW_EYE_SHRINE": "ホワイトホールの隠れたスクロール",
+        "EW_EYE_SHRINE_1": "2つの眼の祭壇地区のNomaiのシンボルを同時観測することで、空中都市の眼の祭壇地区の奥に進めるようになる。",
     }
 }

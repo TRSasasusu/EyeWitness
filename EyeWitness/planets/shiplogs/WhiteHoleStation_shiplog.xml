@@ -1,0 +1,23 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>WHITE_HOLE</ID>
+  <Entry>
+    <ID>ew_error_eye_shrine</ID>
+    <Name>EW_ERROR_EYE_SHRINE</Name>
+    <ExploreFact>
+      <ID>ew_error_eye_shrine_1</ID>
+      <Text>EW_ERROR_EYE_SHRINE_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_error_eye_shrine_2</ID>
+      <Text>EW_ERROR_EYE_SHRINE_2</Text>
+    </ExploreFact>
+  </Entry>
+  <Entry>
+    <ID>ew_eye_shrine</ID>
+    <Name>EW_EYE_SHRINE</Name>
+    <ExploreFact>
+      <ID>ew_eye_shrine_1</ID>
+      <Text>EW_EYE_SHRINE_1</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

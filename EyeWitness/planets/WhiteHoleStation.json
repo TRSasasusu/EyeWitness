@@ -20,6 +20,24 @@
           "z": 0
         }
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_error_eye_shrine",
+        "parentPath": "Sector_WhiteholeStation/text_eye_shrine",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_error_eye_shrine"
+      },
+      {
+        "id": "ew_eye_shrine",
+        "parentPath": "Sector_WhiteholeStation/text_eye_shrine",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_eye_shrine"
+      },
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/WhiteHoleStation_shiplog.xml"
   }
 }

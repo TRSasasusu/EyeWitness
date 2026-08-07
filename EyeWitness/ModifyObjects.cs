@@ -11,6 +11,8 @@ namespace EyeWitness {
         public static ModifyObjects Instance;
 
         public GameObject ProbeTH { get; private set; }
+        public GameObject ProbeTHShipLog { get; private set; }
+        public NotificationWithNewShipLog NotificationWithNewShipLogForProbeTH { get; private set; }
         public MarkerItem MarkerItem { get; private set; }
         public GameObject BrambleRocks { get; private set; }
         public GameObject BrambleRocksBroken { get; private set; }
@@ -22,6 +24,17 @@ namespace EyeWitness {
             ProbeTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH");
             if(ProbeTH != null) {
                 ProbeTH.SetActive(false);
+
+                ProbeTHShipLog = ProbeTH.transform.Find("shiplog_ew_camp_probe_2").gameObject;
+
+                var notificationWithNewShipLogForProbeTH = new GameObject("NotificationWithNewShipLogForProbeTH");
+                notificationWithNewShipLogForProbeTH.transform.SetParent(ProbeTHShipLog.transform);
+                notificationWithNewShipLogForProbeTH.transform.localPosition = Vector3.zero;
+                notificationWithNewShipLogForProbeTH.transform.localEulerAngles = Vector3.zero;
+                NotificationWithNewShipLogForProbeTH = notificationWithNewShipLogForProbeTH.AddComponent<NotificationWithNewShipLog>();
+                NotificationWithNewShipLogForProbeTH.shipLogId = "ew_camp_probe_2";
+                NotificationWithNewShipLogForProbeTH.notificationText = "SHIP_LOG_ERROR_NOTIFICATION";
+                NotificationWithNewShipLogForProbeTH.sphereShape = ProbeTHShipLog.GetComponent<SphereShape>();
             }
 
             //var textStatueIsland = SearchUtilities.Find("StatueIsland_Body/Sector_StatueIsland/text_statue_island");

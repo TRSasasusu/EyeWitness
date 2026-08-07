@@ -23,7 +23,11 @@
         "revealOn": "enter",
         "revealFor": "player",
         "reveals": [
-          "ew_camp_probe_2"
+          "ew_camp_probe_2",
+          "ew_error_statue_island_1",
+          "ew_error_statue_island_2",
+          "ew_error_eye_shrine_1",
+          "ew_error_eye_shrine_2",
         ],
         "parentPath": "Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH",
         "isRelativeToParent": true,
@@ -32,7 +36,8 @@
           "x": 11.402,
           "y": 0,
           "z": 0
-        }
+        },
+        "rename": "shiplog_ew_camp_probe_2"
       }
     ]
   },

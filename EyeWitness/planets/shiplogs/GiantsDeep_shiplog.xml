@@ -1,8 +1,41 @@
 ﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
   <ID>GIANTS_DEEP</ID>
   <Entry>
+    <ID>ew_error_statue_island</ID>
+    <Name>EW_ERROR_STATUE_ISLAND</Name>
+    <ExploreFact>
+      <ID>ew_error_statue_island_1</ID>
+      <Text>EW_ERROR_STATUE_ISLAND_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_error_statue_island_2</ID>
+      <Text>EW_ERROR_STATUE_ISLAND_2</Text>
+    </ExploreFact>
+  </Entry>
+  <Entry>
+    <ID>ew_statue_island</ID>
+    <Name>EW_STATUE_ISLAND</Name>
+    <ExploreFact>
+      <ID>ew_statue_island_1</ID>
+      <Text>EW_STATUE_ISLAND_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_statue_island_2</ID>
+      <Text>EW_STATUE_ISLAND_2</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_statue_island_3</ID>
+      <Text>EW_STATUE_ISLAND_3</Text>
+    </ExploreFact>
+  </Entry>
+  <Entry>
     <ID>ew_signal_for_island</ID>
     <Name>EW_SIGNAL_FOR_ISLAND</Name>
+    <RumorFact>
+      <ID>ew_signal_for_island_rumor1</ID>
+      <SourceID>ew_statue_island</SourceID>
+      <Text>EW_SIGNAL_FOR_ISLAND_RUMOR1</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_signal_for_island_1</ID>
       <Text>EW_SIGNAL_FOR_ISLAND_1</Text>

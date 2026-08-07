@@ -23,4 +23,10 @@
     <ParentID>4</ParentID>
     <Text>EW_EYE_SHRINE_5</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_eye_shrine_1</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

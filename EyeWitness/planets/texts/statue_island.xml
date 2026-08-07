@@ -38,4 +38,22 @@
     <ParentID>7</ParentID>
     <Text>EW_STATUE_ISLAND_8</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_statue_island_1</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>ew_statue_island_2</FactID>
+      <Condition>8</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>ew_statue_island_3</FactID>
+      <Condition>8</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>ew_signal_for_island_rumor1</FactID>
+      <Condition>8</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

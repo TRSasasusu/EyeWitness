@@ -44,6 +44,14 @@
         },
         "seed": 1
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_signal_for_island",
+        "parentPath": "Sector_GabbroIsland/SignalForIsland",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_signal_for_island"
+      }
     ]
   }
 }

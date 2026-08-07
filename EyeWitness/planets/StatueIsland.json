@@ -30,17 +30,31 @@
         "parentPath": "Sector_StatueIsland/Sector_StatueIslandInterior",
         "isRelativeToParent": true,
         "position": {
-          "x": -12.0889,
-          "y": 0.6745,
-          "z": 33.8974
+          "x": -11.3022,
+          "y": 0.6997,
+          "z": 34.8923
         },
         "rotation": {
-          "x": 53.5973,
-          "y": 151.3018,
-          "z": 216.0658
+          "x": 59.7556,
+          "y": 139.8075,
+          "z": 204.2571
         },
         "seed": 6
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_error_statue_island",
+        "parentPath": "Sector_StatueIsland/Sector_StatueIslandInterior/text_statue_island",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_error_statue_island"
+      },
+      {
+        "id": "ew_statue_island",
+        "parentPath": "Sector_StatueIsland/Sector_StatueIslandInterior/text_statue_island",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_statue_island"
+      },
     ]
   }
 }

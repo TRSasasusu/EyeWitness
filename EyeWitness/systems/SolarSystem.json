@@ -2,10 +2,46 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
   "entryPositions": [
     {
-      "id": "ew_camp_probe"
+      "id": "ew_camp_probe",
+      "position": {
+        "x": 1337.501,
+        "y": 970.0347
+      }
     },
     {
-      "id": "ew_signal_for_island"
+      "id": "ew_error_statue_island",
+      "position": {
+        "x": 740.3536,
+        "y": 665.7434
+      }
+    },
+    {
+      "id": "ew_error_eye_shrine",
+      "position": {
+        "x": -168.8517,
+        "y": 742.1169
+      }
+    },
+    {
+      "id": "ew_statue_island",
+      "position": {
+        "x": 833.8504,
+        "y": 625.075
+      }
+    },
+    {
+      "id": "ew_signal_for_island",
+      "position": {
+        "x": 833.274,
+        "y": 882.9703
+      }
+    },
+    {
+      "id": "ew_eye_shrine",
+      "position": {
+        "x": -76.0801,
+        "y": 679.2167
+      }
     }
   ]
 }
