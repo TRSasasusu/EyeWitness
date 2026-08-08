@@ -10,15 +10,20 @@
           "shape": {
             "type": "box",
             "size": {
-              "x": 15.58353,
-              "y": 20,
-              "z": 27
+              "x": 30,
+              "y": 30,
+              "z": 30
             }
           },
           "affectsAlignment": true,
           "rename": "eyeshrine_depth_force",
           "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
-          "isRelativeToParent": true
+          "isRelativeToParent": true,
+          "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 180
+          }
         }
       ]
     }
