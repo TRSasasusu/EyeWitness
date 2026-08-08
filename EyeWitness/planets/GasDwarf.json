@@ -8,14 +8,14 @@
     "surfaceGravity": 0,
   },
   "Orbit": {
-    //"semiMajorAxis": 2000,
-    //"primaryBody": "GIANTS_DEEP",
-    //"isMoon": true,
-    //"isTidallyLocked": true
-    "staticPosition": {
-      "y": 16457.5
-    },
-    "isStatic": true,
+    "semiMajorAxis": 2500,
+    "primaryBody": "GIANTS_DEEP",
+    "isMoon": true,
+    "isTidallyLocked": true
+    //"staticPosition": {
+    //  "y": 16457.5
+    //},
+    //"isStatic": true,
     //"primaryBody": "SUN"
   },
   "Atmosphere": {
@@ -36,7 +36,7 @@
   "Props": {
     "details": [
       {
-        "assetBundle": "planets/assetbundles/eyewitness",
+        "assetBundle": "planets/assetbundles/eyewitness_skyisland",
         "path": "Assets/MyAssets/Prefabs/SkyIsland.prefab",
       }
     ]

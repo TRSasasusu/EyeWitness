@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "BRITTLE_HOLLOW",
+  "starSystem": "SolarSystem",
+  "Volumes": {
+    "forces": {
+      "directionalVolumes": [
+        {
+          "force": 1,
+          "shape": {
+            "type": "box",
+            "size": {
+              "x": 15.58353,
+              "y": 20,
+              "z": 27
+            }
+          },
+          "affectsAlignment": true,
+          "rename": "eyeshrine_depth_force",
+          "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+          "isRelativeToParent": true
+        }
+      ]
+    }
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_eyeshrine",
+        "path": "Assets/orclecleprefabs/EyeShrineDepth.prefab",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 101.1032,
+          "y": 193.84,
+          "z": -0.8122
+        },
+        "rotation": {
+          "x": 356.1911,
+          "y": 191.1997,
+          "z": 22.539
+        }
+      }
+    ]
+  }
+}

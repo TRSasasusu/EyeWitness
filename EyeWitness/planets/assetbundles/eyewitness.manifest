@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1064585651
+CRC: 603573115
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 721f92524bdaa7967738abb3d20f5037
+    Hash: 40c8a8dc3b641797e96bc6fd5e4b7922
   TypeTreeHash:
     serializedVersion: 2
     Hash: b15bed88e3832e1193e8ef278aed38c7
@@ -49,7 +49,6 @@ Assets:
 - Assets/MyAssets/Prefabs/pedestal_for_marker.prefab
 - Assets/MyAssets/Prefabs/BrambleRocks.prefab
 - Assets/MyAssets/Prefabs/BaseMistianEffect.prefab
-- Assets/MyAssets/Prefabs/SkyIsland.prefab
 - Assets/MyAssets/Prefabs/SignalForIsland.prefab
 - Assets/MyAssets/Prefabs/empty_gameobject.prefab
 - Assets/MyAssets/Prefabs/BrambleRocksBroken.prefab
