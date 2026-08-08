@@ -1,36 +1,42 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>EW_EYE_SHRINE_1</Text>
+    <Text>EW_EYE_SHRINE_DEPTH_1</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>EW_EYE_SHRINE_2</Text>
+    <Text>EW_EYE_SHRINE_DEPTH_2</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>EW_EYE_SHRINE_3</Text>
+    <Text>EW_EYE_SHRINE_DEPTH_3</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
-    <ParentID>2</ParentID>
-    <Text>EW_EYE_SHRINE_4</Text>
+    <ParentID>3</ParentID>
+    <Text>EW_EYE_SHRINE_DEPTH_4</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>EW_EYE_SHRINE_5</Text>
+    <Text>EW_EYE_SHRINE_DEPTH_5</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>EW_EYE_SHRINE_DEPTH_6</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>7</ID>
+    <ParentID>6</ParentID>
+    <Text>EW_EYE_SHRINE_DEPTH_7</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
-      <FactID>ew_eye_shrine_1</FactID>
-      <Condition>1</Condition>
-    </RevealFact>
-    <RevealFact>
-      <FactID>ew_eye_shrine_depth_rumor1</FactID>
-      <Condition>1</Condition>
+      <FactID>ew_eye_shrine_depth_1</FactID>
+      <Condition>6</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

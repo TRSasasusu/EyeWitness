@@ -1,0 +1,24 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>BRITTLE_HOLLOW</ID>
+  <Entry>
+    <ID>ew_eye_shrine_depth</ID>
+    <Name>EW_EYE_SHRINE_DEPTH</Name>
+    <RumorFact>
+      <ID>ew_eye_shrine_depth_rumor1</ID>
+      <SourceID>ew_eye_shrine</SourceID>
+      <Text>EW_EYE_SHRINE_DEPTH_RUMOR1</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>ew_eye_shrine_depth_1</ID>
+      <Text>EW_EYE_SHRINE_DEPTH_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_eye_shrine_depth_2</ID>
+      <Text>EW_EYE_SHRINE_DEPTH_2</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_eye_shrine_depth_3</ID>
+      <Text>EW_EYE_SHRINE_DEPTH_3</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

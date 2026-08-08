@@ -33,6 +33,13 @@
       "texturePath": "planets/textures/cloud.png",
     }
   },
+  "Volumes": {
+    "mapRestrictionVolumes": [
+      {
+        "radius": 300,
+      }
+    ]
+  },
   "Props": {
     "details": [
       {

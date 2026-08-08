@@ -2,11 +2,17 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "BRITTLE_HOLLOW",
   "starSystem": "SolarSystem",
+  "removeChildren": [
+    "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/bh_to_eyeshrine_depth/BlackHoleAmbience",
+    "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/bh_from_eyeshrine_depth/BlackHoleAmbience",
+    "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/wh_to_eyeshrine_depth/WhiteHoleAmbience",
+    "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/wh_from_eyeshrine_depth/WhiteHoleAmbience",
+  ],
   "Volumes": {
     "forces": {
       "directionalVolumes": [
         {
-          "force": 1,
+          "force": 10,
           "shape": {
             "type": "box",
             "size": {
@@ -29,6 +35,64 @@
     }
   },
   "Props": {
+    "singularities": [
+      {
+        "rename": "bh_to_eyeshrine_depth",
+        "horizonRadius": 0.5,
+        "uniqueID": "ew_bh_to_eyeshrine_depth",
+        "pairedSingularity": "ew_wh_to_eyeshrine_depth",
+        "type": "blackHole",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 18.1282,
+          "y": 3.3005,
+          "z": 3.4563
+        }
+      },
+      {
+        "rename": "wh_to_eyeshrine_depth",
+        "horizonRadius": 0.5,
+        "uniqueID": "ew_wh_to_eyeshrine_depth",
+        "pairedSingularity": "ew_bh_to_eyeshrine_depth",
+        "type": "whiteHole",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 12.2342,
+          "y": 9.5262,
+          "z": 8.3
+        }
+      },
+      {
+        "rename": "bh_from_eyeshrine_depth",
+        "horizonRadius": 0.5,
+        "uniqueID": "ew_bh_from_eyeshrine_depth",
+        "pairedSingularity": "ew_wh_from_eyeshrine_depth",
+        "type": "blackHole",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 12.2342,
+          "y": 9.5262,
+          "z": -8.3
+        }
+      },
+      {
+        "rename": "wh_from_eyeshrine_depth",
+        "horizonRadius": 0.5,
+        "uniqueID": "ew_wh_from_eyeshrine_depth",
+        "pairedSingularity": "ew_bh_from_eyeshrine_depth",
+        "type": "whiteHole",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 18.1282,
+          "y": 3.3005,
+          "z": -3.4563
+        }
+      }
+    ],
     "details": [
       {
         "assetBundle": "planets/assetbundles/eyewitness_eyeshrine",
@@ -46,6 +110,47 @@
           "z": 22.539
         }
       }
+    ],
+    "translatorText": [
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/eye_shrine_depth.xml",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "rename": "text_eye_shrine_depth",
+        "position": {
+          "x": -0.8311,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 61.3838,
+          "z": 0
+        }
+      },
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/eye_shrine_depth_moon.xml",
+        "parentPath": "Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth",
+        "isRelativeToParent": true,
+        "rename": "text_eye_shrine_depth_moon",
+        "position": {
+          "x": 12.9593,
+          "y": 0.7833,
+          "z": -0.0243
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 0
+        }
+      }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/BH_shiplog.xml"
   }
 }
