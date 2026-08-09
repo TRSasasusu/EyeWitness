@@ -28,6 +28,8 @@
           "ew_error_statue_island_2",
           "ew_error_eye_shrine_1",
           "ew_error_eye_shrine_2",
+          "ew_error_bramble_tower_1",
+          "ew_error_bramble_tower_2",
         ],
         "parentPath": "Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH",
         "isRelativeToParent": true,

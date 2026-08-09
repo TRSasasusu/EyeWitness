@@ -2,6 +2,20 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "TOWER_TWIN",
   "starSystem": "SolarSystem",
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "ew_bramble_tower_inside_1",
+        ],
+        "rename": "shiplog_ew_bramble_tower_inside_1",
+        "parentPath": "Sector_TowerTwin/BrambleRocksBroken",
+        "isRelativeToParent": true,
+      }
+    ]
+  },
   "Props": {
     "warpReceivers": [
       {
@@ -61,6 +75,19 @@
         },
         "keepLoaded": true
       },
+    ],
+    "translatorText": [
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/bramble_tower_inside.xml",
+        "parentPath": "Sector_TowerTwin/BrambleRocksBroken",
+        "isRelativeToParent": true,
+        "rename": "text_bramble_tower_inside",
+      }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/AT_shiplog.xml"
   }
 }

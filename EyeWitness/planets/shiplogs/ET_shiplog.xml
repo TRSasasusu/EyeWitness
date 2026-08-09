@@ -1,0 +1,31 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>CAVE_TWIN</ID>
+  <Entry>
+    <ID>ew_error_bramble_tower</ID>
+    <Name>EW_ERROR_BRAMBLE_TOWER</Name>
+    <ExploreFact>
+      <ID>ew_error_bramble_tower_1</ID>
+      <Text>EW_ERROR_BRAMBLE_TOWER_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_error_bramble_tower_2</ID>
+      <Text>EW_ERROR_BRAMBLE_TOWER_2</Text>
+    </ExploreFact>
+  </Entry>
+  <Entry>
+    <ID>ew_bramble_tower</ID>
+    <Name>EW_BRAMBLE_TOWER</Name>
+    <RumorFact>
+      <ID>ew_bramble_tower_rumor1</ID>
+      <Text>EW_BRAMBLE_TOWER_RUMOR1</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>ew_bramble_tower_1</ID>
+      <Text>EW_BRAMBLE_TOWER_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_bramble_tower_2</ID>
+      <Text>EW_BRAMBLE_TOWER_2</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

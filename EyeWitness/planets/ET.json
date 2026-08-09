@@ -2,6 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "CAVE_TWIN",
   "starSystem": "SolarSystem",
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "ew_bramble_tower_rumor1",
+        ],
+        "rename": "shiplog_ew_bramble_tower_rumor1",
+        "position": {
+          "x": 33.4382,
+          "y": -30.5526,
+          "z": 17.4402
+        },
+        "radius": 15,
+      }
+    ]
+  },
   "Props": {
     "details": [
       {
@@ -32,6 +50,40 @@
           "z": 130.6138
         }
       },
+    ],
+    "translatorText": [
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/bramble_tower.xml",
+        "rename": "text_bramble_tower",
+        "position": {
+          "x": 33.4382,
+          "y": -30.5526,
+          "z": 17.4402
+        },
+        "rotation": {
+          "x": 38.1883,
+          "y": 62.5545,
+          "z": 10.5
+        }
+      }
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_error_bramble_tower",
+        "parentPath": "Sector_CaveTwin/text_bramble_tower",
+        "isRelativeToParent": true,
+      },
+      {
+        "id": "ew_bramble_tower",
+        "parentPath": "Sector_CaveTwin/text_bramble_tower",
+        "isRelativeToParent": true,
+      }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/ET_shiplog.xml"
   }
 }

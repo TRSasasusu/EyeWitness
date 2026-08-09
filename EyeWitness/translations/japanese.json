@@ -51,11 +51,23 @@
         "EW_EYE_SHRINE_DEPTH_MOON_4": "BELLS:その旅の途中で君は後ろにあるシンボルを見ることになる。先祖たちの見つけた眼の信号とは異なる意匠…それが何を意味するのかを考えてみてほしい。&lt;i&gt;&lt;/i&gt;",
 
         //"EW_EYE_SHRINE_DEPTH_BACK_1": "COLEUS:特記事項:帰るときは空中都市側の眼のシンボルだけを観測すればいい。(また閉じ込められたかと焦ったよ。)&lt;i&gt;&lt;/i&gt;",
+
+        "EW_BRAMBLE_TOWER_1": "FILIX:Ramie、Phlox、ちょうどよかった！この前相談して建造したイバラのワープの塔だけれど、いったん閉鎖することにしたの。というのも、私の夫がワープ元のワープパッドの設置に失敗しちゃって、今は不用意に近づくと危ないから。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_2": "FILIX:惜しいところまでは行ったの。船に行くための最後の種のすぐ近くでアンコウに見つかりそうになって…&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_3": "PHLOX:あいつは無事なのか？&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_4": "FILIX:ええ！ワープパッドをその場に投げ捨てて外に避難できたそうよ。ワープパッドがどこにあるかはNomaiのコンピュータと接続された機械なら近くまで行けば自動で検知できる。Solanumの巡礼が終わったころにまた探しにいけばいいわ。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_5": "ROOT:それで私が余ってた材料でとりあえず塔を封鎖したんだ。どこからかすごい勢いで剛体がぶつかってこない限りは平気よ！…そういえば、2人はどうしてここに？&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_6": "RAMIE:Gastianの記憶を22分前に送るのにどのくらいのエネルギーが必要か、Phloxからもらったデータを基に高エネルギー研究所で計算してたの。結果としては、Nomaiよりとても効率的で何も問題なかったわ。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_BRAMBLE_TOWER_INSIDE_1": "FILIX:ワープ元のワープパッドが正しく設置されるまで、このワープの塔は閉鎖します！&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_INSIDE_2": "FILIX:…こういう記録を残して外に出るの、船でのあの忌々しい記憶を思い出すわね。イバラをモチーフにした塔ということもあって。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_INSIDE_3": "FILIX:あのときの私はEscallに従ってワープをしたけれど、それは正しかったのかしら。あれはEscallに責任があって私のせいじゃない、と皆は言ってくれたけれど…&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX:そして年月は流れ、今やSolanumの巡礼のとき。もう私は若くないけれど、夫も脆い空洞に戻ってくるそうだし、せめて教師としてこの部族のために役に立とうと思う。&lt;i&gt;&lt;/i&gt;",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",
         "EW_CAMP_PROBE_1": "空からキャンプファイヤーに落ちてきた探査機。",
-        "EW_CAMP_PROBE_2": "黄色いミストに触れたところ、航行記録に異常が生じ、見知らぬ記録が複数現れた。",
+        "EW_CAMP_PROBE_2": "黄色いガスに触れたところ、航行記録に異常が生じ、見知らぬ記録が複数現れた。",
 
         "EW_ERROR_STATUE_ISLAND": "彫+/の隠%;ス!-+ル",
         "EW_ERROR_STATUE_ISLAND_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
@@ -65,7 +77,7 @@
         "EW_ERROR_EYE_SHRINE_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
         "EW_ERROR_EYE_SHRINE_2": "<![CDATA[<color=blue>情報:HUDマーカーは利用可能</color>]]>",
 
-        "EW_ERROR_BRAMBLE_TOWER": "高エネ;+-研/#への道$-/キスト",
+        "EW_ERROR_BRAMBLE_TOWER": "高エネ;+-研/#への道$-/+|キスト",
         "EW_ERROR_BRAMBLE_TOWER_1": "<![CDATA[<color=red>エラー:不完全な航行記録</color>]]>",
         "EW_ERROR_BRAMBLE_TOWER_2": "<![CDATA[<color=blue>情報:HUDマーカーは利用可能</color>]]>",
 
@@ -87,5 +99,18 @@
         "EW_EYE_SHRINE_DEPTH_1": "Mitisの育てているGastianである「マーメイド」が宇宙の眼を見つけることになる。",
         "EW_EYE_SHRINE_DEPTH_2": "量子の月の第6の場所でもう1つの量子信号を追うと研究所にたどり着くことができる。",
         "EW_EYE_SHRINE_DEPTH_3": "その途中、Nomaiによる宇宙の眼のシンボルとは別のものが見られるらしい。",
+
+        "EW_BRAMBLE_TOWER": "高エネルギー研究所への道に隠れたテキスト",
+        "EW_BRAMBLE_TOWER_RUMOR1": "HUDマーカーは既に埋まった砂の下を示している。",
+        "EW_BRAMBLE_TOWER_1": "イバラのワープの塔は閉鎖されている。固い物体を勢いよくぶつけると開く可能性が示唆された。",
+        "EW_BRAMBLE_TOWER_2": "イバラのワープの塔へのワープパッドは闇のイバラ内部で失われている。船にたどり着くための最後の種の近くまで行けば、自動で位置が検知されるらしい。",
+
+        "EW_BRAMBLE_TOWER_INSIDE": "イバラのワープの塔",
+        "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "イバラのワープの塔は閉鎖されている。固い物体を勢いよくぶつけると開く可能性が示唆された。",
+        "EW_BRAMBLE_TOWER_INSIDE_1": "軌道探査砲から放たれた探査機をぶつけることで、中に入れるようになった。",
+
+        "EW_BRAMBLE_TOWER_WARP": "イバラのワープパッド",
+        "EW_BRAMBLE_TOWER_WARP_RUMOR1": "イバラのワープの塔へのワープパッドは闇のイバラ内部で失われている。船にたどり着くための最後の種の近くまで行けば、自動で位置が検知されるらしい。",
+        "EW_BRAMBLE_TOWER_WARP_1": "ワープパッドの位置が探査艇のコンピュータによって検知された。そのため、HUDマーカーを設定することが可能だ。",
     }
 }

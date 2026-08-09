@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using NewHorizons.Utility;
+using UniRx;
 
 namespace EyeWitness {
     public class PathToHighEnergyLabManager {
@@ -13,6 +14,7 @@ namespace EyeWitness {
         TractorBeamSwitch _topSwitch;
         TractorBeamSwitch _bottomSwitch;
         SectorFixOfPathToHighEnergeLab _fixOfPathToHighEnergeLab;
+        GameObject _rumorRevealVolume;
 
         public PathToHighEnergyLabManager() {
             var tractorBeam = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_SpeedCave/Interactables_SpeedCave/Prefab_NOM_TractorBeam");
@@ -52,6 +54,12 @@ namespace EyeWitness {
             sphereCollider.radius = 12;
             sphereCollider.isTrigger = true;
             _fixOfPathToHighEnergeLab = sectorFix.AddComponent<SectorFixOfPathToHighEnergeLab>();
+
+            _rumorRevealVolume = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/shiplog_ew_bramble_tower_rumor1");
+            _rumorRevealVolume.SetActive(false);
+            Observable.Timer(TimeSpan.FromSeconds(60 * 6)).Subscribe(_ => {
+                _rumorRevealVolume.SetActive(true);
+            }).AddTo(_rumorRevealVolume);
         }
     }
 }

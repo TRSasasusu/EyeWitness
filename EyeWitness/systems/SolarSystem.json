@@ -23,6 +23,13 @@
       }
     },
     {
+      "id": "ew_error_bramble_tower",
+      "position": {
+        "x": 343.0078,
+        "y": 939.6161
+      }
+    },
+    {
       "id": "ew_statue_island",
       "position": {
         "x": 833.8504,
@@ -49,6 +56,23 @@
         "x": -76.1299,
         "y": 1002.174
       }
+    },
+    {
+      "id": "ew_bramble_tower",
+      "position": {
+        "x": 430.7336,
+        "y": 880.0587
+      }
+    },
+    {
+      "id": "ew_bramble_tower_inside",
+      "position": {
+        "x": 297.2073,
+        "y": 547.0305
+      }
+    },
+    {
+      "id": "ew_bramble_tower_warp",
     }
   ]
 }
