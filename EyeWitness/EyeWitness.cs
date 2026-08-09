@@ -11,6 +11,7 @@ namespace EyeWitness {
         ModifyObjects _modifyObjects;
         SkyIslandManager _skyIslandManager;
         EyeShrineDepthManager _eyeShrineDepthManager;
+        PathToHighEnergyLabManager _pathToHighEnergyLabManager;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -45,6 +46,7 @@ namespace EyeWitness {
                     _modifyObjects = new ModifyObjects();
                     _skyIslandManager = new SkyIslandManager();
                     _eyeShrineDepthManager = new EyeShrineDepthManager();
+                    _pathToHighEnergyLabManager = new PathToHighEnergyLabManager();
                 }
             });
         }
