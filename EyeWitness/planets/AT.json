@@ -13,6 +13,12 @@
         "rename": "shiplog_ew_bramble_tower_inside_1",
         "parentPath": "Sector_TowerTwin/BrambleRocksBroken",
         "isRelativeToParent": true,
+        "position": {
+          "x": -10.3754,
+          "y": 1.7748,
+          "z": 0.981
+        },
+        "radius": 5
       }
     ]
   },
@@ -83,6 +89,16 @@
         "parentPath": "Sector_TowerTwin/BrambleRocksBroken",
         "isRelativeToParent": true,
         "rename": "text_bramble_tower_inside",
+        "position": {
+          "x": -1.4809,
+          "y": -0.8604,
+          "z": 0.7563
+        },
+        "rotation": {
+          "x": 0,
+          "y": 330.0285,
+          "z": 28.4014
+        }
       }
     ]
   },
