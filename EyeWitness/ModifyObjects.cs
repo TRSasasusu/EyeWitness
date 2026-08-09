@@ -16,6 +16,7 @@ namespace EyeWitness {
         public MarkerItem MarkerItem { get; private set; }
         public GameObject BrambleRocks { get; private set; }
         public GameObject BrambleRocksBroken { get; private set; }
+        public GameObject GasDwarf { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -51,6 +52,15 @@ namespace EyeWitness {
             BrambleRocksBroken = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken");
             if(BrambleRocksBroken != null) {
                 BrambleRocksBroken.SetActive(false);
+            }
+
+            GasDwarf = SearchUtilities.Find("GasDwarf_Body/Sector");
+            if(GasDwarf != null) {
+                foreach(Transform child in GasDwarf.transform) {
+                    if(child != null && child.name == "LightShaft") {
+                        child.localScale = new Vector3(2, 20, 2);
+                    }
+                }
             }
         }
     }

@@ -7,16 +7,19 @@
     "surfaceSize": 101,
     "surfaceGravity": 0,
   },
+  "Cloak": {
+    "radius": 2000,
+  },
   "Orbit": {
-    "semiMajorAxis": 2500,
-    "primaryBody": "GIANTS_DEEP",
-    "isMoon": true,
-    "isTidallyLocked": true
-    //"staticPosition": {
-    //  "y": 16457.5
-    //},
-    //"isStatic": true,
-    //"primaryBody": "SUN"
+    //"semiMajorAxis": 2500,
+    //"primaryBody": "GIANTS_DEEP",
+    //"isMoon": true,
+    //"isTidallyLocked": true
+    "staticPosition": {
+      "y": 16457.5
+    },
+    "isStatic": true,
+    "primaryBody": "SUN"
   },
   "Atmosphere": {
     "clouds": {
@@ -38,13 +41,67 @@
       {
         "radius": 300,
       }
-    ]
+    ],
+    "interferenceVolumes": [
+      {
+        "radius": 300,
+      }
+    ],
+    "forces": {
+      "directionalVolumes": [
+        {
+          "force": 8,
+          "shape": {
+            "type": "sphere",
+            "radius": 300,
+          },
+          "affectsAlignment": true,
+          "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 180
+          }
+        }
+      ]
+    }
   },
   "Props": {
     "details": [
       {
         "assetBundle": "planets/assetbundles/eyewitness_skyisland",
         "path": "Assets/MyAssets/Prefabs/SkyIsland.prefab",
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
+        "position": {
+          "x": -24.5082,
+          "y": 132.6177,
+          "z": -8.6722
+        },
+        "rename": "LightShaft"
+      },
+      {
+        "path": "StatueIsland_Body/Sector_StatueIsland/Interactables_StatueIsland/ControlledByProxy_StatueIsland/Props_NOM_DockingTractorBeam (1)",
+        "position": {
+          "x": 0.0103,
+          "y": -6.6306,
+          "z": -24.0292
+        },
+        "rotation": {
+          "x": 8.9215,
+          "y": 0,
+          "z": 357.6173
+        },
+        "scale": 0.8
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/SignalForIsland.prefab",
+        "position": {
+          "x": -31.1608,
+          "y": -5.7273,
+          "z": -43.7265
+        }
       }
     ]
   }
