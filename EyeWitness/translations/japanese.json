@@ -49,6 +49,8 @@
         "EW_EYE_SHRINE_DEPTH_MOON_2": "BELLS:我々Nomaiは、量子の月、ひいては宇宙の眼についてさらなる探究を続け、発見には至らぬものの多くの知見を得ることができた。そして…量子の月の深淵に研究所を設置するに至ったのだ。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_DEPTH_MOON_3": "BELLS:第6の場所でもう1つの量子信号を追うのだ。量子の月の発するものとは異なる信号が君をその深淵へと導くだろう！&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_DEPTH_MOON_4": "BELLS:その旅の途中で君は後ろにあるシンボルを見ることになる。先祖たちの見つけた眼の信号とは異なる意匠…それが何を意味するのかを考えてみてほしい。&lt;i&gt;&lt;/i&gt;",
+
+        //"EW_EYE_SHRINE_DEPTH_BACK_1": "COLEUS:特記事項:帰るときは空中都市側の眼のシンボルだけを観測すればいい。(また閉じ込められたかと焦ったよ。)&lt;i&gt;&lt;/i&gt;",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",

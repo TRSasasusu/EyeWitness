@@ -10,6 +10,7 @@ namespace EyeWitness {
 
         ModifyObjects _modifyObjects;
         SkyIslandManager _skyIslandManager;
+        EyeShrineDepthManager _eyeShrineDepthManager;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -43,6 +44,7 @@ namespace EyeWitness {
                 if (loadScene == "SolarSystem") {
                     _modifyObjects = new ModifyObjects();
                     _skyIslandManager = new SkyIslandManager();
+                    _eyeShrineDepthManager = new EyeShrineDepthManager();
                 }
             });
         }
