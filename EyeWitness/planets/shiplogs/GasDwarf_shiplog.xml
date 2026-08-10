@@ -1,0 +1,17 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>Gas Dwarf</ID>
+  <Entry>
+    <ID>ew_gas_dwarf</ID>
+    <Name>EW_GAS_DWARF</Name>
+    <Curiosity>ew_mermaid</Curiosity>
+    <IsCuriosity/>
+    <ExploreFact>
+      <ID>ew_gas_dwarf_1</ID>
+      <Text>EW_GAS_DWARF_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_gas_dwarf_2</ID>
+      <Text>EW_GAS_DWARF_2</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

@@ -23,6 +23,14 @@
         "sourceRadius": 10,
       }
     ],
+    "entryLocation": [
+      {
+        "id": "ew_gas_dwarf",
+        "parentPath": "Sector_GD/parent_of_signal_for_island_on_sky_dummy",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_gas_dwarf"
+      }
+    ]
   },
   "ShipLog": {
     "spriteFolder": "planets/shiplogs/sprites",

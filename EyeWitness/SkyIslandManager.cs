@@ -10,6 +10,8 @@ using UniRx.Triggers;
 
 namespace EyeWitness {
     public class SkyIslandManager {
+        public static SkyIslandManager Instance { get; private set; }
+
         GameObject _gasDwarf;
         GameObject _giantsDeep;
         GameObject _parentOfSignalForIslandOnSkyDummy;
@@ -19,9 +21,11 @@ namespace EyeWitness {
         SpawnPoint _spawnPointInGasDwarf;
         SpawnPoint _spawnPointInGiantsDeep;
 
-        bool _insideGasDwarf = false;
+        public bool InsideGasDwarf { get; private set; }
 
         public SkyIslandManager() {
+            Instance = this;
+
             _gasDwarf = SearchUtilities.Find("GasDwarf_Body");
             if(_gasDwarf != null) {
                 Observable.NextFrame().Subscribe(_ => {
@@ -68,7 +72,7 @@ namespace EyeWitness {
                         _playerSpawner.DebugWarp(_spawnPointInGasDwarf);
                         EnableGasDwarf();
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
-                            _insideGasDwarf = true;
+                            InsideGasDwarf = true;
                         }).AddTo(_gasDwarf);
                     }
                 });
@@ -110,7 +114,7 @@ namespace EyeWitness {
                     if(_gasDwarf == null || !_gasDwarf.activeSelf) {
                         return;
                     }
-                    if(!_insideGasDwarf) {
+                    if(!InsideGasDwarf) {
                         return;
                     }
                     var distanceFromGasDwarf = Vector3.Distance(playerBody.transform.position, _gasDwarf.transform.position);
@@ -120,7 +124,7 @@ namespace EyeWitness {
                         }
                         _playerSpawner.DebugWarp(_spawnPointInGiantsDeep);
                         DisableGasDwarf();
-                        _insideGasDwarf = false;
+                        InsideGasDwarf = false;
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
                             _spawnPointInGiantsDeep.transform.localPosition = UnityEngine.Random.onUnitSphere * 800;
                         }).AddTo(_spawnPointInGiantsDeep);

@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_error_statue_island</ID>
     <Name>EW_ERROR_STATUE_ISLAND</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_error_statue_island_1</ID>
       <Text>EW_ERROR_STATUE_ISLAND_1</Text>
@@ -15,6 +16,7 @@
   <Entry>
     <ID>ew_statue_island</ID>
     <Name>EW_STATUE_ISLAND</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_statue_island_1</ID>
       <Text>EW_STATUE_ISLAND_1</Text>
@@ -31,6 +33,7 @@
   <Entry>
     <ID>ew_signal_for_island</ID>
     <Name>EW_SIGNAL_FOR_ISLAND</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <RumorFact>
       <ID>ew_signal_for_island_rumor1</ID>
       <SourceID>ew_statue_island</SourceID>

@@ -73,6 +73,26 @@
     },
     {
       "id": "ew_bramble_tower_warp",
+    },
+    {
+      "id": "ew_gas_dwarf",
+    },
+  ],
+  "curiosities": [
+    {
+      "id": "ew_mermaid",
+      "color": {
+        "r": 255,
+        "g": 194,
+        "b": 14,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 255,
+        "g": 239,
+        "b": 108,
+        "a": 255
+      }
     }
   ]
 }

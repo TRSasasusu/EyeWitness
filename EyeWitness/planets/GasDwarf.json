@@ -7,9 +7,9 @@
     "surfaceSize": 101,
     "surfaceGravity": 0,
   },
-  "Cloak": {
-    "radius": 2000,
-  },
+  //"Cloak": {
+  //  "radius": 2000,
+  //},
   "Orbit": {
     //"semiMajorAxis": 2500,
     //"primaryBody": "GIANTS_DEEP",
@@ -63,9 +63,32 @@
           }
         }
       ]
-    }
+    },
+    "revealVolumes": [
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "ew_gas_dwarf_1",
+          "ew_gas_dwarf_2",
+        ],
+        "rename": "shiplog_ew_gas_dwarf_1",
+        "radius": 250
+      }
+    ]
   },
   "Props": {
+    "signals": [
+      {
+        "audio": "planets/sounds/signal_for_island.wav",
+        "frequency": "Island Search",
+        "detectionRadius": 30,
+        "rename": "signal_for_island_on_sky",
+        "name": "Island Signal",
+        "parentPath": "Sector/SignalForIsland",
+        "isRelativeToParent": true,
+      }
+    ],
     "details": [
       {
         "assetBundle": "planets/assetbundles/eyewitness_skyisland",
@@ -104,5 +127,9 @@
         }
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/GasDwarf_shiplog.xml"
   }
 }
