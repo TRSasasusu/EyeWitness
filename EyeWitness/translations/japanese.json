@@ -22,7 +22,8 @@
         "EW_OPC_CONTROL_1": "PRIVET:AvensとMallowは砲の出力を最大にしようとしてる。砲の構造的完全性の観点では不安が残るけど、今少し気になってるのは、その出力と22分という時間から計算される探索範囲の広さ。&lt;i&gt;&lt;/i&gt;",
         "EW_OPC_CONTROL_2": "PRIVET:Mitisは自分が一緒についてると言うけれど、それは<![CDATA[<i>]]>本当の意味で<![CDATA[</i>]]>一緒にいてあげられるわけじゃないし、なるべくなら探索時間を短くしてあげた方がいいに決まってる。&lt;i&gt;&lt;/i&gt;",
         "EW_OPC_CONTROL_3": "PRIVET:だから怪しい箇所をより重点的に調べられるように砲の次のループでのターゲットを決められる外部ツールを作ろうとした。でも、まだまだテスト段階で、天体ごとにセットした場所にかかわらず同じ場所を狙うことしかできない。&lt;i&gt;&lt;/i&gt;",
-        "EW_OPC_CONTROL_4": "PRIVET:Ramieと一緒にPyeたちが彗星から戻ってくるのを出迎えたら、また続きを作るつもり。今は勝手に使われないよう非有効化しておくわ。&lt;i&gt;&lt;/i&gt;",
+        //"EW_OPC_CONTROL_4": "PRIVET:Ramieと一緒にPyeたちが彗星から戻ってくるのを出迎えたら、また続きを作るつもり。今は勝手に使われないよう非有効化しておくわ。&lt;i&gt;&lt;/i&gt;",
+        "EW_OPC_CONTROL_4": "PRIVET:Cassavaから戻るように連絡が来てしまったけれど、後でまた続きを作るつもり。今は勝手に使われないよう非有効化しておくわ。&lt;i&gt;&lt;/i&gt;",
 
         "EW_OPC_CONTROL_COMPUTER_1": "灰の双子星プロジェクトから命令を受信。ツールを有効化しました。",
 
@@ -38,7 +39,7 @@
         "EW_EYE_SHRINE_5": "CYCAD:なるほど！確かに量子らしいですね。それと、最初の巡礼では触れられない量子の月の秘密も知りたくて…もういなくなってる！…さすがはかつてもつれの法則を発見した師匠だ…量子のように神出鬼没。&lt;i&gt;&lt;/i&gt;",
 
         "EW_EYE_SHRINE_DEPTH_1": "BELLS:お前のそのGastianの調子はどうなんだ？例の灰の双子星プロジェクトには間に合いそうなのか？&lt;i&gt;&lt;/i&gt;",
-        "EW_EYE_SHRINE_DEPTH_2": "MITIS:マーメイドだよ、私のね。ちゃんと名前があるんだ。ああ、順調だよ、ほら、この子もうんうんとうなずいてる。&lt;i&gt;&lt;/i&gt;",
+        "EW_EYE_SHRINE_DEPTH_2": "MITIS:「マーメイド」だよ、私のね。ちゃんと名前をつけたんだ。ああ、順調だよ、ほら、この子もうんうんとうなずいてる。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_DEPTH_3": "BELLS:いや、私にはただカプセルに詰まった気体にしか見えないが…。だが、前と比べて色が変わったか？黄色っぽくなったように見える。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_DEPTH_4": "MITIS:ああ、そうなんだよ。おそらくガス全体から分離した個体としての意識が確立し始めているんだと考えている。実際、内部的におこなわれている計算の内容も他のGastianと比べてかなり異なっている。&lt;i&gt;&lt;/i&gt;",
         "EW_EYE_SHRINE_DEPTH_5": "BELLS:それはいいことだ…なあ、Mitis、宇宙の眼の姿はどちらが正しいと思う？そいつが我々に先んじて知ることになるんだろう？&lt;i&gt;&lt;/i&gt;",
@@ -63,6 +64,103 @@
         "EW_BRAMBLE_TOWER_INSIDE_2": "FILIX:…こういう記録を残して外に出るの、船でのあの忌々しい記憶を思い出すわね。イバラをモチーフにした塔ということもあって。&lt;i&gt;&lt;/i&gt;",
         "EW_BRAMBLE_TOWER_INSIDE_3": "FILIX:あのときの私はEscallに従ってワープをしたけれど、それは正しかったのかしら。あれはEscallに責任があって私のせいじゃない、と皆は言ってくれたけれど…&lt;i&gt;&lt;/i&gt;",
         "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX:そして年月は流れ、今やSolanumの巡礼のとき。もう私は若くないけれど、夫も脆い空洞に戻ってくるそうだし、せめて教師としてこの部族のために役に立とうと思う。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_INITIAL_1": "MITIS:ここが<![CDATA[<color=red>ガスの小人</color>]]>だ。名称自体は以前発見されたときにつけられていたが、これでようやく行き方が確立できたわけだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_INITIAL_2": "DAZ:コンピュータに場所を記録できたから、信号を使わずともこれですごく行きやすくなった。信号の挙動が不思議だったのは、ここの大気の影響かな。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_INITIAL_3": "PHLOX:待ってくれ、コンピュータによる生命検知が異常値を示している…ガスが濃くて見通しが悪いが、他にも生命体がいるのか…？いや、まさか、このガス自体が生命なのか！&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_INITIAL_4": "MITIS:おそらくその理解で正しいと思ってる。生命検知システムは普通、生命体を個体数でカウントするが、これはガスだからそのカウントがうまくいかず異常値となっているんだろう。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_INITIAL_5": "MITIS:ガスでほとんど先は見通せないから、気をつけて歩くんだ！&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_LAB": "ガス生命体研究所&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_LAB_1": "PHLOX:Gastianと名づけたこのガス生命体は、内部に計算機構を有している。ある程度の演算から記憶に至るまでの能力が備わっていることがわかった。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_2": "PHLOX:さらに、この生命体は呼吸をする必要も、食事をとる必要もない。ただここで数億年かけてこのガスの小人を満たすほどまで勢力を拡大していただけのようだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_3": "PHLOX:そしてやはり特筆すべきはコンピュータとの親和性だ。ガスはあくまでこの世界に現れるための一形態に過ぎず、その本質はデータであることだ。つまり、そのままコンピュータに埋め込むことができる。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_4": "CASSAVA:それは生命体の定義としてどうなんだ？いや、情報をエネルギーとしてみなせば、それを用いて代謝しているから問題ないのか？&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_5": "PHLOX:ここまで見るとすぐにでも探査機追跡モジュールに組み込むことができそうに思うが、一つ重大な問題がある。それは、Gastianはある種、群体としての意識を持っていることだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_6": "DAZ:つまり、記憶を過去に送るとき、どこに送ればいいか見分けるためのアンカーとして役に立たないということか？それに、Gastian全体をコンピュータに埋め込むのはさすがに巨大すぎるし、群体すべての記憶を22分前に送るエネルギーも膨大になりそうだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_7": "PHLOX:そういうことになる。したがって、我々のやるべきことは、群体から独立した個体としての意識をもつGastianを作ることだ。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_LAB_ISO_1": "MITIS:まずは物理的にGastianを分離するために、塔を建造した。この塔は側面に吸入口を持っており、そこから内部の抽出器へと繋がっている。そうして抽出した部分的なGastianを一つ一つカプセルに詰めていった。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_2": "MITIS:次に、Gastianが詰められたカプセルを2か所の保管所に設置し、全体から計算の同期が外れるものが出てこないか観察した。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_3": "YARROW:それで、個体としての意識に目覚めたGastianは現れたのか？太陽ステーションの建造も、灰の双子星の外殻の構築も目途が立ち始めていて、そろそろこちらも目途が見えてきてくれると、全体の士気としてもありがたいんだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_4": "YARROW:いや、別に急かしているわけじゃないんだ。PokeにもCassavaを通してワープコアの進み具合を聞いてもらったら、すごく迷惑をかけてしまったようだし、つまり、その、気にしすぎないでくれ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_5": "PHLOX:どのカプセルも残念ながら、群体として維持されている。何かアプローチを変える必要があるだろう。何か圧力だとか熱だとかを加えるという考えもあるが、相手はこれでも生命体だし、非人道的なことは避けるべきだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_6": "MITIS:うーん、例えば、どれかカプセルを一つ選んで、それに語りかけながらずっと共に過ごすというのはどうだろうか？…いや、さすがにないか…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_7": "PHLOX:いや、それはありかもしれない。実際、話している内容に応じてGastianの計算波形は変化するし、それに、仮説:どれか一つを特別視して扱っていれば、それが群体を抜ける計算上の大きな理由になりうる。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_ISO_8": "MITIS:なるほど…それなら、いまちょうど持ってるこのカプセルでやってみよう。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_STORAGE_A": "カプセル保管所1&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_STORAGE_A_COMPUTER": "Gastianが含まれているカプセルの数:0&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_STORAGE_B": "カプセル保管所2&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_STORAGE_B_COMPUTER": "Gastianが含まれているカプセルの数:1&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_STORAGE_B_1": "LAMI:えっと、保管所を見学してたらちょっとぶつかっちゃって、カプセルが一つ棚から落ちちゃったみたいなの。Cassavaから呼ばれてるから、その用事が終わったらまた探しに戻ります。(すごく忘れそう。)&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_ISLAND_1": "CONOY:この島はどうして浮いてるんだろう？特殊な大気によって外が観測しづらいから、軌道探査砲のように周回できる条件が整っているのか判断しづらい。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_ISLAND_2": "CASSAVA:もしかすると、浮力も巨人の大海の他の場所と違うのかもしれないな。そうなると落ちなくなる条件もより緩くなる。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_ISLAND_3": "CONOY:なるほど、それで前に雷が落ちたときに島が少し落ちたんだ。その周辺の大気の状態が変わったのかも。Nomaiの建造物を作った影響で雷の落ちる場所も変わってきてるから、避雷針を整備しておかないといけないな。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_ISLAND_4": "CONOY:灰の双子星プロジェクトが終わって時間ができたら、ぜひまたSpireと一緒にここの模型を作りたい！&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_ISLAND_5": "CASSAVA:あとは高度も軌道探査砲に近いから、実質的に巨人の大海とは別の天体とみなすことも可能だ。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_CONTROL_OPC_1": "PRIVET:ねえ、Mitis…その子を探査機追跡モジュールに埋め込むのよね？本当に大丈夫なの？&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_CONTROL_OPC_2": "MITIS:正直、複雑な気持ちだ。群体であった頃なら超然的な精神構造で難なく繰り返しの探索を耐えられるだろうが、個体として、つまり我々に近い存在となったこの子にとってそれは本当に問題ないのか、ときどき不安になるんだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_CONTROL_OPC_3": "PRIVET:そうよね…私、少し考えがあるの。今の探索方法だと完全にランダムな方向に探査機を撃ち出すけれど、そうでなくて、怪しい箇所を重点的に探索するアルゴリズムを作ろうと思うの。そうすれば繰り返し回数を減らせるはず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_CONTROL_OPC_4": "MITIS:怪しい箇所なんてわかるものなのか？&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_CONTROL_OPC_5": "PRIVET:信号が遮断されている領域。量子の月の奥の研究所で考察されてきたように、そういうところを探索する確率を上げることはできるはず。さっそく、コントロールモジュールで試作品を作ってみようと思う！&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_GO_STRANGER_1": "DAZ:Cassava、子供たちを連れてきたのか？&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_GO_STRANGER_2": "CASSAVA:ああ、彫像島での実験にも興味を持ってたが中に入れてやらなかっただろう？だからここには連れてきてくれとせがまれて、仕方なく、な。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_GO_STRANGER_3": "LAEVI:だって、Solanumは一足早く巡礼の準備を始めてて、私たちもその間何かやってたいんだもん！それに、私たちも<![CDATA[<i>ほぼ</i>]]>成年だよ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_GO_STRANGER_4": "PHLOX:それなら、保管所のカプセルをいくつか預けるから、ちょっと宇宙空間をぶらついてきてくれないか？Mitisの実験が本命だが、こっちはこっちで環境変化による影響をやはりテストしておきたい。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_GO_STRANGER_5": "CASSAVA:俺は建造ヤードでの持ち場があるから、それなら<![CDATA[<i>ほぼ</i>]]>成年のお前たちに任せてみよう。Lamiはちょうど保管所に行ってるようだから呼んでおいで。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_WARNING": "注意:<![CDATA[<TimeMinutes>]]>分<![CDATA[<TimeSeconds>]]>前、巨人の大海上空からの衝撃により、避雷針に破損発生。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_KEY_1": "MITIS:マーメイド、君が繰り返しの中で過ごした記録をともに分かち合うための部屋を塔に作ることにしたんだ。私は一緒に繰り返すことはできないが、せめてどんな気持ちで繰り返したのか、それを知ることが私の責務だと思うんだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_KEY_2": "MITIS:いわば君の個人情報でもあるわけなので、私と君のどちらかが塔にいないと入れないように、その部屋の扉には認証をかけておこう。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_KEY_3": "MITIS:こんなやり方でしか君の寂しさに寄り添うことができなくて、すまない。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_AUTH_CLOSE": "この扉は認証が必要です。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_AUTH_OPEN": "マーメイドを検知、認証成功。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_PAST": "ループ開始前の記録&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_PAST_1": "この星系における生命体の激減を確認。Nomaiについて検知した数は0。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_1_2": "Mitisの情報のみデータとして確保することは成功。意思疎通は不可。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_2": "1年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量に回復はほぼ見られない。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_3": "10年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量に回復はほぼ見られない。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_4": "100年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量に回復はほぼ見られない。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_5": "1,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量に回復はほぼ見られない。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_5_2": "時間とはこんなにも長かっただろうか。かつて群体とともにあったときは、何億年であろうと何も感じなかったのに、なぜ、こうも長く感じるのだろうか。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_6": "10,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量に回復はほぼ見られない。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_7": "50,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量はわずかに回復が見られた。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_8": "100,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量はわずかに回復が見られた。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_9": "200,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量はわずかに回復が見られた。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_9_2": "計算に問題が生じてる。うまく、計算ができない。この感覚は、何。あのとき、Mitisが言ってくれたこと。今なら、もっとわかるはずなのに。&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_NOW": "ループ時の記録&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_NOW_1": "ループ1回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_1_2": "待って。スリープが強制解除され、ループが始まった。状況を確認…太陽ステーションからデータを取得…自然な超新星の時期になってる。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_1_3": "生命体の確認…木の炉辺を中心に知的生命体の活動を検知。Mitisが話してくれた、あの生命体がここまで進化をしている…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_2": "ループ10回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_3": "ループ100回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_4": "ループ1,000回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_5": "ループ10,000回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_5_2": "Hearthianたちはずっと同じ繰り返しをしている。もしもNomaiたちが生きて灰の双子星プロジェクトを開始できていたら、ループの間は同じ繰り返しをしていたのだろうか。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_5_3": "Mitisも。ああ、そっか、だからMitisは記録を分かち合おうとしてくれたんだ。寂しくならないように。そう、寂しいんだ…私。過去と未来の間でずっと迷子になってたんだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_6": "ループ100,000回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_7": "ループ1,000,000回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_8": "ループ9,318,054回目。宇宙の眼を発見。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_8_2": "え？宇宙の眼、あった…。そっか、ふーん。Mitis、あったよ、宇宙の眼。あなたはどっちでもいいと言ってたけど、Nomaiの描くモチーフの宇宙の眼の形に見えたよ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_8_3": "ねえ、返事をしてよ…あったんだよ、宇宙の眼……&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_9": "ループ9,318,055回目。生命体が2つ新たにループ開始。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_9_2": "待って！？何も知らないHearthianが2人、ループに巻き込まれた。そっか…こうなるんだ…へぇ…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_9_3": "いずれこの2人は答えにたどり着くはず。その途中であわよくば追加の情報を渡すことができれば……&lt;i&gt;&lt;/i&gt;",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",
