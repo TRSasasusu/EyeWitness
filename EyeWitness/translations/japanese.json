@@ -161,6 +161,16 @@
         "EW_GAS_DWARF_MEMORY_NOW_9": "ループ9,318,055回目。生命体が2つ新たにループ開始。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_9_2": "待って！？何も知らないHearthianが2人、ループに巻き込まれた。そっか…こうなるんだ…へぇ…&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_9_3": "いずれこの2人は答えにたどり着くはず。その途中であわよくば追加の情報を渡すことができれば……&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_FINAL_1": "MITIS:Lamiたちが持ってきたこの緑色の炎、PhloxとDazの解析によるとGastianと親和性の高い物質のようだ。うまく使えばマーメイドと意思疎通ができるかもしれないな…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_2": "MITIS:…待て、なんだ、何が起きてる！？どうしてガスの小人全体のGastianの量が急激に減ってきている？気体観測機器は別の気体の流入を示しているが、Gastianとぶつかったところで互いに消滅している…なんだこれは…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_3": "MITIS:皆に連絡をとらなくては…繋がらない。どういう…生命体観測機器！この星系での生命体の数が急激に減少している…Nomaiの数は……1。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_4": "MITIS:…彗星か。そして、Gastianとこの気体の拮抗が崩れた瞬間に私も死ぬのだろう。ああ、マーメイドよ、すまない。君を灰の双子星プロジェクトのコンピュータに埋め込めば君は助かるが、独りにさせてしまう。だが、それでも…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_5": "MITIS:…まずい、視界がおかしくなってきた。徐々にあの気体の濃度が上がってきたんだ。燃えるように全身が…&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_6": "MITIS:…マーメイド？カプセルから出てきて…緑の炎に触れて………&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_FINAL_COMPUTER_1": "灰の双子星プロジェクトへマーメイドが埋め込まれました。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_FINAL_COMPUTER_2": "注意:マーメイドに加えて追加のデータが埋め込まれています。&lt;i&gt;&lt;/i&gt;",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "落ちてきた探査機",
@@ -214,5 +224,7 @@
         "EW_GAS_DWARF": "ガスの小人",
         "EW_GAS_DWARF_1": "信号を追うことで巨人の大海の雲の中に浮かぶ島を見つけた。",
         "EW_GAS_DWARF_2": "ここにはHUDマーカーを設定することができる。",
+
+        "EW_GAS_DWARF_LAB": "ガス生命体研究所",
     }
 }

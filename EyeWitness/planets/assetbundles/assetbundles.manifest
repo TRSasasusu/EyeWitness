@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1570918386
+CRC: 2251700540
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -10,4 +10,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_2:
       Name: eyewitness_eyeshrine
+      Dependencies: {}
+    Info_3:
+      Name: eyewitness_skyisland_buildings
       Dependencies: {}
