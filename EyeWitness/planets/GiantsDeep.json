@@ -8,7 +8,7 @@
         "assetBundle": "planets/assetbundles/eyewitness",
         "path": "Assets/MyAssets/Prefabs/empty_gameobject.prefab",
         "rename": "parent_of_signal_for_island_on_sky_dummy"
-      }
+      },
     ],
     "signals": [
       {

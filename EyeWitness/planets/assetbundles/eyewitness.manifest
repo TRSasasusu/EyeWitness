@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 603573115
+CRC: 1972294
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 40c8a8dc3b641797e96bc6fd5e4b7922
+    Hash: a20f488268a6fbf980c35a7ead204b0f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b15bed88e3832e1193e8ef278aed38c7
+    Hash: 2e503c4419ea3dd692790e9c9d10c490
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -30,6 +30,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 3e2cd530bcd6ab93471c4405ca1c5b6a, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: ed2c05164c15f8d9c350b78482f30169, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7272cba977bdf7eec3ebf07ae09efe55, type: 3}
@@ -44,6 +46,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/MyAssets/Prefabs/FishtailEffect.prefab
+- Assets/MyAssets/Prefabs/parent_of_signal_for_island_on_sky_dummy.prefab
 - Assets/MyAssets/Prefabs/OPCMarker.prefab
 - Assets/MyAssets/Prefabs/BrambleTower.prefab
 - Assets/MyAssets/Prefabs/pedestal_for_marker.prefab

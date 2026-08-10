@@ -13,6 +13,7 @@ namespace EyeWitness {
         public static SkyIslandManager Instance { get; private set; }
 
         GameObject _gasDwarf;
+        Transform _gasDwarfSector;
         GameObject _giantsDeep;
         GameObject _parentOfSignalForIslandOnSkyDummy;
         GameObject _signalForIslandOnSkyDummy;
@@ -20,6 +21,8 @@ namespace EyeWitness {
         PlayerSpawner _playerSpawner;
         SpawnPoint _spawnPointInGasDwarf;
         SpawnPoint _spawnPointInGiantsDeep;
+        ShipLogEntryLocation _entryLocationGasDwarf;
+        //ShipLogEntryHUDMarker _shipLogEntryHUDMarker;
 
         public bool InsideGasDwarf { get; private set; }
 
@@ -34,8 +37,10 @@ namespace EyeWitness {
                 }).AddTo(_gasDwarf);
                 //_gasDwarf.SetActive(false);
 
+                _gasDwarfSector = _gasDwarf.transform.Find("Sector");
+
                 var spawnPoint = new GameObject("SpawnPointInGasDwarf");
-                spawnPoint.transform.SetParent(_gasDwarf.transform);
+                spawnPoint.transform.SetParent(_gasDwarfSector);
                 spawnPoint.transform.localPosition = new Vector3(0f, 0f, -190f);
                 _spawnPointInGasDwarf = spawnPoint.AddComponent<SpawnPoint>();
             }
@@ -52,7 +57,12 @@ namespace EyeWitness {
             _signalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy/signal_for_island_on_sky_dummy");
             if(_parentOfSignalForIslandOnSkyDummy != null) {
                 _signalForIslandOnSkyDummy = _parentOfSignalForIslandOnSkyDummy.transform.Find("signal_for_island_on_sky_dummy").gameObject;
-                _parentOfSignalForIslandOnSkyDummy.transform.localPosition = UnityEngine.Random.onUnitSphere * 900;
+                _parentOfSignalForIslandOnSkyDummy.transform.localPosition = new Vector3(299.7084f, -410.6536f, 743.6026f); //UnityEngine.Random.onUnitSphere * 900;
+
+                var entryLocationGasDwarf = _parentOfSignalForIslandOnSkyDummy.transform.Find("entrylocation_ew_gas_dwarf");
+                if(entryLocationGasDwarf != null) {
+                    _entryLocationGasDwarf = entryLocationGasDwarf.GetComponent<ShipLogEntryLocation>();
+                }
 
                 _triggerForWarp = new GameObject("TriggerForWarp");
                 _triggerForWarp.transform.SetParent(_parentOfSignalForIslandOnSkyDummy.transform);
@@ -74,6 +84,10 @@ namespace EyeWitness {
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
                             InsideGasDwarf = true;
                         }).AddTo(_gasDwarf);
+
+                        _entryLocationGasDwarf.transform.parent = _gasDwarfSector;
+                        _entryLocationGasDwarf.transform.localPosition = Vector3.zero;
+                        _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
                     }
                 });
 
@@ -86,28 +100,45 @@ namespace EyeWitness {
                         return;
                     }
 
+                    //if(_shipLogEntryHUDMarker == null) {
+                    //    var shipTransform = Locator.GetShipTransform();
+                    //    if(shipTransform != null) {
+                    //        _shipLogEntryHUDMarker = shipTransform.GetComponentInChildren<ShipLogEntryHUDMarker>();
+                    //    }
+                    //}
+                    //if(_shipLogEntryHUDMarker != null) {
+                    //    if(_shipLogEntryHUDMarker.)
+                    //}
+                    if(ShipLogEntryHUDMarker.s_entryLocation == _entryLocationGasDwarf) {
+                        _triggerForWarp.SetActive(true);
+                    }
+
                     var distanceFromGiantsDeep = Vector3.Distance(playerBody.transform.position, _giantsDeep.transform.position);
                     if (distanceFromGiantsDeep < 950 && distanceFromGiantsDeep > 840 && EyeWitness.HasShipLog("ew_signal_for_island_1")) {
                         if (!_signalForIslandOnSkyDummy.activeSelf) {
                             _signalForIslandOnSkyDummy.SetActive(true);
                             _triggerForWarp.SetActive(true);
 
-                            Vector3 forwardPos;
-                            EyeWitness.Log($"dot: {Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)}");
-                            if(Mathf.Abs(Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)) > 0.8f) {
-                                forwardPos = playerBody.transform.position + playerBody.transform.up * (200f + UnityEngine.Random.value * 20);
+                            if (ShipLogEntryHUDMarker.s_entryLocation != _entryLocationGasDwarf) {
+                                Vector3 forwardPos;
+                                EyeWitness.Log($"dot: {Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)}");
+                                if (Mathf.Abs(Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)) > 0.8f) {
+                                    forwardPos = playerBody.transform.position + playerBody.transform.up * (200f + UnityEngine.Random.value * 20);
+                                }
+                                else {
+                                    forwardPos = playerBody.transform.position + playerBody.transform.forward * (200f + UnityEngine.Random.value * 20);
+                                }
+                                var gdToForwardPosVector = forwardPos - _giantsDeep.transform.position;
+                                _parentOfSignalForIslandOnSkyDummy.transform.position = gdToForwardPosVector.normalized * 900 + _giantsDeep.transform.position;
                             }
-                            else {
-                                forwardPos = playerBody.transform.position + playerBody.transform.forward * (200f + UnityEngine.Random.value * 20);
-                            }
-                            var gdToForwardPosVector = forwardPos - _giantsDeep.transform.position;
-                            _parentOfSignalForIslandOnSkyDummy.transform.position = gdToForwardPosVector.normalized * 900 + _giantsDeep.transform.position;
                         }
                     }
                     else {
                         if (_signalForIslandOnSkyDummy.activeSelf) {
                             _signalForIslandOnSkyDummy.SetActive(false);
-                            _triggerForWarp.SetActive(false);
+                            if (ShipLogEntryHUDMarker.s_entryLocation != _entryLocationGasDwarf) {
+                                _triggerForWarp.SetActive(false);
+                            }
                         }
                     }
 
@@ -123,6 +154,11 @@ namespace EyeWitness {
                             _playerSpawner = Locator.GetPlayerBody().GetComponent<PlayerSpawner>();
                         }
                         _playerSpawner.DebugWarp(_spawnPointInGiantsDeep);
+
+                        _entryLocationGasDwarf.transform.parent = _parentOfSignalForIslandOnSkyDummy.transform;
+                        _entryLocationGasDwarf.transform.localPosition = Vector3.zero;
+                        _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
+
                         DisableGasDwarf();
                         InsideGasDwarf = false;
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
