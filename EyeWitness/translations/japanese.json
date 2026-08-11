@@ -68,6 +68,7 @@
 
         "EW_BRAMBLE_COMPUTER_LOCK": "ワープ先は封鎖されており、現在ワープできません。&lt;i&gt;&lt;/i&gt;",
         "EW_BRAMBLE_COMPUTER_SAND": "ワープ先はまだ砂で満たされており、現在ワープできません。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_COMPUTER_AVAILABLE": "ワープ可能です。&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_INITIAL_1": "MITIS:ここが<![CDATA[<color=orange>ガスの小人</color>]]>だ。名称自体は以前発見されたときにつけられていたが、これでようやく行き方が確立できたわけだ。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_INITIAL_2": "DAZ:コンピュータに場所を記録できたから、信号を使わずともこれですごく行きやすくなった。信号の挙動が不思議だったのは、ここの大気の影響かな。&lt;i&gt;&lt;/i&gt;",

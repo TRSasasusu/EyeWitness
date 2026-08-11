@@ -29,6 +29,7 @@ namespace EyeWitness {
         public GameObject BrambleTowerWarpReceiver { get; private set; }
         public GameObject BrambleComputerLock { get; private set; }
         public GameObject BrambleComputerSand { get; private set; }
+        public GameObject BrambleComputerAvailable { get; private set; }
         public GameObject GasDwarf { get; private set; }
 
         public ModifyObjects() {
@@ -105,7 +106,15 @@ namespace EyeWitness {
             BrambleRocksBroken = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken");
             if(BrambleRocksBroken != null) {
                 BrambleRocksBroken.SetActive(false);
+                var brambleTowerWarpReceiver = BrambleRocksBroken.transform.Find("Prefab_NOM_WarpReceiver");
+                if (brambleTowerWarpReceiver != null) {
+                    BrambleTowerWarpReceiver = brambleTowerWarpReceiver.gameObject;
+                    BrambleTowerWarpReceiver.SetActive(false);
+                }
             }
+            BrambleComputerLock = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_lock");
+            BrambleComputerSand = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_sand");
+            BrambleComputerAvailable = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_available");
 
             GasDwarf = SearchUtilities.Find("GasDwarf_Body/Sector");
             if(GasDwarf != null) {

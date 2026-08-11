@@ -25,11 +25,46 @@
         "type": "computer",
         "xmlFile": "planets/texts/bramble_computer_lock.xml",
         "rename": "text_bramble_computer_lock",
+        "position": {
+          "x": 240.7768,
+          "y": -504.706,
+          "z": -278.5746
+        },
+        "rotation": {
+          "x": 321.4414,
+          "y": 285.9607,
+          "z": 270.2301
+        }
       },
       {
         "type": "computer",
         "xmlFile": "planets/texts/bramble_computer_sand.xml",
         "rename": "text_bramble_computer_sand",
+        "position": {
+          "x": 240.7768,
+          "y": -504.706,
+          "z": -278.5746
+        },
+        "rotation": {
+          "x": 321.4414,
+          "y": 285.9607,
+          "z": 270.2301
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/bramble_computer_available.xml",
+        "rename": "text_bramble_computer_available",
+        "position": {
+          "x": 240.7768,
+          "y": -504.706,
+          "z": -278.5746
+        },
+        "rotation": {
+          "x": 321.4414,
+          "y": 285.9607,
+          "z": 270.2301
+        }
       },
     ]
   }

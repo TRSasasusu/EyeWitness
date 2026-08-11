@@ -76,6 +76,10 @@
     },
     {
       "id": "ew_opc_control",
+      "position": {
+        "x": 1785.785,
+        "y": 857.457
+      }
     },
     {
       "id": "ew_gas_dwarf",
@@ -86,6 +90,10 @@
     },
     {
       "id": "ew_gas_dwarf_lab",
+      "position": {
+        "x": 833.9663,
+        "y": 1215.077
+      }
     },
   ],
   "curiosities": [

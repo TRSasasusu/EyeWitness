@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using DG.Tweening;
+using UniRx;
 
 namespace EyeWitness.patches {
     [HarmonyPatch]
@@ -67,6 +68,21 @@ namespace EyeWitness.patches {
             if(probe == ModifyObjects.Instance.ProbeAT) {
                 ModifyObjects.Instance.BrambleRocks.SetActive(false);
                 ModifyObjects.Instance.BrambleRocksBroken.SetActive(true);
+                if(ModifyObjects.Instance.BrambleComputerLock != null) {
+                    ModifyObjects.Instance.BrambleComputerLock.SetActive(false);
+                }
+                if (ModifyObjects.Instance.BrambleComputerSand != null) {
+                    ModifyObjects.Instance.BrambleComputerSand.SetActive(true);
+                }
+                Observable.Timer(TimeSpan.FromSeconds(11 * 60)).Subscribe(_ => {
+                    if (ModifyObjects.Instance.BrambleComputerAvailable != null) {
+                        ModifyObjects.Instance.BrambleComputerAvailable.SetActive(true);
+                    }
+                    if(ModifyObjects.Instance.BrambleTowerWarpReceiver != null) {
+                        ModifyObjects.Instance.BrambleTowerWarpReceiver.SetActive(true);
+                    }
+                    ModifyObjects.Instance.BrambleComputerSand.SetActive(false);
+                }).AddTo(ModifyObjects.Instance.BrambleComputerSand);
             }
 
             return false;
