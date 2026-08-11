@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1203973615
+CRC: 1717189334
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 73ed4fed4dc4883be2505d8aa67d560b
+    Hash: b0f318c2212f6facffbc70633f07826a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 5bbed8c6d0bb69b656e07d39087b822e
+    Hash: 3d740cfd2bd0cba23298be3af8385c02
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -35,7 +35,12 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
 - Class: 115
   Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/MyAssets/Prefabs/SkyIslandBuildings.prefab
-Dependencies: []
+Dependencies:
+- C:/Users/manyo/source/repos/EyeWitness/EyeWitness/planets/assetbundles/eyewitness

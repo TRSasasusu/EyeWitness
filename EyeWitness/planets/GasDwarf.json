@@ -3,6 +3,10 @@
   "name": "Gas Dwarf",
   "starSystem": "SolarSystem",
   "canShowOnTitle": false,
+  "removeChildren": [
+    "Sector/SkyIslandBuildings/GasDwarfLab/Center/campfire/Effects",
+    "Sector/SkyIslandBuildings/GasDwarfLab/Center/campfire/Props_HEA_Campfire",
+  ],
   "Base": {
     "surfaceSize": 101,
     "surfaceGravity": 0,
@@ -211,7 +215,7 @@
           "y": 62.5342,
           "z": 319.3458
         },
-        "seed": 1
+        "seed": 2
       },
     ]
   },
