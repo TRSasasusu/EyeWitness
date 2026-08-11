@@ -56,6 +56,10 @@ namespace EyeWitness.patches {
                 return true;
             }
 
+            if(probe == ModifyObjects.Instance.ProbeTH) {
+                DialogueConditionManager.SharedInstance.SetConditionState("EW_PROBE_TH_NOW", true);
+            }
+
             __instance._probeBody.gameObject.SetActive(false);
 
             var basePos = probe.transform.localPosition;

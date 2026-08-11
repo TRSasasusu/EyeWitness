@@ -5,6 +5,7 @@
     <Name>Scientist5</Name>
     <DialogueOptionsList>
       <DialogueOption>
+        <RequiredCondition>EW_PROBE_TH_NOW</RequiredCondition>
         <Text>EW_SLATE_PROBE_OPTION</Text>
         <DialogueTarget>ScientistProbe</DialogueTarget>
       </DialogueOption>
