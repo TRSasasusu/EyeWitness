@@ -15,6 +15,7 @@ namespace EyeWitness {
         TractorBeamSwitch _bottomSwitch;
         SectorFixOfPathToHighEnergeLab _fixOfPathToHighEnergeLab;
         GameObject _rumorRevealVolume;
+        Collider _textBrambleTower;
 
         public PathToHighEnergyLabManager() {
             var tractorBeam = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_SpeedCave/Interactables_SpeedCave/Prefab_NOM_TractorBeam");
@@ -55,10 +56,16 @@ namespace EyeWitness {
             sphereCollider.isTrigger = true;
             _fixOfPathToHighEnergeLab = sectorFix.AddComponent<SectorFixOfPathToHighEnergeLab>();
 
+            var textBrambleTower = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/text_bramble_tower");
+            if(textBrambleTower != null) {
+                _textBrambleTower = textBrambleTower.GetComponent<BoxCollider>();
+            }
+
             _rumorRevealVolume = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/shiplog_ew_bramble_tower_rumor1");
             _rumorRevealVolume.SetActive(false);
             Observable.Timer(TimeSpan.FromSeconds(60 * 6)).Subscribe(_ => {
                 _rumorRevealVolume.SetActive(true);
+                _textBrambleTower.enabled = false;
             }).AddTo(_rumorRevealVolume);
         }
     }
