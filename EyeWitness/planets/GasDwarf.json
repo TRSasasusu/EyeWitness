@@ -21,6 +21,12 @@
     "isStatic": true,
     "primaryBody": "SUN"
   },
+  "AmbientLights": [
+    {
+      "outerRadius": 300,
+      "intensity": 0.8,
+    }
+  ],
   "Atmosphere": {
     "clouds": {
       "cloudsPrefab": "giantsDeep",
