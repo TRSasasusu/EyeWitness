@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 139077540
+CRC: 231646578
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4914b44c900fd8e9a5ef7a0d9cb2b96f
+    Hash: 05c7f3bcb02425de0721d48a01740c6c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2e503c4419ea3dd692790e9c9d10c490
+    Hash: 6065d14b38a1769087cbb6794fc8d328
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,6 +26,8 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 - Class: 64
+  Script: {instanceID: 0}
+- Class: 108
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 3e2cd530bcd6ab93471c4405ca1c5b6a, type: 3}
@@ -54,5 +56,6 @@ Assets:
 - Assets/MyAssets/Prefabs/BaseMistianEffect.prefab
 - Assets/MyAssets/Prefabs/SignalForIsland.prefab
 - Assets/MyAssets/Prefabs/empty_gameobject.prefab
+- Assets/orclecleprefabs/BrambleTowerInterior.prefab
 - Assets/MyAssets/Prefabs/BrambleRocksBroken.prefab
 Dependencies: []

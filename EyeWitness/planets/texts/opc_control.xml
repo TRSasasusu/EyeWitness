@@ -18,4 +18,14 @@
     <ParentID>3</ParentID>
     <Text>EW_OPC_CONTROL_4</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_opc_control_1</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>ew_opc_control_2</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "VOLCANIC_MOON",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_VM",
+        "position": {
+          "x": -2.6613,
+          "y": 135.0796,
+          "z": -1.6216
+        },
+        "rotation": {
+          "x": 0,
+          "y": 328.6463,
+          "z": 147.386
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DARK_BRAMBLE",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_DB",
+        "position": {
+          "x": -520.4485,
+          "y": -195.6905,
+          "z": 202.2122
+        },
+        "rotation": {
+          "x": 301.6581,
+          "y": 236.766,
+          "z": 330.35
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      }
+    ]
+  }
+}

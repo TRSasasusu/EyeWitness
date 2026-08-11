@@ -69,5 +69,9 @@
         }
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/OPC_shiplog.xml"
   }
 }

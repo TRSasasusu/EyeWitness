@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "TIMBER_MOON",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_TM",
+        "position": {
+          "x": 36.0107,
+          "y": 42.9758,
+          "z": -53.109
+        },
+        "rotation": {
+          "x": 0,
+          "y": 236.766,
+          "z": 130.2527
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      },
+    ]
+  }
+}

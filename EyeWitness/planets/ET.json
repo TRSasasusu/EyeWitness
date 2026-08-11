@@ -50,6 +50,23 @@
           "z": 130.6138
         }
       },
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_ET",
+        "position": {
+          "x": 112.4383,
+          "y": 3.8593,
+          "z": 69.4204
+        },
+        "rotation": {
+          "x": 294.7685,
+          "y": 236.766,
+          "z": 90
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      },
     ],
     "translatorText": [
       {

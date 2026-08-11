@@ -146,6 +146,22 @@
           "y": -5.7273,
           "z": -43.7265
         }
+      },
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_GasDwarf",
+        "position": {
+          "x": -3.0489,
+          "y": 61.9714,
+          "z": 8.9014
+        },
+        "rotation": {
+          "x": 309.5218,
+          "y": 346.94,
+          "z": 150.35
+        },
+        "scale": 0.25
       }
     ],
     "translatorText": [

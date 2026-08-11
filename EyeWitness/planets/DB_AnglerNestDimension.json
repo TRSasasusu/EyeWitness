@@ -19,6 +19,18 @@
         },
         "rename": "warpTransmitter_db_datura"
       }
+    ],
+    "translatorText": [
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/bramble_computer_lock.xml",
+        "rename": "text_bramble_computer_lock",
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/bramble_computer_sand.xml",
+        "rename": "text_bramble_computer_sand",
+      },
     ]
   }
 }

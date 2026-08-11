@@ -75,6 +75,9 @@
       "id": "ew_bramble_tower_warp",
     },
     {
+      "id": "ew_opc_control",
+    },
+    {
       "id": "ew_gas_dwarf",
       "position": {
         "x": 1011.982,

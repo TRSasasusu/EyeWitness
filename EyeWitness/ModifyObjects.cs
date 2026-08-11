@@ -11,11 +11,24 @@ namespace EyeWitness {
         public static ModifyObjects Instance;
 
         public GameObject ProbeTH { get; private set; }
+        public GameObject ProbeTM { get; private set; }
+        public GameObject ProbeInterloper { get; private set; }
+        public GameObject ProbeET { get; private set; }
+        public GameObject ProbeAT { get; private set; }
+        public GameObject ProbeBH { get; private set; }
+        public GameObject ProbeVM { get; private set; }
+        public GameObject ProbeGiantsDeep { get; private set; }
+        public GameObject ProbeDB { get; private set; }
+        public GameObject ProbeTS { get; private set; }
+        public GameObject ProbeGasDwarf { get; private set; }
         public GameObject ProbeTHShipLog { get; private set; }
         public NotificationWithNewShipLog NotificationWithNewShipLogForProbeTH { get; private set; }
         public MarkerItem MarkerItem { get; private set; }
         public GameObject BrambleRocks { get; private set; }
         public GameObject BrambleRocksBroken { get; private set; }
+        public GameObject BrambleTowerWarpReceiver { get; private set; }
+        public GameObject BrambleComputerLock { get; private set; }
+        public GameObject BrambleComputerSand { get; private set; }
         public GameObject GasDwarf { get; private set; }
 
         public ModifyObjects() {
@@ -36,6 +49,46 @@ namespace EyeWitness {
                 NotificationWithNewShipLogForProbeTH.shipLogId = "ew_camp_probe_2";
                 NotificationWithNewShipLogForProbeTH.notificationText = "SHIP_LOG_ERROR_NOTIFICATION";
                 NotificationWithNewShipLogForProbeTH.sphereShape = ProbeTHShipLog.GetComponent<SphereShape>();
+            }
+            ProbeTM = SearchUtilities.Find("Moon_Body/Sector_THM/Probe_TM");
+            if(ProbeTM != null) {
+                ProbeTM.SetActive(false);
+            }
+            ProbeInterloper = SearchUtilities.Find("Comet_Body/Sector_CO/Probe_Interloper");
+            if (ProbeInterloper != null) {
+                ProbeInterloper.SetActive(false);
+            }
+            ProbeET = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Probe_ET");
+            if(ProbeET != null) {
+                ProbeET.SetActive(false);
+            }
+            ProbeAT = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Probe_AT");
+            if (ProbeAT != null) {
+                ProbeAT.SetActive(false);
+            }
+            ProbeBH = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Probe_BH");
+            if (ProbeBH != null) {
+                ProbeBH.SetActive(false);
+            }
+            ProbeVM = SearchUtilities.Find("VolcanicMoon_Body/Sector_VM/Probe_VM");
+            if (ProbeVM != null) {
+                ProbeVM.SetActive(false);
+            }
+            ProbeGiantsDeep = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Probe_GiantsDeep");
+            if (ProbeGiantsDeep != null) {
+                ProbeGiantsDeep.SetActive(false);
+            }
+            ProbeDB = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Probe_DB");
+            if(ProbeDB != null) {
+                ProbeDB.SetActive(false);
+            }
+            ProbeTS = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Probe_TS");
+            if (ProbeTS != null) {
+                ProbeTS.SetActive(false);
+            }
+            ProbeGasDwarf = SearchUtilities.Find("GasDwarf_Body/Sector/Probe_GasDwarf");
+            if (ProbeGasDwarf != null) {
+                ProbeGasDwarf.SetActive(false);
             }
 
             //var textStatueIsland = SearchUtilities.Find("StatueIsland_Body/Sector_StatueIsland/text_statue_island");

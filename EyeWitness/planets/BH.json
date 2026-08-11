@@ -109,7 +109,26 @@
           "y": 191.1997,
           "z": 22.539
         }
-      }
+      },
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_BH",
+        "parentPath": "Sector_BH/Sector_QuantumFragment",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.3142,
+          "y": 264.4382,
+          "z": -16.555
+        },
+        "rotation": {
+          "x": 336.5786,
+          "y": 297.7603,
+          "z": 114.3786
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      },
     ],
     "translatorText": [
       {

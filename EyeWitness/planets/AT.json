@@ -81,6 +81,38 @@
         },
         "keepLoaded": true
       },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/orclecleprefabs/BrambleTowerInterior.prefab",
+        "position": {
+          "x": 97.2242,
+          "y": -1.1095,
+          "z": 10.8642
+        },
+        "rotation": {
+          "x": 270,
+          "y": 270,
+          "z": 0
+        },
+        "keepLoaded": true,
+      },
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_AT",
+        "position": {
+          "x": 108.7795,
+          "y": -5.234,
+          "z": -4.4608
+        },
+        "rotation": {
+          "x": 0,
+          "y": 236.766,
+          "z": 182.716
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      },
     ],
     "translatorText": [
       {

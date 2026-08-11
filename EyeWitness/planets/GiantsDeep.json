@@ -9,6 +9,23 @@
         "path": "Assets/MyAssets/Prefabs/empty_gameobject.prefab",
         "rename": "parent_of_signal_for_island_on_sky_dummy"
       },
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_GiantsDeep",
+        "position": {
+          "x": -75.5017,
+          "y": 754.1437,
+          "z": 38.2165
+        },
+        "rotation": {
+          "x": 0,
+          "y": 236.766,
+          "z": 90
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      }
     ],
     "signals": [
       {

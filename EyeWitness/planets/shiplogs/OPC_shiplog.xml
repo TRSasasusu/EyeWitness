@@ -1,0 +1,15 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>ORBITAL_PROBE_CANNON</ID>
+  <Entry>
+    <ID>ew_opc_control</ID>
+    <Name>EW_OPC_CONTROL</Name>
+    <ExploreFact>
+      <ID>ew_opc_control_1</ID>
+      <Text>EW_OPC_CONTROL_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_opc_control_2</ID>
+      <Text>EW_OPC_CONTROL_2</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>
