@@ -95,6 +95,13 @@
         "isRelativeToParent": true,
       }
     ],
+    "campfires": [
+      {
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfLab/Center",
+        "isRelativeToParent": true,
+        "rename": "campfire"
+      }
+    ],
     "details": [
       {
         "assetBundle": "planets/assetbundles/eyewitness_skyisland",
@@ -136,9 +143,92 @@
           "z": -43.7265
         }
       }
+    ],
+    "translatorText": [
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/gas_dwarf_initial.xml",
+        "rename": "text_gas_dwarf_initial",
+        "position": {
+          "x": -29.7866,
+          "y": -5.243,
+          "z": -44.5115
+        },
+        "rotation": {
+          "x": 270,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_lab_sign.xml",
+        "rename": "text_gas_dwarf_lab_sign",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfLab",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 3.9818,
+          "y": -3.3296,
+          "z": -11.2179
+        },
+        "rotation": {
+          "x": 0,
+          "y": 146.6911,
+          "z": 0
+        }
+      },
+      {
+        "type": "whiteboard",
+        "xmlFile": "planets/texts/gas_dwarf_lab.xml",
+        "rename": "text_gas_dwarf_lab",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfLab",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -1.6841,
+          "y": 0,
+          "z": 3.0778
+        },
+        "rotation": {
+          "x": 0,
+          "y": 150,
+          "z": 0
+        }
+      },
+      {
+        "type": "scroll",
+        "xmlFile": "planets/texts/gas_dwarf_lab_iso.xml",
+        "rename": "text_gas_dwarf_lab_iso",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfLab",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -0.3448,
+          "y": 0.7938,
+          "z": -2.55
+        },
+        "rotation": {
+          "x": 356.8918,
+          "y": 62.5342,
+          "z": 319.3458
+        },
+        "seed": 1
+      },
     ]
   },
   "ShipLog": {
+    "mapMode": {
+      "invisibleWhenHidden": true,
+      "revealedSprite": "planets/shiplogs/sprites/gas_dwarf_icon.png",
+      "scale": 0.5,
+      "manualPosition": {
+        "x": 1040,
+        "y": 115
+      },
+      "manualNavigationPosition": {
+        "x": 4,
+        "y": 2
+      }
+    },
     "spriteFolder": "planets/shiplogs/sprites",
     "xmlFile": "planets/shiplogs/GasDwarf_shiplog.xml"
   }

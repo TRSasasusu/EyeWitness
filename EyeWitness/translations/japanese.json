@@ -4,6 +4,7 @@
         "OPCMarker": "マーカー",
         "SHIP_LOG_ERROR_NOTIFICATION": "<![CDATA[<color=red>エラー:航行記録に不正な入力</color>]]>",
         "WARP_DETECT_NOTIFICATION": "<![CDATA[<color=blue>情報:ワープパッドの位置を検知</color>]]>",
+        "Gas Dwarf": "ガスの小人",
     },
     "DialogueDictionary": {
         "EW_SLATE_PROBE_OPTION": "ねぇSlate、大丈夫…？",
@@ -65,13 +66,13 @@
         "EW_BRAMBLE_TOWER_INSIDE_3": "FILIX:あのときの私はEscallに従ってワープをしたけれど、それは正しかったのかしら。あれはEscallに責任があって私のせいじゃない、と皆は言ってくれたけれど…&lt;i&gt;&lt;/i&gt;",
         "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX:そして年月は流れ、今やSolanumの巡礼のとき。もう私は若くないけれど、夫も脆い空洞に戻ってくるそうだし、せめて教師としてこの部族のために役に立とうと思う。&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_INITIAL_1": "MITIS:ここが<![CDATA[<color=red>ガスの小人</color>]]>だ。名称自体は以前発見されたときにつけられていたが、これでようやく行き方が確立できたわけだ。&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_INITIAL_1": "MITIS:ここが<![CDATA[<color=orange>ガスの小人</color>]]>だ。名称自体は以前発見されたときにつけられていたが、これでようやく行き方が確立できたわけだ。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_INITIAL_2": "DAZ:コンピュータに場所を記録できたから、信号を使わずともこれですごく行きやすくなった。信号の挙動が不思議だったのは、ここの大気の影響かな。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_INITIAL_3": "PHLOX:待ってくれ、コンピュータによる生命検知が異常値を示している…ガスが濃くて見通しが悪いが、他にも生命体がいるのか…？いや、まさか、このガス自体が生命なのか！&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_INITIAL_4": "MITIS:おそらくその理解で正しいと思ってる。生命検知システムは普通、生命体を個体数でカウントするが、これはガスだからそのカウントがうまくいかず異常値となっているんだろう。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_INITIAL_5": "MITIS:ガスでほとんど先は見通せないから、気をつけて歩くんだ！&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_LAB": "ガス生命体研究所&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_LAB_SIGN": "ガス生命体研究所&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_LAB_1": "PHLOX:Gastianと名づけたこのガス生命体は、内部に計算機構を有している。ある程度の演算から記憶に至るまでの能力が備わっていることがわかった。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_LAB_2": "PHLOX:さらに、この生命体は呼吸をする必要も、食事をとる必要もない。ただここで数億年かけてこのガスの小人を満たすほどまで勢力を拡大していただけのようだ。&lt;i&gt;&lt;/i&gt;",
@@ -90,11 +91,11 @@
         "EW_GAS_DWARF_LAB_ISO_7": "PHLOX:いや、それはありかもしれない。実際、話している内容に応じてGastianの計算波形は変化するし、それに、仮説:どれか一つを特別視して扱っていれば、それが群体を抜ける計算上の大きな理由になりうる。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_LAB_ISO_8": "MITIS:なるほど…それなら、いまちょうど持ってるこのカプセルでやってみよう。&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_STORAGE_A": "カプセル保管所1&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_STORAGE_A_SIGN": "カプセル保管所1&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_STORAGE_A_COMPUTER": "Gastianが含まれているカプセルの数:0&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_STORAGE_B": "カプセル保管所2&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_STORAGE_B_SIGN": "カプセル保管所2&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_STORAGE_B_COMPUTER": "Gastianが含まれているカプセルの数:1&lt;i&gt;&lt;/i&gt;",
 

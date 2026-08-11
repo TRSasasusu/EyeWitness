@@ -76,6 +76,13 @@
     },
     {
       "id": "ew_gas_dwarf",
+      "position": {
+        "x": 1011.982,
+        "y": 1384.312
+      }
+    },
+    {
+      "id": "ew_gas_dwarf_lab",
     },
   ],
   "curiosities": [
