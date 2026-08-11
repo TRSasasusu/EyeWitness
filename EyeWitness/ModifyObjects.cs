@@ -31,6 +31,8 @@ namespace EyeWitness {
         public GameObject BrambleComputerSand { get; private set; }
         public GameObject BrambleComputerAvailable { get; private set; }
         public GameObject GasDwarf { get; private set; }
+        public GameObject GasDwarfStorageA { get; private set; }
+        public GameObject GasDwarfStorageB { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -121,6 +123,26 @@ namespace EyeWitness {
                 foreach(Transform child in GasDwarf.transform) {
                     if(child != null && child.name == "LightShaft") {
                         child.localScale = new Vector3(2, 20, 2);
+                    }
+                }
+            }
+
+            GasDwarfStorageA = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageA");
+            if (GasDwarfStorageA != null) {
+                foreach (Transform transform in GasDwarfStorageA.transform) {
+                    if (transform.name.Contains("CapsuleItemEmpty")) {
+                        transform.gameObject.AddComponent<CapsuleItem>();
+                    }
+                }
+            }
+            GasDwarfStorageB = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageB");
+            if (GasDwarfStorageB != null) {
+                foreach (Transform transform in GasDwarfStorageA.transform) {
+                    if (transform.name.Contains("CapsuleItemEmpty")) {
+                        transform.gameObject.AddComponent<CapsuleItem>();
+                    }
+                    else if(transform.name == "CapsuleItem") {
+                        transform.gameObject.AddComponent<CapsuleItem>()._hasLiquid = true;
                     }
                 }
             }
