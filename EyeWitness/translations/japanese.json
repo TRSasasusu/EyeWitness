@@ -242,8 +242,21 @@
         "EW_GAS_DWARF_LAB_3": "群体から個体を分離するため、塔の抽出器を利用して物理的にカプセルに分離された。これらのカプセルは2か所の保管所に設置されている。",
         "EW_GAS_DWARF_LAB_4": "個体としての意識を目覚めさせるため、MitisはGastianのうち一個体を特別に育てることにした。",
 
-        "EW_GAS_DWARF_STORAGE": "カプセル保管所",
-        "EW_GAS_DWARF_STORAGE_1": "たくさんの空のカプセルが設置されている。",
-        "EW_GAS_DWARF_STORAGE_2": "水の中に1つだけ中身のあるカプセルを見つけた。",
+        "EW_GAS_DWARF_STORAGE_A": "カプセル保管所1",
+        "EW_GAS_DWARF_STORAGE_A_1": "たくさんのカプセルが設置されている。すべてのカプセルは空である。",
+		"EW_GAS_DWARF_STORAGE_A_2": "この空島は一つの天体としてみなすことが可能である。",
+
+		"EW_GAS_DWARF_STORAGE_B": "カプセル保管所2",
+		"EW_GAS_DWARF_STORAGE_B_1": "たくさんのカプセルが設置されている。1つのカプセルは空ではない。",
+        "EW_GAS_DWARF_STORAGE_B_2": "水の中に1つだけ中身のあるカプセルを見つけた。",
+		"EW_GAS_DWARF_STORAGE_B_3": "Nomaiの子供たちは宇宙空間へ向かった。",
+
+		"EW_GAS_DWARF_TOWER": "空島の塔",
+		"EW_GAS_DWARF_TOWER_1": "軌道探査砲のコントロールモジュールで、砲のターゲットの制御が試みられていた。",
+		"EW_GAS_DWARF_TOWER_2": "Mitisもしくはマーメイドが認証に必要なドアがある。",
+		"EW_GAS_DWARF_TOWER_3": "マーメイドが200,000年以上独りでいる記録が残されていた。Mitisのデータだけは確保したらしい。",
+		"EW_GAS_DWARF_TOWER_4": "マーメイドが9,318,054回のループを繰り返して宇宙の眼を発見した記録が残されていた。その後、ループを開始した私に何かを任せようとしているようだ。",
+		"EW_GAS_DWARF_TOWER_5": "Gastianは幽霊物質と作用すると両方とも消滅する。",
+		"EW_GAS_DWARF_TOWER_6": "流れ者の緑色の炎を用いると、マーメイドと会話できる可能性が示唆された。",
     }
 }
