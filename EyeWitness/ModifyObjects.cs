@@ -137,7 +137,7 @@ namespace EyeWitness {
             }
             GasDwarfStorageB = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageB");
             if (GasDwarfStorageB != null) {
-                foreach (Transform transform in GasDwarfStorageA.transform) {
+                foreach (Transform transform in GasDwarfStorageB.transform) {
                     if (transform.name.Contains("CapsuleItemEmpty")) {
                         transform.gameObject.AddComponent<CapsuleItem>();
                     }
