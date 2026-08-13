@@ -233,6 +233,116 @@
         },
         "seed": 2
       },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_storage_a_sign.xml",
+        "rename": "text_gas_dwarf_storage_a_sign",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageA",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 12.5677,
+          "y": -2.5,
+          "z": 6.2781
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_storage_a_computer.xml",
+        "rename": "text_gas_dwarf_storage_a_computer",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageA",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 12.5313,
+          "y": -3.3312,
+          "z": 0.8385
+        }
+      },
+      {
+        "type": "scroll",
+        "xmlFile": "planets/texts/gas_dwarf_island.xml",
+        "rename": "text_gas_dwarf_island",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageA",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -9.5142,
+          "y": 1.8928,
+          "z": 4.5212
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 8.3646
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_storage_b_sign.xml",
+        "rename": "text_gas_dwarf_storage_b_sign",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageB",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -7.7851,
+          "y": -2.9956,
+          "z": -4.4536
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_storage_b_computer.xml",
+        "rename": "text_gas_dwarf_storage_b_computer",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageB",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -9.6539,
+          "y": -2.6884,
+          "z": 4.5196
+        }
+      },
+      {
+        "type": "scroll",
+        "xmlFile": "planets/texts/gas_dwarf_go_stranger.xml",
+        "rename": "text_gas_dwarf_go_stranger",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageB",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 24.1182,
+          "y": -7.2261,
+          "z": -28.1747
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 307.5239
+        },
+        "seed": 1
+      },
+      {
+        "type": "wall",
+        "xmlFile": "planets/texts/gas_dwarf_storage_b_lami.xml",
+        "rename": "text_gas_dwarf_storage_b_lami",
+        "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageB",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 6.7508,
+          "y": -1.667,
+          "z": 3.537
+        },
+        "rotation": {
+          "x": 284.1483,
+          "y": 193.5,
+          "z": 158.1684
+        }
+      }
     ]
   },
   "ShipLog": {

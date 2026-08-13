@@ -97,9 +97,17 @@
     },
     {
       "id": "ew_gas_dwarf_storage_a",
+      "position": {
+        "x": 1189.723,
+        "y": 1213.591
+      }
     },
     {
       "id": "ew_gas_dwarf_storage_b",
+      "position": {
+        "x": 1190.801,
+        "y": 1395
+      }
     },
     {
       "id": "ew_gas_dwarf_tower",
