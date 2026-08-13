@@ -1,0 +1,48 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Mermaid</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>EW_MERMAID_1</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>EW_MERMAID_A</Text>
+        <DialogueTarget>MermaidNext</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>EW_MERMAID_B</Text>
+        <DialogueTarget>MermaidNext</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MermaidNext</Name>
+    <Dialogue>
+      <Page>EW_MERMAID_2</Page>
+      <Page>EW_MERMAID_3</Page>
+      <Page>EW_MERMAID_4</Page>
+      <Page>EW_MERMAID_5</Page>
+      <Page>EW_MERMAID_6</Page>
+      <Page>EW_MERMAID_7</Page>
+      <Page>EW_MERMAID_8</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>EW_MERMAID_C</Text>
+        <DialogueTarget>MermaidFinal</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MermaidFinal</Name>
+    <Dialogue>
+      <Page>EW_MERMAID_9</Page>
+    </Dialogue>
+    <SetCondition>ReadMermaidFinal</SetCondition>
+  </DialogueNode>
+</DialogueTree>

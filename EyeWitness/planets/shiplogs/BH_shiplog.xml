@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_eye_shrine_depth</ID>
     <Name>EW_EYE_SHRINE_DEPTH</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <RumorFact>
       <ID>ew_eye_shrine_depth_rumor1</ID>
       <SourceID>ew_eye_shrine</SourceID>

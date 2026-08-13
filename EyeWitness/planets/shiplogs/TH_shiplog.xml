@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_camp_probe</ID>
     <Name>EW_CAMP_PROBE</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_camp_probe_1</ID>
       <Text>EW_CAMP_PROBE_1</Text>

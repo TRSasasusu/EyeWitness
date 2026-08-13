@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_error_bramble_tower</ID>
     <Name>EW_ERROR_BRAMBLE_TOWER</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_error_bramble_tower_1</ID>
       <Text>EW_ERROR_BRAMBLE_TOWER_1</Text>
@@ -15,6 +16,7 @@
   <Entry>
     <ID>ew_bramble_tower</ID>
     <Name>EW_BRAMBLE_TOWER</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <RumorFact>
       <ID>ew_bramble_tower_rumor1</ID>
       <Text>EW_BRAMBLE_TOWER_RUMOR1</Text>

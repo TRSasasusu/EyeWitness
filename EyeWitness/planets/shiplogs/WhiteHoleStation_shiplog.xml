@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_error_eye_shrine</ID>
     <Name>EW_ERROR_EYE_SHRINE</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_error_eye_shrine_1</ID>
       <Text>EW_ERROR_EYE_SHRINE_1</Text>
@@ -15,6 +16,7 @@
   <Entry>
     <ID>ew_eye_shrine</ID>
     <Name>EW_EYE_SHRINE</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_eye_shrine_1</ID>
       <Text>EW_EYE_SHRINE_1</Text>

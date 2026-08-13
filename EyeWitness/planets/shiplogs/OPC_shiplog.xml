@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_opc_control</ID>
     <Name>EW_OPC_CONTROL</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <ExploreFact>
       <ID>ew_opc_control_1</ID>
       <Text>EW_OPC_CONTROL_1</Text>

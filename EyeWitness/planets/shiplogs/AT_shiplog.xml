@@ -3,6 +3,7 @@
   <Entry>
     <ID>ew_bramble_tower_inside</ID>
     <Name>EW_BRAMBLE_TOWER_INSIDE</Name>
+    <Curiosity>ew_mermaid</Curiosity>
     <RumorFact>
       <ID>ew_bramble_tower_inside_rumor1</ID>
       <SourceID>ew_bramble_tower</SourceID>
