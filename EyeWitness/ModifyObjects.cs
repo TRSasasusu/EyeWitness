@@ -38,6 +38,9 @@ namespace EyeWitness {
         public GameObject GasDwarfStorageB { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
         public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
+        public GameObject AuthDoor { get; private set; }
+        public GameObject AuthComputerClose { get; private set; }
+        public GameObject AuthComputerOpen { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -182,6 +185,15 @@ namespace EyeWitness {
             var mermaidNoiseMaker = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/FishtailEffect");
             if(mermaidNoiseMaker != null) {
                 MermaidNoiseMaker = mermaidNoiseMaker.AddComponent<MermaidNoiseMaker>();
+            }
+
+            AuthDoor = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/AuthDoor");
+            AuthComputerClose = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/text_gas_dwarf_auth_close");
+            AuthComputerOpen = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/text_gas_dwarf_auth_open");
+            if (AuthComputerOpen != null) {
+                Observable.NextFrame().Subscribe(_ => {
+                    AuthComputerOpen.SetActive(false);
+                }).AddTo(AuthComputerOpen);
             }
         }
     }

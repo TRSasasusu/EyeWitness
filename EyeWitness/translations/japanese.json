@@ -104,7 +104,7 @@
 
         "EW_GAS_DWARF_STORAGE_B_COMPUTER": "Gastianが含まれているカプセルの数:1&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_STORAGE_B_LAMI": "LAMI:えっと、保管所を見学してたらちょっとぶつかっちゃって、カプセルが一つ棚から落ちちゃったみたいなの。Cassavaから呼ばれてるから、その用事が終わったらまた探しに戻ります。(すごく忘れそう。)&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_STORAGE_B_LAMI": "LAMI:えっと、保管所を見学してたらちょっとぶつかっちゃって、カプセルが一つテーブルから落ちちゃったみたいなの。Cassavaから呼ばれてるから、その用事が終わったらまた探しに戻ります。(すごく忘れそう。)&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_ISLAND_1": "CONOY:この島はどうして浮いてるんだろう？特殊な大気によって外が観測しづらいから、軌道探査砲のように周回できる条件が整っているのか判断しづらい。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_ISLAND_2": "CASSAVA:もしかすると、浮力も巨人の大海の他の場所と違うのかもしれないな。そうなると落ちなくなる条件もより緩くなる。&lt;i&gt;&lt;/i&gt;",
@@ -167,6 +167,10 @@
         "EW_GAS_DWARF_MEMORY_NOW_9": "ループ9,318,055回目。生命体が2つ新たにループ開始。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_9_2": "待って！？何も知らないHearthianが2人、ループに巻き込まれた。そっか…こうなるんだ…へぇ…&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_9_3": "いずれこの2人は答えにたどり着くはず。その途中であわよくば追加の情報を渡すことができれば……&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_FUTURE": "ループ終了後の記録&lt;i&gt;&lt;/i&gt;",
+
+        "EW_GAS_DWARF_MEMORY_FUTURE_1": "記録なし。&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_FINAL_1": "MITIS:Lamiたちが持ってきたこの緑色の炎、PhloxとDazの解析によるとGastianと親和性の高い物質のようだ。うまく使えばマーメイドと意思疎通ができるかもしれないな…&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_FINAL_2": "MITIS:…待て、なんだ、何が起きてる！？どうしてガスの小人全体のGastianの量が急激に減ってきている？気体観測機器は別の気体の流入を示しているが、Gastianとぶつかったところで互いに消滅している…なんだこれは…&lt;i&gt;&lt;/i&gt;",
@@ -289,10 +293,10 @@
 		"EW_GAS_DWARF_STORAGE_B": "カプセル保管所2",
 		"EW_GAS_DWARF_STORAGE_B_1": "たくさんのカプセルが設置されている。1つのカプセルは空ではない。",
         "EW_GAS_DWARF_STORAGE_B_2": "水の中に1つだけ中身のあるカプセルを見つけた。",
-		"EW_GAS_DWARF_STORAGE_B_3": "Nomaiの子供たちは宇宙空間へ向かった。",
+		"EW_GAS_DWARF_STORAGE_B_3": "軌道探査砲のコントロールモジュールで、砲のターゲットの制御が試みられていた。",
 
 		"EW_GAS_DWARF_TOWER": "空島の塔",
-		"EW_GAS_DWARF_TOWER_1": "軌道探査砲のコントロールモジュールで、砲のターゲットの制御が試みられていた。",
+		"EW_GAS_DWARF_TOWER_1": "Nomaiの子供たちは宇宙空間へ向かった。",
 		"EW_GAS_DWARF_TOWER_2": "Mitisもしくはマーメイドが認証に必要なドアがある。",
 		"EW_GAS_DWARF_TOWER_3": "マーメイドが200,000年以上独りでいる記録が残されていた。Mitisのデータだけは確保したらしい。",
 		"EW_GAS_DWARF_TOWER_4": "マーメイドが9,318,054回のループを繰り返して宇宙の眼を発見した記録が残されていた。その後、ループを開始した私に何かを任せようとしているようだ。",

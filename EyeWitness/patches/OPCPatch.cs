@@ -88,6 +88,17 @@ namespace EyeWitness.patches {
                     ModifyObjects.Instance.BrambleComputerSand.SetActive(false);
                 }).AddTo(ModifyObjects.Instance.BrambleComputerSand);
             }
+            else if(probe == ModifyObjects.Instance.ProbeGasDwarf) {
+                if(ModifyObjects.Instance.AuthDoor != null) {
+                    ModifyObjects.Instance.AuthDoor.SetActive(false);
+                }
+                if(ModifyObjects.Instance.AuthComputerClose != null) {
+                    ModifyObjects.Instance.AuthComputerClose.SetActive(false);
+                }
+                if (ModifyObjects.Instance.AuthComputerOpen != null) {
+                    ModifyObjects.Instance.AuthComputerOpen.SetActive(true);
+                }
+            }
 
             return false;
         }

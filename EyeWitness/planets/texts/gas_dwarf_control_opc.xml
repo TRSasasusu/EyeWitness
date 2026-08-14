@@ -1,0 +1,32 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>EW_GAS_DWARF_CONTROL_OPC_1</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>EW_GAS_DWARF_CONTROL_OPC_2</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>EW_GAS_DWARF_CONTROL_OPC_3</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>EW_GAS_DWARF_CONTROL_OPC_4</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>EW_GAS_DWARF_CONTROL_OPC_5</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_gas_dwarf_storage_b_3</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

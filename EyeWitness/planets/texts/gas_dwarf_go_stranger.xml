@@ -25,7 +25,7 @@
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
-      <FactID>ew_gas_dwarf_storage_b_3</FactID>
+      <FactID>ew_gas_dwarf_tower_1</FactID>
       <Condition>5</Condition>
     </RevealFact>
   </ShipLogConditions>

@@ -125,7 +125,7 @@
         "path": "Assets/MyAssets/Prefabs/SkyIslandBuildings.prefab",
       },
       {
-        "assetBundle": "planets/assetbundles/eyewitness",
+        "assetBundle": "planets/assetbundles/eyewitness_tower",
         "path": "Assets/MyAssets/Prefabs/GasDwarfTower.prefab",
         "position": {
           "x": 15,
@@ -333,8 +333,8 @@
       },
       {
         "type": "scroll",
-        "xmlFile": "planets/texts/gas_dwarf_go_stranger.xml",
-        "rename": "text_gas_dwarf_go_stranger",
+        "xmlFile": "planets/texts/gas_dwarf_control_opc.xml",
+        "rename": "text_gas_dwarf_control_opc",
         "parentPath": "Sector/SkyIslandBuildings/GasDwarfStorageB",
         "isRelativeToParent": true,
         "position": {
@@ -365,7 +365,65 @@
           "y": 193.5,
           "z": 158.1684
         }
-      }
+      },
+      {
+        "type": "scroll",
+        "xmlFile": "planets/texts/gas_dwarf_go_stranger.xml",
+        "rename": "text_gas_dwarf_go_stranger",
+        "parentPath": "Sector/SkyIslandBuildings/UnderTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -2.3281,
+          "y": -0.2023,
+          "z": 10.4396
+        },
+        "rotation": {
+          "x": 75.8328,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/gas_dwarf_key.xml",
+        "rename": "text_gas_dwarf_key",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 15.8174,
+          "y": 55.0887,
+          "z": -1.8216
+        },
+        "rotation": {
+          "x": 0,
+          "y": 121.6803,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_auth_close.xml",
+        "rename": "text_gas_dwarf_auth_close",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 14.5919,
+          "y": 55.0887,
+          "z": -7.1312
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_auth_open.xml",
+        "rename": "text_gas_dwarf_auth_open",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 14.5919,
+          "y": 55.0887,
+          "z": -7.1312
+        }
+      },
     ]
   },
   "ShipLog": {
