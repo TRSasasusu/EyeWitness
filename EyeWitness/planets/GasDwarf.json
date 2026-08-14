@@ -85,6 +85,15 @@
         "rename": "shiplog_ew_gas_dwarf_1",
         "radius": 250
       }
+    ],
+    "audioVolumes": [
+      {
+        "audio": "planets/sounds/gas_dwarf.wav",
+        "track": "music",
+        "radius": 300,
+        "volume": 0.2,
+        "priority": 1
+      }
     ]
   },
   "Props": {
@@ -114,6 +123,20 @@
       {
         "assetBundle": "planets/assetbundles/eyewitness_skyisland_buildings",
         "path": "Assets/MyAssets/Prefabs/SkyIslandBuildings.prefab",
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/GasDwarfTower.prefab",
+        "position": {
+          "x": 15,
+          "y": -17.1,
+          "z": 24.6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        }
       },
       {
         "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",

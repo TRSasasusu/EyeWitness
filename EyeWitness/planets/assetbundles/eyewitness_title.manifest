@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 510043174
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 124018081b04cda8c13e91cd2945cc37
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 64510a3cd72920554ca1c94caa554491
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MyAssets/Prefabs/TitleFishtailEffect.prefab
+Dependencies:
+- C:/Users/manyo/source/repos/EyeWitness/EyeWitness/planets/assetbundles/eyewitness

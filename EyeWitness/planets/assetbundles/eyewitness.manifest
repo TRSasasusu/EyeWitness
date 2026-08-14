@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2455266122
+CRC: 3487057721
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b86122efd677c959768893046ee3f690
+    Hash: b938447b407a2ce639648efd75de5422
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6065d14b38a1769087cbb6794fc8d328
+    Hash: 6c3f16c5b46dc334e4e43e878ea67c37
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,6 +26,8 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 - Class: 64
+  Script: {instanceID: 0}
+- Class: 65
   Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
@@ -48,6 +50,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/MyAssets/Prefabs/FishtailEffect.prefab
+- Assets/MyAssets/Prefabs/GasDwarfTower.prefab
 - Assets/MyAssets/Prefabs/parent_of_signal_for_island_on_sky_dummy.prefab
 - Assets/MyAssets/Prefabs/OPCMarker.prefab
 - Assets/MyAssets/Prefabs/BrambleTower.prefab

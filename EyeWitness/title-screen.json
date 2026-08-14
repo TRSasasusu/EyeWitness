@@ -1,3 +1,21 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/title_screen_schema.json"
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/title_screen_schema.json",
+  "titleScreens": [
+    {
+      "MenuPlanet": {
+        "details": [
+          {
+            "assetBundle": "planets/assetbundles/eyewitness_title",
+            "path": "Assets/MyAssets/Prefabs/TitleFishtailEffect.prefab",
+            "rotation": {
+              "x": 270,
+              "y": 0,
+              "z": 0
+            },
+            "scale": 1.5
+          }
+        ]
+      }
+    }
+  ]
 }
