@@ -115,6 +115,10 @@
     },
     {
       "id": "ew_gas_dwarf_tower",
+      "position": {
+        "x": 833.428,
+        "y": 1395.632
+      }
     },
   ],
   "curiosities": [

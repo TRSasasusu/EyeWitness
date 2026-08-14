@@ -92,8 +92,27 @@
         "track": "music",
         "radius": 300,
         "volume": 0.2,
-        "priority": 1
-      }
+        "priority": 0
+      },
+      {
+        "audio": "planets/sounds/tower.wav",
+        "track": "music",
+        "shape": {
+          "type": "cylinder",
+          "radius": 13.4,
+          "height": 30,
+        },
+        "volume": 0.2,
+        "priority": 1,
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 73.3331,
+          "z": 0
+        },
+        "rename": "audio_tower",
+      },
     ]
   },
   "Props": {
@@ -185,6 +204,12 @@
           "z": 150.35
         },
         "scale": 0.25
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_EyeDistrict/Props_EyeDistrict/OtherComponentsGroup/Props_LargeBuilding/Skeleton_LargeBuilding/Prefab_NOM_Skeleton_Large_Pile_A",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "rename": "Mitis"
       }
     ],
     "translatorText": [
@@ -422,6 +447,285 @@
           "x": 14.5919,
           "y": 55.0887,
           "z": -7.1312
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_sign.xml",
+        "rename": "text_gas_dwarf_memory_past_sign",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 6.1357,
+          "y": 59.125,
+          "z": -8.0671
+        },
+        "rotation": {
+          "x": 0,
+          "y": 136.4461,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_1.xml",
+        "rename": "text_gas_dwarf_memory_past_1",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.64,
+          "y": 59.1202,
+          "z": -8.77
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_2.xml",
+        "rename": "text_gas_dwarf_memory_past_2",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -3.661401,
+          "y": 59.1202,
+          "z": -4.236199
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_3.xml",
+        "rename": "text_gas_dwarf_memory_past_3",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -8.311401,
+          "y": 59.1202,
+          "z": 0.6538006
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_4.xml",
+        "rename": "text_gas_dwarf_memory_past_4",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.63,
+          "y": 59.1202,
+          "z": -4.97
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_5.xml",
+        "rename": "text_gas_dwarf_memory_past_5",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.3285971,
+          "y": 59.1202,
+          "z": -0.4362001
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_6.xml",
+        "rename": "text_gas_dwarf_memory_past_6",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -4.321404,
+          "y": 59.1202,
+          "z": 4.4538
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_7.xml",
+        "rename": "text_gas_dwarf_memory_past_7",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 8.98,
+          "y": 59.1202,
+          "z": -0.84
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_8.xml",
+        "rename": "text_gas_dwarf_memory_past_8",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.678603,
+          "y": 59.1202,
+          "z": 3.693801
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_9.xml",
+        "rename": "text_gas_dwarf_memory_past_9",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.0286026,
+          "y": 59.1202,
+          "z": 8.583801
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_sign.xml",
+        "rename": "text_gas_dwarf_memory_now_sign",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -8.7799,
+          "y": 66.4213,
+          "z": 3.501
+        },
+        "rotation": {
+          "x": 0,
+          "y": 310.7852,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_1.xml",
+        "rename": "text_gas_dwarf_memory_now_1",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.0286026,
+          "y": 66.43,
+          "z": 8.583801
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_2.xml",
+        "rename": "text_gas_dwarf_memory_now_2",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.678603,
+          "y": 66.43,
+          "z": 3.693801
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_3.xml",
+        "rename": "text_gas_dwarf_memory_now_3",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 8.98,
+          "y": 66.43,
+          "z": -0.84
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_4.xml",
+        "rename": "text_gas_dwarf_memory_now_4",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -4.321404,
+          "y": 66.43,
+          "z": 4.4538
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_5.xml",
+        "rename": "text_gas_dwarf_memory_now_5",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.3285971,
+          "y": 66.43,
+          "z": -0.4362001
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_6.xml",
+        "rename": "text_gas_dwarf_memory_now_6",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.63,
+          "y": 66.43,
+          "z": -4.97
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_7.xml",
+        "rename": "text_gas_dwarf_memory_now_7",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -8.311401,
+          "y": 66.43,
+          "z": 0.6538006
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_8.xml",
+        "rename": "text_gas_dwarf_memory_now_8",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -3.661401,
+          "y": 66.43,
+          "z": -4.236199
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_9.xml",
+        "rename": "text_gas_dwarf_memory_now_9",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.64,
+          "y": 66.43,
+          "z": -8.77
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_future_sign.xml",
+        "rename": "text_gas_dwarf_memory_future_sign",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 8.6893,
+          "y": 73.6631,
+          "z": -2.7825
+        },
+        "rotation": {
+          "x": 0,
+          "y": 140.8358,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_memory_future_1.xml",
+        "rename": "text_gas_dwarf_memory_future_1",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.3285971,
+          "y": 73.66,
+          "z": -0.4362001
         }
       },
     ]

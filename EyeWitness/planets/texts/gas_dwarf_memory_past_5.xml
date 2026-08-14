@@ -1,0 +1,10 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>EW_GAS_DWARF_MEMORY_PAST_5</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <Text>EW_GAS_DWARF_MEMORY_PAST_5_2</Text>
+  </TextBlock>
+</NomaiObject>

@@ -133,7 +133,7 @@
         "EW_GAS_DWARF_AUTH_CLOSE": "この扉は認証が必要です。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_AUTH_OPEN": "マーメイドを検知、認証成功。&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_MEMORY_PAST": "ループ開始前の記録&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_PAST_SIGN": "ループ開始前の記録&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_MEMORY_PAST_1": "この星系における生命体の激減を確認。Nomaiについて検知した数は0。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_PAST_1_2": "Mitisの情報のみデータとして確保することは成功。意思疎通は不可。&lt;i&gt;&lt;/i&gt;",
@@ -148,7 +148,7 @@
         "EW_GAS_DWARF_MEMORY_PAST_9": "200,000年経過。改めて生命体の確認。Nomaiについて検知した数は0。他のGastianの量はわずかに回復が見られた。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_PAST_9_2": "計算に問題が生じてる。うまく、計算ができない。この感覚は、何。あのとき、Mitisが言ってくれたこと。今なら、もっとわかるはずなのに。&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_MEMORY_NOW": "ループ時の記録&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_NOW_SIGN": "ループ時の記録&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_MEMORY_NOW_1": "ループ1回目。何も発見せず。&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_1_2": "待って。スリープが強制解除され、ループが始まった。状況を確認…太陽ステーションからデータを取得…自然な超新星の時期になってる。&lt;i&gt;&lt;/i&gt;",
@@ -168,7 +168,7 @@
         "EW_GAS_DWARF_MEMORY_NOW_9_2": "待って！？何も知らないHearthianが2人、ループに巻き込まれた。そっか…こうなるんだ…へぇ…&lt;i&gt;&lt;/i&gt;",
         "EW_GAS_DWARF_MEMORY_NOW_9_3": "いずれこの2人は答えにたどり着くはず。その途中であわよくば追加の情報を渡すことができれば……&lt;i&gt;&lt;/i&gt;",
 
-        "EW_GAS_DWARF_MEMORY_FUTURE": "ループ終了後の記録&lt;i&gt;&lt;/i&gt;",
+        "EW_GAS_DWARF_MEMORY_FUTURE_SIGN": "ループ終了後の記録&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_MEMORY_FUTURE_1": "記録なし。&lt;i&gt;&lt;/i&gt;",
 
