@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NewHorizons.Utility;
+using UniRx;
 using UnityEngine;
 
 namespace EyeWitness {
@@ -30,10 +31,13 @@ namespace EyeWitness {
         public GameObject BrambleComputerLock { get; private set; }
         public GameObject BrambleComputerSand { get; private set; }
         public GameObject BrambleComputerAvailable { get; private set; }
+        public GameObject BrambleTowerWarpTransmitterShipLog { get; private set; }
+        public NotificationWithNewShipLog NotificationWithNewShipLogForBrambleTowerWarp { get; private set; }
         public GameObject GasDwarf { get; private set; }
         public GameObject GasDwarfStorageA { get; private set; }
         public GameObject GasDwarfStorageB { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
+        public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -117,7 +121,29 @@ namespace EyeWitness {
             }
             BrambleComputerLock = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_lock");
             BrambleComputerSand = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_sand");
+            if (BrambleComputerSand != null) {
+                Observable.NextFrame().Subscribe(_ => {
+                    BrambleComputerSand.SetActive(false);
+                }).AddTo(BrambleComputerSand);
+            }
             BrambleComputerAvailable = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/text_bramble_computer_available");
+            if (BrambleComputerAvailable != null) {
+                Observable.NextFrame().Subscribe(_ => {
+                    BrambleComputerAvailable.SetActive(false);
+                }).AddTo(BrambleComputerAvailable);
+            }
+
+            BrambleTowerWarpTransmitterShipLog = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/warpTransmitter_db_datura/shiplog_ew_bramble_tower_warp_1");
+            if (BrambleTowerWarpTransmitterShipLog != null) {
+                var notificationWithNewShipLogForBrambleTowerWarp = new GameObject("NotificationWithNewShipLogForBrambleTowerWarp");
+                notificationWithNewShipLogForBrambleTowerWarp.transform.SetParent(BrambleTowerWarpTransmitterShipLog.transform);
+                notificationWithNewShipLogForBrambleTowerWarp.transform.localPosition = Vector3.zero;
+                notificationWithNewShipLogForBrambleTowerWarp.transform.localEulerAngles = Vector3.zero;
+                NotificationWithNewShipLogForBrambleTowerWarp = notificationWithNewShipLogForBrambleTowerWarp.AddComponent<NotificationWithNewShipLog>();
+                NotificationWithNewShipLogForBrambleTowerWarp.shipLogId = "ew_bramble_tower_warp_1";
+                NotificationWithNewShipLogForBrambleTowerWarp.notificationText = "WARP_DETECT_NOTIFICATION";
+                NotificationWithNewShipLogForBrambleTowerWarp.sphereShape = BrambleTowerWarpTransmitterShipLog.GetComponent<SphereShape>();
+            }
 
             GasDwarf = SearchUtilities.Find("GasDwarf_Body/Sector");
             if(GasDwarf != null) {
@@ -151,6 +177,11 @@ namespace EyeWitness {
             var mermaid = SearchUtilities.Find("DreamWorld_Body/Sector_DreamWorld/Sector_DreamZone_2/Mermaid");
             if (mermaid != null) {
                 Mermaid = mermaid.AddComponent<MermaidConversation>();
+            }
+
+            var mermaidNoiseMaker = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/FishtailEffect");
+            if(mermaidNoiseMaker != null) {
+                MermaidNoiseMaker = mermaidNoiseMaker.AddComponent<MermaidNoiseMaker>();
             }
         }
     }

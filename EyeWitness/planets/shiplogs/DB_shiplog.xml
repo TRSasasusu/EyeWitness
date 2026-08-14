@@ -1,0 +1,17 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>DARK_BRAMBLE</ID>
+  <Entry>
+    <ID>ew_bramble_tower_warp</ID>
+    <Name>EW_BRAMBLE_TOWER_WARP</Name>
+    <Curiosity>ew_mermaid</Curiosity>
+    <RumorFact>
+      <ID>ew_bramble_tower_warp_rumor1</ID>
+      <SourceID>ew_bramble_tower</SourceID>
+      <Text>EW_BRAMBLE_TOWER_WARP_RUMOR1</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>ew_bramble_tower_warp_1</ID>
+      <Text>EW_BRAMBLE_TOWER_WARP_1</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

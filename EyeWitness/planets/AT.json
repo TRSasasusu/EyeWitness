@@ -113,6 +113,24 @@
         "scale": 0.25,
         "keepLoaded": true
       },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/FishtailEffect.prefab",
+        "parentPath": "Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": -0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 270,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      }
     ],
     "translatorText": [
       {

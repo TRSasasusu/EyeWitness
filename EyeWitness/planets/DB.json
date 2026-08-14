@@ -22,5 +22,9 @@
         "keepLoaded": true
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/DB_shiplog.xml"
   }
 }

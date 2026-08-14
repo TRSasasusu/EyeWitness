@@ -28,6 +28,8 @@ namespace EyeWitness {
             if (root == Locator.GetPlayerTransform() || (root == Locator.GetShipTransform() && PlayerState.IsInsideShip())) {
                 var data = new NotificationData(NotificationTarget.All, EyeWitness.Instance.NewHorizons.GetTranslationForUI(notificationText), 8f, true);
                 NotificationManager.SharedInstance.PostNotification(data);
+
+                gameObject.SetActive(false);
             }
         }
 

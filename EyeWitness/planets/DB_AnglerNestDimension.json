@@ -2,6 +2,21 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_AnglerNestDimension",
   "starSystem": "SolarSystem",
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "ew_bramble_tower_warp_1"
+        ],
+        "parentPath": "Sector_AnglerNestDimension/warpTransmitter_db_datura",
+        "isRelativeToParent": true,
+        "radius": 400,
+        "rename": "shiplog_ew_bramble_tower_warp_1"
+      }
+    ]
+  },
   "Props": {
     "warpTransmitters": [
       {
@@ -21,6 +36,21 @@
       }
     ],
     "translatorText": [
+      //{
+      //  "type": "computer",
+      //  "xmlFile": "planets/texts/bramble_computer.xml",
+      //  "rename": "text_bramble_computer",
+      //  "position": {
+      //    "x": 240.7768,
+      //    "y": -504.706,
+      //    "z": -278.5746
+      //  },
+      //  "rotation": {
+      //    "x": 321.4414,
+      //    "y": 285.9607,
+      //    "z": 270.2301
+      //  }
+      //},
       {
         "type": "computer",
         "xmlFile": "planets/texts/bramble_computer_lock.xml",
@@ -66,6 +96,13 @@
           "z": 270.2301
         }
       },
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_bramble_tower_warp",
+        "parentPath": "Sector_AnglerNestDimension/warpTransmitter_db_datura",
+        "isRelativeToParent": true
+      }
     ]
   }
 }

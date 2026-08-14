@@ -73,6 +73,10 @@
     },
     {
       "id": "ew_bramble_tower_warp",
+      "position": {
+        "x": 433.6064,
+        "y": 1196.55
+      }
     },
     {
       "id": "ew_opc_control",
