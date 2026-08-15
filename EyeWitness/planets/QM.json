@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "QUANTUM_MOON",
+  "starSystem": "SolarSystem",
+  "Volumes": {
+    "forces": {
+      "directionalVolumes": [
+        {
+          "force": 8,
+          "shape": {
+            "type": "sphere",
+            "radius": 68.5
+          },
+          "affectsAlignment": true,
+          "alignmentPriority": 10,
+          "parentPath": "Sector_QuantumMoon/State_EYE/QMDepth/GameObject",
+          "isRelativeToParent": true,
+          "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 180
+          }
+        }
+      ]
+    }
+  },
+  "Props": {
+    "signals": [
+      {
+        "audio": "OW_QuantumSignal",
+        "frequency": "Quantum",
+        "name": "Quantum Moon Depth",
+        "parentPath": "Sector_QuantumMoon/State_EYE",
+        "isRelativeToParent": true,
+        "detectionRadius": 10,
+        "identificationRadius": 5,
+        "rename": "signal_qm_depth",
+        "position": {
+          "x": 11.9035,
+          "y": -32.7893,
+          "z": 64.9317
+        }
+      }
+    ],
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_tower",
+        "path": "Assets/orclecleprefabs/QMDepth.prefab",
+        "parentPath": "Sector_QuantumMoon/State_EYE",
+        "isRelativeToParent": true,
+      }
+    ],
+  }
+}

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 38634870
+CRC: 1079907918
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9666450e97d6b3faf381a68f70b6a81e
+    Hash: 4f4fa6dfe57d9fa5e059bf948aeee23e
   TypeTreeHash:
     serializedVersion: 2
     Hash: ab310a5a3900a8d61c58a6e78f2fc9eb
@@ -39,5 +39,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/orclecleprefabs/QMDepth.prefab
 - Assets/MyAssets/Prefabs/GasDwarfTower.prefab
 Dependencies: []

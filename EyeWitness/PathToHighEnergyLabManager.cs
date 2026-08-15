@@ -63,7 +63,7 @@ namespace EyeWitness {
 
             _rumorRevealVolume = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/shiplog_ew_bramble_tower_rumor1");
             _rumorRevealVolume.SetActive(false);
-            Observable.Timer(TimeSpan.FromSeconds(60 * 6)).Subscribe(_ => {
+            Observable.Timer(TimeSpan.FromSeconds(60 * 6 - 2)).Subscribe(_ => {
                 _rumorRevealVolume.SetActive(true);
                 _textBrambleTower.enabled = false;
             }).AddTo(_rumorRevealVolume);
