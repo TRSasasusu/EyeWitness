@@ -161,8 +161,26 @@
         "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
         "position": {
           "x": -24.5082,
-          "y": 132.6177,
+          "y": 195.695,
           "z": -8.6722
+        },
+        "rename": "LightShaft"
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
+        "position": {
+          "x": 52.4785,
+          "y": 195.695,
+          "z": 35.3258
+        },
+        "rename": "LightShaft"
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
+        "position": {
+          "x": -38.7973,
+          "y": 186.2367,
+          "z": 43.0111
         },
         "rename": "LightShaft"
       },
