@@ -1,0 +1,33 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>INVISIBLE_PLANET</ID>
+  <Entry>
+    <ID>ew_mermaid</ID>
+    <Name>EW_MERMAID</Name>
+    <Curiosity>ew_mermaid</Curiosity>
+    <RumorFact>
+      <ID>ew_mermaid_rumor1</ID>
+      <SourceID>ew_gas_dwarf_tower</SourceID>
+      <Text>EW_MERMAID_RUMOR1</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>ew_mermaid_1</ID>
+      <Text>EW_MERMAID_1</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_mermaid_2</ID>
+      <Text>EW_MERMAID_2</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_mermaid_3</ID>
+      <Text>EW_MERMAID_3</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_mermaid_4</ID>
+      <Text>EW_MERMAID_4</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>ew_mermaid_5</ID>
+      <Text>EW_MERMAID_5</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

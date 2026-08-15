@@ -19,7 +19,52 @@
           "z": 270.2667
         },
         "scale": 0.5
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Prefab_IP_DreamCampfire",
+        "removeChildren": [
+          "Controller_Campfire",
+          "DreamCampfire_Streaming",
+          "AttachPoint",
+          "HeatHazardVolume",
+          "DreamOnDeathVolume",
+          "RiverCollisionChecker",
+          "BurnedReelSocket",
+          "Props_IP_DreamFire/DreamFire_Sconce_geo"
+        ],
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance",
+        "isRelativeToParent": true,
+        "rename": "FireProbe",
+        "scale": 7.8334,
+        "position": {
+          "x": 2.4121,
+          "y": 3.6092,
+          "z": -15.8891
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/lami_stranger.xml",
+        "rename": "text_lami_stranger",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 4.8937,
+          "y": 5.9579,
+          "z": -14.7798
+        },
+        "rotation": {
+          "x": 0,
+          "y": 140.3973,
+          "z": 0
+        }
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/RingWorld_shiplog.xml"
   }
 }

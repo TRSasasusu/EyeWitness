@@ -37,5 +37,9 @@
       <FactID>ew_gas_dwarf_tower_6</FactID>
       <Condition>1</Condition>
     </RevealFact>
+    <RevealFact>
+      <FactID>ew_mermaid_rumor1</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

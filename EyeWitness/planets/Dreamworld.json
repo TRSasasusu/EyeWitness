@@ -26,7 +26,10 @@
         "xmlFile": "planets/dialogues/mermaid.xml",
         "rename": "dialogue",
         "parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Mermaid",
-        "isRelativeToParent": true
+        "isRelativeToParent": true,
+        "position": {
+          "y": 1
+        }
       }
     ]
   }

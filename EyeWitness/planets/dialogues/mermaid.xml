@@ -30,6 +30,13 @@
       <Page>EW_MERMAID_7</Page>
       <Page>EW_MERMAID_8</Page>
     </Dialogue>
+    <RevealFacts>
+      <FactID>ew_mermaid_1</FactID>
+      <FactID>ew_mermaid_2</FactID>
+      <FactID>ew_mermaid_3</FactID>
+      <FactID>ew_mermaid_4</FactID>
+      <FactID>ew_mermaid_5</FactID>
+    </RevealFacts>
     <DialogueOptionsList>
       <DialogueOption>
         <Text>EW_MERMAID_C</Text>

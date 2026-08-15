@@ -63,16 +63,17 @@ namespace EyeWitness.patches {
             __instance._probeBody.gameObject.SetActive(false);
 
             var basePos = probe.transform.localPosition;
+            var baseScale = probe.transform.localScale.x;
             probe.transform.position = __instance._probeBody.transform.position;
             probe.transform.localScale = Vector3.one;
             probe.SetActive(true);
             probe.transform.DOLocalMove(basePos, 3);
-            probe.transform.DOScale(0.25f, 3);
+            probe.transform.DOScale(baseScale, 3);
 
-            if(probe == ModifyObjects.Instance.ProbeAT) {
+            if (probe == ModifyObjects.Instance.ProbeAT) {
                 ModifyObjects.Instance.BrambleRocks.SetActive(false);
                 ModifyObjects.Instance.BrambleRocksBroken.SetActive(true);
-                if(ModifyObjects.Instance.BrambleComputerLock != null) {
+                if (ModifyObjects.Instance.BrambleComputerLock != null) {
                     ModifyObjects.Instance.BrambleComputerLock.SetActive(false);
                 }
                 if (ModifyObjects.Instance.BrambleComputerSand != null) {
@@ -82,21 +83,29 @@ namespace EyeWitness.patches {
                     if (ModifyObjects.Instance.BrambleComputerAvailable != null) {
                         ModifyObjects.Instance.BrambleComputerAvailable.SetActive(true);
                     }
-                    if(ModifyObjects.Instance.BrambleTowerWarpReceiver != null) {
+                    if (ModifyObjects.Instance.BrambleTowerWarpReceiver != null) {
                         ModifyObjects.Instance.BrambleTowerWarpReceiver.SetActive(true);
                     }
                     ModifyObjects.Instance.BrambleComputerSand.SetActive(false);
                 }).AddTo(ModifyObjects.Instance.BrambleComputerSand);
             }
-            else if(probe == ModifyObjects.Instance.ProbeGasDwarf) {
-                if(ModifyObjects.Instance.AuthDoor != null) {
+            else if (probe == ModifyObjects.Instance.ProbeGasDwarf) {
+                if (ModifyObjects.Instance.AuthDoor != null) {
                     ModifyObjects.Instance.AuthDoor.SetActive(false);
                 }
-                if(ModifyObjects.Instance.AuthComputerClose != null) {
+                if (ModifyObjects.Instance.AuthComputerClose != null) {
                     ModifyObjects.Instance.AuthComputerClose.SetActive(false);
                 }
                 if (ModifyObjects.Instance.AuthComputerOpen != null) {
                     ModifyObjects.Instance.AuthComputerOpen.SetActive(true);
+                }
+            }
+            else if (probe == ModifyObjects.Instance.ProbeTS) {
+                if (ModifyObjects.Instance.Mermaid != null) {
+                    ModifyObjects.Instance.Mermaid.gameObject.SetActive(true);
+                }
+                if (ModifyObjects.Instance.FireProbe != null) {
+                    ModifyObjects.Instance.FireProbe.SetActive(true);
                 }
             }
 

@@ -39,6 +39,7 @@ namespace EyeWitness {
         public GameObject GasDwarfStorageB { get; private set; }
         public GameObject GasDwarfTowerCapsule { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
+        public GameObject FireProbe { get; private set; }
         public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
         public GameObject AuthDoor { get; private set; }
         public GameObject AuthComputerClose { get; private set; }
@@ -190,11 +191,19 @@ namespace EyeWitness {
             var mermaid = SearchUtilities.Find("DreamWorld_Body/Sector_DreamWorld/Sector_DreamZone_2/Mermaid");
             if (mermaid != null) {
                 Mermaid = mermaid.AddComponent<MermaidConversation>();
+                mermaid.SetActive(false);
+            }
+
+            FireProbe = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/FireProbe");
+            if (FireProbe != null) {
+                FireProbe.SetActive(false);
             }
 
             var mermaidNoiseMaker = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/FishtailEffect");
             if(mermaidNoiseMaker != null) {
-                MermaidNoiseMaker = mermaidNoiseMaker.AddComponent<MermaidNoiseMaker>();
+                if(EyeWitness.HasShipLog("ew_mermaid_4")) {
+                    MermaidNoiseMaker = mermaidNoiseMaker.AddComponent<MermaidNoiseMaker>();
+                }
             }
 
             AuthDoor = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/AuthDoor");
