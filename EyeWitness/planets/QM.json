@@ -3,6 +3,24 @@
   "name": "QUANTUM_MOON",
   "starSystem": "SolarSystem",
   "Volumes": {
+    "revealVolumes": [
+      {
+        "revealFor": "both",
+        "revealOn": "enter",
+        "reveals": [
+          "ew_moon_tower_1",
+        ],
+        "parentPath": "Sector_QuantumMoon/State_EYE/QMDepth/GameObject",
+        "isRelativeToParent": true,
+        "rename": "shiplog_ew_moon_tower_1",
+        "position": {
+          "x": -2.6365,
+          "y": 51.2371,
+          "z": -20.2023
+        },
+        "radius": 3
+      }
+    ],
     "forces": {
       "directionalVolumes": [
         {
@@ -50,5 +68,68 @@
         "isRelativeToParent": true,
       }
     ],
+    "translatorText": [
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/moon.xml",
+        "rename": "text_moon",
+        "parentPath": "Sector_QuantumMoon/State_EYE/QMDepth/GameObject",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 33.6695,
+          "y": 31.23,
+          "z": -11.9239
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        },
+        "seed": 10
+      },
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/moon_block.xml",
+        "rename": "text_moon_block",
+        "parentPath": "Sector_QuantumMoon/State_EYE/QMDepth/GameObject",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 33.6695,
+          "y": 30.9975,
+          "z": 1.1841
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        },
+        "seed": 1
+      },
+      {
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/moon_here.xml",
+        "rename": "text_moon_here",
+        "parentPath": "Sector_QuantumMoon/State_EYE/QMDepth/GameObject",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 33.6695,
+          "y": 31.3775,
+          "z": 13.7721
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 0
+        },
+        "seed": 2
+      },
+    ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/QM_shiplog.xml"
   }
 }
