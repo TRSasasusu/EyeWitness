@@ -209,7 +209,27 @@
         "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_EyeDistrict/Props_EyeDistrict/OtherComponentsGroup/Props_LargeBuilding/Skeleton_LargeBuilding/Prefab_NOM_Skeleton_Large_Pile_A",
         "parentPath": "Sector/GasDwarfTower",
         "isRelativeToParent": true,
-        "rename": "Mitis"
+        "rename": "Mitis",
+        "position": {
+          "x": 5.4745,
+          "y": 81.2677,
+          "z": -7.0573
+        }
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/VisionTorchApparatus/VisionTorchRoot/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 2.831,
+          "y": 81.203,
+          "z": -5.2512
+        },
+        "rotation": {
+          "x": 347.2826,
+          "y": 265.8804,
+          "z": 80.9377
+        }
       }
     ],
     "translatorText": [
@@ -728,6 +748,35 @@
           "z": -0.4362001
         }
       },
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/gas_dwarf_final.xml",
+        "rename": "text_gas_dwarf_final",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 5.1239,
+          "y": 81.0908,
+          "z": -5.55
+        },
+        "rotation": {
+          "x": 0,
+          "y": 7.5605,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/gas_dwarf_final_computer.xml",
+        "rename": "text_gas_dwarf_final_computer",
+        "parentPath": "Sector/GasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.731,
+          "y": 81.0908,
+          "z": -10.1335
+        }
+      }
     ]
   },
   "ShipLog": {

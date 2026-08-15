@@ -28,5 +28,9 @@
       <FactID>ew_gas_dwarf_storage_b_3</FactID>
       <Condition>5</Condition>
     </RevealFact>
+    <RevealFact>
+      <FactID>ew_opc_control_rumor1</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

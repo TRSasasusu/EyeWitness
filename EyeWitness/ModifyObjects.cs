@@ -36,6 +36,7 @@ namespace EyeWitness {
         public GameObject GasDwarf { get; private set; }
         public GameObject GasDwarfStorageA { get; private set; }
         public GameObject GasDwarfStorageB { get; private set; }
+        public GameObject GasDwarfTowerCapsule { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
         public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
         public GameObject AuthDoor { get; private set; }
@@ -175,6 +176,10 @@ namespace EyeWitness {
                         transform.gameObject.AddComponent<CapsuleItem>()._hasLiquid = true;
                     }
                 }
+            }
+            GasDwarfTowerCapsule = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/CapsuleItemEmpty");
+            if(GasDwarfTowerCapsule != null) {
+                GasDwarfTowerCapsule.AddComponent<CapsuleItem>();
             }
 
             var mermaid = SearchUtilities.Find("DreamWorld_Body/Sector_DreamWorld/Sector_DreamZone_2/Mermaid");

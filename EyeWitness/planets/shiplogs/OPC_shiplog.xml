@@ -4,6 +4,11 @@
     <ID>ew_opc_control</ID>
     <Name>EW_OPC_CONTROL</Name>
     <Curiosity>ew_mermaid</Curiosity>
+    <RumorFact>
+      <ID>ew_opc_control_rumor1</ID>
+      <SourceID>ew_gas_dwarf_storage_b</SourceID>
+      <Text>EW_OPC_CONTROL_RUMOR1</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_opc_control_1</ID>
       <Text>EW_OPC_CONTROL_1</Text>
