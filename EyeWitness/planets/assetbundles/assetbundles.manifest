@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1957767215
+CRC: 342105312
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -21,4 +21,7 @@ AssetBundleManifest:
         Dependency_0: eyewitness
     Info_5:
       Name: eyewitness_tower
+      Dependencies: {}
+    Info_6:
+      Name: eyewitness_postcredit
       Dependencies: {}

@@ -37,6 +37,7 @@
       <FactID>ew_mermaid_4</FactID>
       <FactID>ew_mermaid_5</FactID>
     </RevealFacts>
+    <SetPersistentCondition>EW_MET_MERMAID</SetPersistentCondition>
     <DialogueOptionsList>
       <DialogueOption>
         <Text>EW_MERMAID_C</Text>
