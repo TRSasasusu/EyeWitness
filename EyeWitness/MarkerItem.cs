@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UniRx;
 using UnityEngine;
+using IEnumerator = System.Collections.IEnumerator;
 
 namespace EyeWitness {
     public class MarkerItem : OWItem {
@@ -62,11 +64,31 @@ namespace EyeWitness {
 
             var probe = GetProbeBasedOnMarker();
             if (probe != null) {
+                if(transform.root.name == "OrbitalProbeCannon_Body") {
+                    var thMarker = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/OPCMarker");
+                    var entrylocation = transform.Find("entrylocation_ew_opc_control");
+                    if (entrylocation != null && thMarker != null) {
+                        entrylocation.parent = thMarker.transform;
+                        entrylocation.transform.localPosition = Vector3.zero;
+                        entrylocation.transform.localEulerAngles = Vector3.zero;
+                    }
+                    gameObject.SetActive(false);
+                    return;
+                }
+
+                // only TH marker
                 _markerBeam.transform.parent = probe.transform;
                 _markerBeam.transform.localPosition = Vector3.zero;
                 _markerBeam.transform.localEulerAngles = new Vector3(0, 90, 0);
                 _markerBeam.transform.parent = probe.transform.parent;
                 _markerBeam.SetActive(true);
+            }
+            else {
+                if(transform.root.name == "TimberHearth_Body") {
+                    gameObject.SetActive(false);
+                    return;
+                }
+                // only OPC marker
             }
         }
 

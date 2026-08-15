@@ -68,6 +68,14 @@
           "z": 0
         }
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "ew_opc_control",
+        "parentPath": "Sector_OrbitalProbeCannon/Sector_Module_Intact/pedestal_for_marker/OPCMarker",
+        "isRelativeToParent": true,
+        "rename": "entrylocation_ew_opc_control"
+      }
     ]
   },
   "ShipLog": {

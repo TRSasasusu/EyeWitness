@@ -79,6 +79,23 @@
           "z": 0
         },
         "scale": 2
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness",
+        "path": "Assets/MyAssets/Prefabs/OPCMarker.prefab",
+        "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 41.7092,
+          "y": 5.7053,
+          "z": -21.192
+        },
+        "rotation": {
+          "x": 359.7296,
+          "y": 28.086,
+          "z": 343.4054
+        },
+        "keepLoaded": true
       }
     ],
     "dialogue": [

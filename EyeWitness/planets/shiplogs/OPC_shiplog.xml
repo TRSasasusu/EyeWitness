@@ -17,5 +17,9 @@
       <ID>ew_opc_control_2</ID>
       <Text>EW_OPC_CONTROL_2</Text>
     </ExploreFact>
+    <ExploreFact>
+      <ID>ew_opc_control_3</ID>
+      <Text>EW_OPC_CONTROL_3</Text>
+    </ExploreFact>
   </Entry>
 </AstroObjectEntry>

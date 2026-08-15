@@ -25,6 +25,7 @@ namespace EyeWitness {
         public GameObject ProbeTHShipLog { get; private set; }
         public NotificationWithNewShipLog NotificationWithNewShipLogForProbeTH { get; private set; }
         public MarkerItem MarkerItem { get; private set; }
+        public MarkerItem MarkerItemTH { get; private set; }
         public GameObject BrambleRocks { get; private set; }
         public GameObject BrambleRocksBroken { get; private set; }
         public GameObject BrambleTowerWarpReceiver { get; private set; }
@@ -111,6 +112,10 @@ namespace EyeWitness {
             var markerItem = SearchUtilities.Find("OrbitalProbeCannon_Body/Sector_OrbitalProbeCannon/Sector_Module_Intact/pedestal_for_marker/OPCMarker");
             if (markerItem != null) {
                 MarkerItem = markerItem.AddComponent<MarkerItem>();
+            }
+            var markerItemTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/OPCMarker");
+            if (markerItemTH != null) {
+                MarkerItemTH = markerItemTH.AddComponent<MarkerItem>();
             }
 
             BrambleRocks = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocks");
