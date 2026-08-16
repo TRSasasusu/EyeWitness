@@ -24,6 +24,10 @@
       <Condition>3</Condition>
     </RevealFact>
     <RevealFact>
+      <FactID>ew_moon_rumor1</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+    <RevealFact>
       <FactID>ew_eye_shrine_depth_3</FactID>
       <Condition>4</Condition>
     </RevealFact>
