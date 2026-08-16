@@ -20,6 +20,7 @@ namespace EyeWitness {
         public GameObject ProbeVM { get; private set; }
         public GameObject ProbeGiantsDeep { get; private set; }
         public GameObject ProbeDB { get; private set; }
+        public GameObject ProbeWhiteholeStation { get; private set; }
         public GameObject ProbeTS { get; private set; }
         public GameObject ProbeGasDwarf { get; private set; }
         public GameObject ProbeTHShipLog { get; private set; }
@@ -96,6 +97,10 @@ namespace EyeWitness {
             ProbeDB = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Probe_DB");
             if(ProbeDB != null) {
                 ProbeDB.SetActive(false);
+            }
+            ProbeWhiteholeStation = SearchUtilities.Find("WhiteholeStation_Body/Sector_WhiteholeStation/Probe_WhiteholeStation");
+            if (ProbeWhiteholeStation != null) {
+                ProbeWhiteholeStation.SetActive(false);
             }
             ProbeTS = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Probe_TS");
             if (ProbeTS != null) {
@@ -202,8 +207,12 @@ namespace EyeWitness {
 
             var mermaidNoiseMaker = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/FishtailEffect");
             if(mermaidNoiseMaker != null) {
-                if(EyeWitness.HasShipLog("ew_mermaid_4")) {
+                //if(EyeWitness.HasShipLog("ew_mermaid_4")) {
+                if(PlayerData.GetPersistentCondition("EW_MET_MERMAID")) {
                     MermaidNoiseMaker = mermaidNoiseMaker.AddComponent<MermaidNoiseMaker>();
+                }
+                else {
+                    mermaidNoiseMaker.SetActive(false);
                 }
             }
 

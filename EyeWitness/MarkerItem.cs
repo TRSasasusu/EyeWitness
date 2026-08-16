@@ -43,6 +43,9 @@ namespace EyeWitness {
             else if(ParentRootName == "DarkBramble_Body") {
                 return ModifyObjects.Instance.ProbeDB;
             }
+            else if(ParentRootName == "WhiteholeStation_Body") {
+                return ModifyObjects.Instance.ProbeWhiteholeStation;
+            }
             else if(ParentRootName == "RingWorld_Body") {
                 return ModifyObjects.Instance.ProbeTS;
             }

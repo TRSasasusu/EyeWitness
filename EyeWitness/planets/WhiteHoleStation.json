@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "WhiteholeStation",
+  "starSystem": "SolarSystem",
+  "Props": {
+    "details": [
+      {
+        "path": "NomaiProbe_Body",
+        "removeComponents": true,
+        "rename": "Probe_WhiteholeStation",
+        "position": {
+          "x": 6.3095,
+          "y": 5.3383,
+          "z": 9.7832
+        },
+        "rotation": {
+          "x": 290.9819,
+          "y": 242.54,
+          "z": 56.258
+        },
+        "scale": 0.25,
+        "keepLoaded": true
+      }
+    ]
+  }
+}
