@@ -8,7 +8,7 @@
     <RumorFact>
       <ID>ew_gas_dwarf_rumor1</ID>
       <SourceID>ew_signal_for_island</SourceID>
-      <RumorName>EW_GAS_DWARF_RUMOR1_Name</RumorName>
+      <RumorName>EW_GAS_DWARF_RUMOR1_NAME</RumorName>
       <Text>EW_GAS_DWARF_RUMOR1</Text>
     </RumorFact>
     <ExploreFact>
