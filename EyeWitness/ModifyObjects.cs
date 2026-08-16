@@ -44,6 +44,7 @@ namespace EyeWitness {
         public GameObject AuthDoor { get; private set; }
         public GameObject AuthComputerClose { get; private set; }
         public GameObject AuthComputerOpen { get; private set; }
+        public GameObject WhiteHoleStationScroll { get; private set; }
 
         public ModifyObjects() {
             EyeWitness.Log("ModifyObjects constructor called");
@@ -213,6 +214,12 @@ namespace EyeWitness {
                 Observable.NextFrame().Subscribe(_ => {
                     AuthComputerOpen.SetActive(false);
                 }).AddTo(AuthComputerOpen);
+            }
+
+            WhiteHoleStationScroll = SearchUtilities.Find("WhiteholeStationSuperstructure_Body/Sector/text_eye_shrine");
+            if (WhiteHoleStationScroll != null) {
+                WhiteHoleStationScroll.transform.localPosition = new Vector3(-12.9704f, 38.079f, -16.1912f);
+                WhiteHoleStationScroll.transform.localEulerAngles = new Vector3(332.4185f, 355.1561f, 0);
             }
         }
     }
