@@ -23,7 +23,7 @@
 
         "EW_OPC_CONTROL_1": "PRIVET: Avens and Mallow are trying to push the cannon's output to its maximum. I have my doubts about the cannon's structural integrity, but what concerns me more at the moment is the size of the search area you get when you calculate it from that output and a span of twenty-two minutes.",
         "EW_OPC_CONTROL_2": "PRIVET: Mitis says he'll be there with her, but he can't <![CDATA[<i>]]>truly<![CDATA[</i>]]> be with her, and it's obviously better to make her search as short as we possibly can.",
-        "EW_OPC_CONTROL_3": "PRIVET: So I set out to build an external tool that lets us choose the cannon's target for the next loop, so the search can concentrate on suspicious areas. But it's still very much in testing. For each celestial body it can only aim at one fixed spot, no matter where the target is set, and the Quantum Moon can't be targeted at all.",
+        "EW_OPC_CONTROL_3": "PRIVET: So I set out to build an external tool that lets us choose the cannon's target for the next loop, so the search can concentrate on suspicious areas. But it's still very much in testing. No matter where you place it on a given body, it can only aim at one fixed spot on that body, and the Quantum Moon can't be targeted at all.",
         "EW_OPC_CONTROL_4": "PRIVET: I've also arranged for it to appear right beside whoever used it on the next loop. And even if you lose track of where it's gone, the computer can put a marker on it, so it'll never be lost.",
         //"EW_OPC_CONTROL_4": "PRIVET: Once Ramie and I have gone to welcome Pye and the others back from the comet, I intend to pick up where I left off. For now I'll deactivate it so nobody uses it without permission.",
         "EW_OPC_CONTROL_5": "PRIVET: Cassava has sent word for me to come back, but I intend to pick this up again later. For now I'll deactivate it so nobody uses it without permission.",
@@ -52,7 +52,7 @@
         "EW_EYE_SHRINE_DEPTH_MOON_1": "BELLS: To one who has completed the pilgrimage to the Quantum Moon: what did you see at the sixth location, and what did you feel? Did your thoughts turn to the path our ancestors walked to bring us here?",
         "EW_EYE_SHRINE_DEPTH_MOON_2": "BELLS: We Nomai continued our inquiry into the Quantum Moon, and through it into the Eye of the universe, and though we did not find it, we gained a great deal of knowledge. And so... we came to establish a laboratory in the depths of the Quantum Moon.",
         "EW_EYE_SHRINE_DEPTH_MOON_3": "BELLS: At the sixth location, follow the other quantum signal. A signal unlike the one the Quantum Moon itself emits will guide you into those depths!",
-        "EW_EYE_SHRINE_DEPTH_MOON_4": "BELLS: On that journey you will see the symbol behind me. A design unlike the signal of the Eye our ancestors found... I ask you to consider what it might mean.",
+        "EW_EYE_SHRINE_DEPTH_MOON_4": "BELLS: On that journey you will see the same symbol that stands behind me. A design unlike the signal of the Eye our ancestors found... I ask you to consider what it might mean.",
 
         //"EW_EYE_SHRINE_DEPTH_BACK_1": "COLEUS: Addendum: to return, you need only observe the Eye symbol on the Hanging City side. (I was quite alarmed, thinking I'd trapped myself again.)",
 
@@ -66,15 +66,15 @@
         "EW_BRAMBLE_TOWER_INSIDE_1": "FILIX: This warp tower is closed until the warp pad at the departure end has been properly installed! We've limited it to return warps for safety, but it remains dangerous even so.",
         "EW_BRAMBLE_TOWER_INSIDE_2": "FILIX: ...Leaving a record like this and walking out brings back that wretched memory aboard the Vessel. Perhaps because the tower takes the Bramble as its motif.",
         "EW_BRAMBLE_TOWER_INSIDE_3": "FILIX: I followed Escall's order and made the warp that day. I wonder whether that was right. Everyone told me the responsibility was Escall's and that it wasn't my fault, but...",
-        "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX: And the years passed, and now it's time for Solanum's pilgrimage. I'm not young anymore, but my husband is returning to Brittle Hollow, and I intend to be of use to this clan as a teacher, at the very least.",
+        "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX: The years have passed, and now it's time for Solanum's pilgrimage. I'm not young anymore, but my husband is returning to Brittle Hollow, and I intend to be of use to this clan as a teacher, at the very least.",
 
         "EW_BRAMBLE_COMPUTER_LOCK": "The warp destination is sealed. Warping is not currently possible.",
         "EW_BRAMBLE_COMPUTER_SAND": "The warp destination is still filled with sand. Warping is not currently possible.",
         "EW_BRAMBLE_COMPUTER_AVAILABLE": "Warping is possible.",
 
-        "EW_GAS_DWARF_INITIAL_1": "MITIS: This is the <![CDATA[<color=orange>Gas Dwarf</color>]]>. The name itself was given when it was first discovered, but only now have we established a way to reach it.",
+        "EW_GAS_DWARF_INITIAL_1": "MITIS: This is the <![CDATA[<color=orange>Gas Dwarf</color>]]>. The name itself was given upon its discovery, but only now have we finally established a way to reach it.",
         "EW_GAS_DWARF_INITIAL_2": "DAZ: I've recorded the location in the computer, so it'll be far easier to reach now, even without the signal. The signal's strange behavior must be an effect of the atmosphere here.",
-        "EW_GAS_DWARF_INITIAL_3": "PHLOX: Wait, the computer's life detection is returning anomalous values... The gas is too thick to see far, but is there another lifeform here...? No, surely not, this gas itself is alive!",
+        "EW_GAS_DWARF_INITIAL_3": "PHLOX: Wait, the computer's life detection is returning anomalous values... The gas is too thick to see far, but is there another lifeform here...? No, surely not... is this gas itself alive!?",
         "EW_GAS_DWARF_INITIAL_4": "MITIS: I believe that understanding is correct. A life detection system normally counts lifeforms as discrete individuals, but since this is a gas, the count fails and produces an anomalous value.",
         "EW_GAS_DWARF_INITIAL_5": "MITIS: You can barely see anything through the gas, so watch your step!",
 
@@ -82,7 +82,7 @@
 
         "EW_GAS_DWARF_LAB_1": "PHLOX: This gas lifeform, which we've named the Gastian, possesses a computational mechanism within itself. We've found it capable of everything from a degree of calculation up to memory.",
         "EW_GAS_DWARF_LAB_2": "PHLOX: Furthermore, this lifeform has no need to breathe and no need to eat. It appears to have simply spent hundreds of millions of years here, expanding until it filled this gas dwarf.",
-        "EW_GAS_DWARF_LAB_3": "PHLOX: And what's most remarkable is its affinity with computers. The gas is merely one form it takes in order to appear in this world; its essence is data. In other words, it can be embedded into a computer just as it is.",
+        "EW_GAS_DWARF_LAB_3": "PHLOX: And what's most remarkable is its affinity with computers. The gas is merely one form it takes in order to manifest in this world; its essence is data. In other words, it can be embedded into a computer just as it is.",
         "EW_GAS_DWARF_LAB_4": "CASSAVA: What does that mean for the definition of a lifeform? Or rather, if we regard information as energy, then it's metabolizing with it, so there's no problem?",
         "EW_GAS_DWARF_LAB_5": "PHLOX: From all this, one might think we could incorporate it into the Probe Tracking Module immediately, but there's one serious problem. The Gastian possesses, in a sense, a collective consciousness.",
         "EW_GAS_DWARF_LAB_6": "DAZ: Meaning it's useless as an anchor for determining where memories should be sent when we send them into the past? And embedding the entire Gastian into a computer would be far too enormous, and the energy needed to send the whole colony's memories back twenty-two minutes would be immense as well.",
@@ -90,7 +90,7 @@
 
         "EW_GAS_DWARF_LAB_ISO_1": "MITIS: First, in order to separate a Gastian physically, we constructed a tower. The tower has intake ports on its sides, and they connect to an extractor inside. We sealed the partial Gastians extracted that way into capsules, one by one.",
         "EW_GAS_DWARF_LAB_ISO_2": "MITIS: Next, we placed the capsules containing the Gastians in two storerooms and observed whether any of them would fall out of computational synchronization with the whole.",
-        "EW_GAS_DWARF_LAB_ISO_3": "YARROW: So, has a Gastian awakened to an individual consciousness? Construction of the Sun Station and the building of Ash Twin's outer shell are both coming into view, and it would do wonders for morale overall if this were nearing completion too.",
+        "EW_GAS_DWARF_LAB_ISO_3": "YARROW: So, has a Gastian awakened to an individual consciousness? Construction of the Sun Station and the building of Ash Twin's outer shell are both coming into sight. It would do wonders for morale overall if this were nearing that point too.",
         "EW_GAS_DWARF_LAB_ISO_4": "YARROW: No, I'm not trying to rush you. When I had Cassava ask Poke how the warp core was progressing, it seems I caused a great deal of trouble, so... that is... please don't take it too much to heart.",
         "EW_GAS_DWARF_LAB_ISO_5": "PHLOX: Regrettably, every capsule is still being maintained as part of the colony. We'll have to change our approach somehow. We could apply pressure or heat, but this is a living thing all the same, and we should avoid anything unethical.",
         "EW_GAS_DWARF_LAB_ISO_6": "MITIS: Hmm. What if, say, we chose a single capsule and spent all our time with it, speaking to it? ...No, surely that's absurd...",
@@ -128,7 +128,7 @@
         "EW_GAS_DWARF_WARNING": "Warning: <![CDATA[<TimeMinutes>]]>m <![CDATA[<TimeSeconds>]]>s ago, an impact from above Giant's Deep caused damage to a lightning rod.",
 
         "EW_GAS_DWARF_KEY_1": "MITIS: Mermaid, I've decided to build a room in the tower where we can share the record of the time you spend within the repetitions. I can't repeat them alongside you, but I believe it's my duty to know, at the very least, how you felt while you did.",
-        "EW_GAS_DWARF_KEY_2": "MITIS: Since it is, in a sense, your own personal information, I'll place an authentication lock on that room's door, so that no one may enter unless you or I are in the tower.",
+        "EW_GAS_DWARF_KEY_2": "MITIS: Since it is, in a sense, your own personal information, I'll place an authentication lock on that room's door, so that no one else may enter unless you or I are in the tower.",
         "EW_GAS_DWARF_KEY_3": "MITIS: I'm sorry that this is the only way I can stay close to your loneliness.",
 
         "EW_GAS_DWARF_AUTH_CLOSE": "This door requires authentication.",
@@ -163,7 +163,7 @@
         "EW_GAS_DWARF_MEMORY_NOW_6": "Loop 100,000. Nothing found.",
         "EW_GAS_DWARF_MEMORY_NOW_7": "Loop 1,000,000. Nothing found.",
         "EW_GAS_DWARF_MEMORY_NOW_8": "Loop 9,318,054. Eye of the universe found.",
-        "EW_GAS_DWARF_MEMORY_NOW_8_2": "What? The Eye of the universe, it was there... I see. Huh. Mitis, it was there. The Eye of the universe. You said either one would suit you, but it looked like the shape of the Eye in the Nomai's motif.",
+        "EW_GAS_DWARF_MEMORY_NOW_8_2": "What? The Eye of the universe, it was there... I see. Huh. Mitis, it was there. The Eye of the universe. You said either form would suit you, but it looked like the shape of the Eye in the Nomai's motif.",
         "EW_GAS_DWARF_MEMORY_NOW_8_3": "Please, answer me... it was there, the Eye of the universe......",
         "EW_GAS_DWARF_MEMORY_NOW_9": "Loop 9,318,055. Two new lifeforms have begun looping.",
         "EW_GAS_DWARF_MEMORY_NOW_9_2": "Wait!? Two Hearthians who know nothing at all have been caught in the loop. I see... so this is what happens... huh...",
@@ -265,22 +265,22 @@
 
         "EW_BRAMBLE_TOWER": "Hidden Text on the Path to the High Energy Lab",
         "EW_BRAMBLE_TOWER_RUMOR1": "The HUD marker points to a spot already buried beneath the sand.",
-        "EW_BRAMBLE_TOWER_RUMOR2": "On the way to the high energy lab, there's a cave overhead filled with ghost matter.",
-        "EW_BRAMBLE_TOWER_1": "The Bramble warp tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
-        "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble warp tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
+        "EW_BRAMBLE_TOWER_RUMOR2": "On the way to the High Energy Lab, there's a cave overhead filled with ghost matter.",
+        "EW_BRAMBLE_TOWER_1": "The Bramble Warp Tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
+        "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
 
         "EW_BRAMBLE_TOWER_INSIDE": "Bramble Warp Tower",
-        "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "The Bramble warp tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
+        "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "The Bramble Warp Tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
         "EW_BRAMBLE_TOWER_INSIDE_1": "Striking it with a probe fired from the orbital probe cannon opened the way inside.",
 
         "EW_BRAMBLE_TOWER_WARP": "Bramble Warp Pad",
-        "EW_BRAMBLE_TOWER_WARP_RUMOR1": "The warp pad leading to the Bramble warp tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
+        "EW_BRAMBLE_TOWER_WARP_RUMOR1": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
         "EW_BRAMBLE_TOWER_WARP_1": "My ship's computer has detected the warp pad's location, so I can set a HUD marker for it.",
 
         "EW_OPC_CONTROL": "Orbital Probe Cannon Target Control",
         "EW_OPC_CONTROL_RUMOR1": "Someone was attempting to control the cannon's target from the orbital probe cannon's control module.",
         "EW_OPC_CONTROL_1": "I found a tool in the orbital probe cannon's control module for setting the cannon's target for the next loop.",
-        "EW_OPC_CONTROL_2": "Setting it somewhere on a celestial body causes the probe to be fired at one particular spot on that body during the next loop.",
+        "EW_OPC_CONTROL_2": "Placing it somewhere on a celestial body causes the probe to be fired at one particular spot on that body during the next loop.",
         "EW_OPC_CONTROL_3": "Once it's been used, the tool apparently turns up near me on the next loop. I can also set a HUD marker for the tool itself from my ship log.",
 
         "EW_GAS_DWARF": "Gas Dwarf",
@@ -291,7 +291,7 @@
 
         "EW_GAS_DWARF_LAB": "Gas Lifeform Laboratory",
         "EW_GAS_DWARF_LAB_1": "The essence of the gas lifeform named the Gastian is data, so it can be embedded into a computer.",
-        "EW_GAS_DWARF_LAB_2": "Because the Gastian has a collective consciousness, as it is it doesn't meet the requirements for sending memories into the past.",
+        "EW_GAS_DWARF_LAB_2": "Because the Gastian has a collective consciousness, as things stand it doesn't meet the requirements for sending memories into the past.",
         "EW_GAS_DWARF_LAB_3": "To separate individuals from the colony, they were physically divided into capsules using the tower's extractor. These capsules are kept in two storerooms.",
         "EW_GAS_DWARF_LAB_4": "To awaken an individual consciousness, Mitis decided to raise one particular Gastian.",
 
