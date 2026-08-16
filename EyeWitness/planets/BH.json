@@ -62,7 +62,8 @@
           "x": 12.2342,
           "y": 9.5262,
           "z": 8.3
-        }
+        },
+        "renderQueueOverride": 3000
       },
       {
         "rename": "bh_from_eyeshrine_depth",
@@ -76,7 +77,8 @@
           "x": 12.2342,
           "y": 9.5262,
           "z": -8.3
-        }
+        },
+        "renderQueueOverride": 3000
       },
       {
         "rename": "wh_from_eyeshrine_depth",
