@@ -37,5 +37,9 @@
       <FactID>ew_moon_4</FactID>
       <Condition>6</Condition>
     </RevealFact>
+    <RevealFact>
+      <FactID>ew_mermaid_rumor2</FactID>
+      <Condition>6</Condition>
+    </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

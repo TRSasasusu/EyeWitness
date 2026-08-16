@@ -92,7 +92,7 @@
         "EW_GAS_DWARF_LAB_ISO_2": "MITIS: Next, we placed the capsules containing the Gastians in two storerooms and observed whether any of them would fall out of computational synchronization with the whole.",
         "EW_GAS_DWARF_LAB_ISO_3": "YARROW: So, has a Gastian awakened to an individual consciousness? Construction of the Sun Station and the building of Ash Twin's outer shell are both coming into view, and it would do wonders for morale overall if this were nearing completion too.",
         "EW_GAS_DWARF_LAB_ISO_4": "YARROW: No, I'm not trying to rush you. When I had Cassava ask Poke how the warp core was progressing, it seems I caused a great deal of trouble, so... that is... please don't take it too much to heart.",
-        "EW_GAS_DWARF_LAB_ISO_5": "PHLOX: Regrettably, every capsule is still being maintained as part of the colony. We'll have to change our approach somehow. We could apply pressure or heat, but this is a living thing all the same, and we should avoid anything inhumane.",
+        "EW_GAS_DWARF_LAB_ISO_5": "PHLOX: Regrettably, every capsule is still being maintained as part of the colony. We'll have to change our approach somehow. We could apply pressure or heat, but this is a living thing all the same, and we should avoid anything unethical.",
         "EW_GAS_DWARF_LAB_ISO_6": "MITIS: Hmm. What if, say, we chose a single capsule and spent all our time with it, speaking to it? ...No, surely that's absurd...",
         "EW_GAS_DWARF_LAB_ISO_7": "PHLOX: No, that might work. In fact, the Gastian's computational waveform does change according to what's being said to it. And, hypothesis: treating one of them as special could constitute a significant computational reason for it to leave the colony.",
         "EW_GAS_DWARF_LAB_ISO_8": "MITIS: I see... Then let's try it with this capsule I happen to be holding.",
@@ -205,7 +205,7 @@
         "EW_MOON_HERE_3": "COLEUS: And so, studying the nature of this place, we determined that manifestation by an observer is possible using quantum matter. In fact, Filix manifested the Vessel. It may tend to produce whatever is familiar to that individual.",
         "EW_MOON_HERE_4": "THATCH: It can't be reproduced with the other quantum shards in this system, and is possible only in this region where the Eye's nature runs deepest, so this is very likely a property of the Eye itself. Which is to say, this wooden temple may be a scene familiar to whoever last made contact with the Eye.",
         "EW_MOON_HERE_5": "PLUME: Then if the Ash Twin Project bears fruit and we observe the Eye, will this place become the Vessel? Or the Sunless City, or the Hanging City?",
-        "EW_MOON_HERE_6": "MITIS: No, I suspect it will become the tower on the island in the sky. Mermaid is the one who will do the observing, after all. She's so fond of towers that whenever she comes to an unfamiliar land, the first thing she wants is to head for one.",
+        "EW_MOON_HERE_6": "MITIS: No, I suspect it will become the tower on the island in the sky. Mermaid is the one who will do the observing, after all. She's so fond of towers that whenever she comes to an unfamiliar land, the first thing she wants is to head for the top of one.",
 
         "EW_LAMI_STRANGER_1": "TAGET: We were flying the shuttle around with the capsules aboard when this structure suddenly appeared right in front of us. My heart is still pounding from the shock.",
         "EW_LAMI_STRANGER_2": "LAMI: Hey, I saw a river over there! And so many wooden buildings! I can't stop being excited!",
@@ -265,6 +265,7 @@
 
         "EW_BRAMBLE_TOWER": "Hidden Text on the Path to the High Energy Lab",
         "EW_BRAMBLE_TOWER_RUMOR1": "The HUD marker points to a spot already buried beneath the sand.",
+        "EW_BRAMBLE_TOWER_RUMOR2": "On the way to the high energy lab, there's a cave overhead filled with ghost matter.",
         "EW_BRAMBLE_TOWER_1": "The Bramble warp tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
         "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble warp tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
 
@@ -316,13 +317,14 @@
         "EW_MOON_1": "The Nomai theorized about the true nature of the Eye of the universe, and mentioned the possibility of using the Eye to send data to the next universe.",
         "EW_MOON_2": "They were considering ways to make the Ash Twin Project's search more efficient.",
         "EW_MOON_3": "The wooden temple on the way to the Quantum Moon laboratory was thought to be a manifestation of something familiar to whoever last made contact with the Eye.",
-        "EW_MOON_4": "It was thought that a tower would manifest here once the Ash Twin Project succeeded. Mermaid was said to head for a tower no matter where she is.",
+        "EW_MOON_4": "It was thought that a tower would manifest here once the Ash Twin Project succeeded. Mermaid was said to head for the top of a tower no matter where she is.",
 
         "EW_MOON_TOWER": "Tower on the Quantum Moon",
         "EW_MOON_TOWER_1": "The tower has an entrance on its side.",
 
         "EW_MERMAID": "Mermaid",
         "EW_MERMAID_RUMOR1": "It's been suggested that the Stranger's green flame might make it possible to speak with Mermaid.",
+        "EW_MERMAID_RUMOR2": "No matter where she is, Mermaid heads for the top of a tower.",
         "EW_MERMAID_1": "I met Mermaid atop the tower in the Stranger's simulation!",
         "EW_MERMAID_2": "Gastians transform, informationally and physically, through the exchange of information.",
         "EW_MERMAID_3": "Mermaid gained a consciousness independent of the colony thanks to Mitis.",

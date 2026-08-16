@@ -21,6 +21,10 @@
       <ID>ew_bramble_tower_rumor1</ID>
       <Text>EW_BRAMBLE_TOWER_RUMOR1</Text>
     </RumorFact>
+    <RumorFact>
+      <ID>ew_bramble_tower_rumor2</ID>
+      <Text>EW_BRAMBLE_TOWER_RUMOR2</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_bramble_tower_1</ID>
       <Text>EW_BRAMBLE_TOWER_1</Text>

@@ -17,6 +17,20 @@
           "z": 17.4402
         },
         "radius": 15,
+      },
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "ew_bramble_tower_rumor2",
+        ],
+        "rename": "shiplog_ew_bramble_tower_rumor2",
+        "position": {
+          "x": 97.7564,
+          "y": -35.8867,
+          "z": 48.4518
+        },
+        "radius": 7
       }
     ]
   },
