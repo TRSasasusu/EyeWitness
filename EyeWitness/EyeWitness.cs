@@ -13,6 +13,7 @@ namespace EyeWitness {
         EyeShrineDepthManager _eyeShrineDepthManager;
         PathToHighEnergyLabManager _pathToHighEnergyLabManager;
         PostCreditsHelper _postCreditsHelper;
+        EyeModifyObjects _eyeModifyObjects;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -45,12 +46,15 @@ namespace EyeWitness {
             //OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen
             //LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
             NewHorizons.GetStarSystemLoadedEvent().AddListener(loadScene => {
-                //EyeWitness.Log($"current loadScene: {loadScene}");
+                EyeWitness.Log($"current loadScene: {loadScene}");
                 if (loadScene == "SolarSystem") {
                     _modifyObjects = new ModifyObjects();
                     _skyIslandManager = new SkyIslandManager();
                     _eyeShrineDepthManager = new EyeShrineDepthManager();
                     _pathToHighEnergyLabManager = new PathToHighEnergyLabManager();
+                }
+                else if(loadScene == "EyeOfTheUniverse") {
+                    _eyeModifyObjects = new EyeModifyObjects();
                 }
                 //else if(loadScene == "PostCreditScene") {
                 //    _postCreditsHelper = new PostCreditsHelper();
