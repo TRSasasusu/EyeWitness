@@ -60,7 +60,7 @@
     "forces": {
       "directionalVolumes": [
         {
-          "force": 7,
+          "force": 6,
           "shape": {
             "type": "sphere",
             "radius": 300,

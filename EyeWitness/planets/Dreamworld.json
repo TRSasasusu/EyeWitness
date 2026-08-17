@@ -2,6 +2,30 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DREAMWORLD",
   "starSystem": "SolarSystem",
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "planets/sounds/castaways.wav",
+        "track": "music",
+        "shape": {
+          "type": "cylinder",
+          "radius": 14,
+          "height": 2.5,
+        },
+        "volume": 0.15,
+        "priority": 10,
+        "parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Mermaid",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "rename": "audio_mermaid_dreamtower",
+        "loop": false
+      }
+    ]
+  },
   "Props": {
     "details": [
       {
