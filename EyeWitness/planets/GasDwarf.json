@@ -262,14 +262,14 @@
         "xmlFile": "planets/texts/gas_dwarf_initial.xml",
         "rename": "text_gas_dwarf_initial",
         "position": {
-          "x": -29.7866,
-          "y": -5.243,
-          "z": -44.5115
+          "x": -28.8808,
+          "y": -5.5255,
+          "z": -44.6333
         },
         "rotation": {
-          "x": 270,
-          "y": 0,
-          "z": 0
+          "x": 275.5514,
+          "y": 18.9285,
+          "z": 36.4816
         }
       },
       {
