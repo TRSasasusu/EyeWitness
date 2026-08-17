@@ -7,7 +7,8 @@ using UnityEngine;
 
 namespace EyeWitness {
     public class MermaidNoiseMaker : NoiseMaker {
-        bool _setPlayer;
+        //bool _setPlayer;
+        OWRigidbody _defaultAttachedBody;
 
         public override void Awake() {
             base.Awake();
@@ -19,17 +20,26 @@ namespace EyeWitness {
             if (sub != null) {
                 sub.localScale = Vector3.one * 0.1f;
             }
+
+            _defaultAttachedBody = _attachedBody;
         }
 
         void Update() {
-            if(_setPlayer) {
-                return;
-            }
+            //if(_setPlayer) {
+            //    return;
+            //}
 
-            var player = Locator.GetPlayerBody();
-            if(player != null) {
-                _attachedBody = player;
-                _setPlayer = true;
+            //var player = Locator.GetPlayerBody();
+            //if(player != null) {
+            //    _attachedBody = player;
+            //    _setPlayer = true;
+            //}
+
+            if(transform.root.name == "Player_Body" || transform.root.name == "Ship_Body") {
+                _attachedBody = Locator.GetPlayerBody();
+            }
+            else {
+                _attachedBody = _defaultAttachedBody;
             }
         }
     }
