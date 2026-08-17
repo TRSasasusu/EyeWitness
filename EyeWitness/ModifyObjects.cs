@@ -36,9 +36,10 @@ namespace EyeWitness {
         public GameObject BrambleTowerWarpTransmitterShipLog { get; private set; }
         public NotificationWithNewShipLog NotificationWithNewShipLogForBrambleTowerWarp { get; private set; }
         public GameObject GasDwarf { get; private set; }
-        public GameObject GasDwarfStorageA { get; private set; }
-        public GameObject GasDwarfStorageB { get; private set; }
-        public GameObject GasDwarfTowerCapsule { get; private set; }
+        //public GameObject GasDwarfStorageA { get; private set; }
+        //public GameObject GasDwarfStorageB { get; private set; }
+        //public GameObject GasDwarfTowerCapsule { get; private set; }
+        public GameObject GasDwarfCapsulesToKeep { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
         public GameObject FireProbe { get; private set; }
         public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
@@ -170,28 +171,39 @@ namespace EyeWitness {
                 }
             }
 
-            GasDwarfStorageA = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageA");
-            if (GasDwarfStorageA != null) {
-                foreach (Transform transform in GasDwarfStorageA.transform) {
-                    if (transform.name.Contains("CapsuleItemEmpty")) {
-                        transform.gameObject.AddComponent<CapsuleItem>();
+            //GasDwarfStorageA = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageA");
+            //if (GasDwarfStorageA != null) {
+            //    foreach (Transform transform in GasDwarfStorageA.transform) {
+            //        if (transform.name.Contains("CapsuleItemEmpty")) {
+            //            transform.gameObject.AddComponent<CapsuleItem>();
+            //        }
+            //    }
+            //}
+            //GasDwarfStorageB = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageB");
+            //if (GasDwarfStorageB != null) {
+            //    foreach (Transform transform in GasDwarfStorageB.transform) {
+            //        if (transform.name.Contains("CapsuleItemEmpty")) {
+            //            transform.gameObject.AddComponent<CapsuleItem>();
+            //        }
+            //        else if(transform.name == "CapsuleItem") {
+            //            transform.gameObject.AddComponent<CapsuleItem>()._hasLiquid = true;
+            //        }
+            //    }
+            //}
+            //GasDwarfTowerCapsule = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/CapsuleItemEmpty");
+            //if(GasDwarfTowerCapsule != null) {
+            //    GasDwarfTowerCapsule.AddComponent<CapsuleItem>();
+            //}
+            GasDwarfCapsulesToKeep = SearchUtilities.Find("GasDwarf_Body/Sector/CapsulesToKeep");
+            if(GasDwarfCapsulesToKeep != null) {
+                foreach(var child in GasDwarfCapsulesToKeep.GetComponentsInChildren<Transform>(true)) {
+                    if (child.name.Contains("CapsuleItemEmpty")) {
+                        child.gameObject.AddComponent<CapsuleItem>();
+                    }
+                    else if(child.name == "CapsuleItem") {
+                        child.gameObject.AddComponent<CapsuleItem>()._hasLiquid = true;
                     }
                 }
-            }
-            GasDwarfStorageB = SearchUtilities.Find("GasDwarf_Body/Sector/SkyIslandBuildings/GasDwarfStorageB");
-            if (GasDwarfStorageB != null) {
-                foreach (Transform transform in GasDwarfStorageB.transform) {
-                    if (transform.name.Contains("CapsuleItemEmpty")) {
-                        transform.gameObject.AddComponent<CapsuleItem>();
-                    }
-                    else if(transform.name == "CapsuleItem") {
-                        transform.gameObject.AddComponent<CapsuleItem>()._hasLiquid = true;
-                    }
-                }
-            }
-            GasDwarfTowerCapsule = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/CapsuleItemEmpty");
-            if(GasDwarfTowerCapsule != null) {
-                GasDwarfTowerCapsule.AddComponent<CapsuleItem>();
             }
 
             var mermaid = SearchUtilities.Find("DreamWorld_Body/Sector_DreamWorld/Sector_DreamZone_2/Mermaid");

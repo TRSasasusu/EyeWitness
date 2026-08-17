@@ -158,6 +158,11 @@
         }
       },
       {
+        "assetBundle": "planets/assetbundles/eyewitness_sky_capsules",
+        "path": "Assets/MyAssets/Prefabs/CapsulesToKeep.prefab",
+        "keepLoaded": true
+      },
+      {
         "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
         "position": {
           "x": -24.5082,

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1517701998
+CRC: 3276341991
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -24,4 +24,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_6:
       Name: eyewitness_postcredit
+      Dependencies: {}
+    Info_7:
+      Name: eyewitness_sky_capsules
       Dependencies: {}
