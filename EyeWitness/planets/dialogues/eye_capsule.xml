@@ -1,0 +1,13 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>EW_EYE_OBSERVATORY_1</Page>
+      <Page>EW_EYE_OBSERVATORY_2</Page>
+      <Page>EW_EYE_OBSERVATORY_3</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

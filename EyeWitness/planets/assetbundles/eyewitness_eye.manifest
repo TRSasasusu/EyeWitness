@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2516666173
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c9e0617e35f777cbcb665d9319358c0f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7a2e823fd745e7a2e33095db82f1448e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9e254c439b57f4dc70844c8794687fb5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3764d89beefddfb963f973f9a1e29bad, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MyAssets/Prefabs/EyeCapsuleExhibit.prefab
+Dependencies: []
