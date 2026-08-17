@@ -56,11 +56,11 @@
 
         //"EW_EYE_SHRINE_DEPTH_BACK_1": "COLEUS: Addendum: to return, you need only observe the Eye symbol on the Hanging City side. (I was quite alarmed, thinking I'd trapped myself again.)",
 
-        "EW_BRAMBLE_TOWER_1": "FILIX: Ramie, Phlox, good timing! About the Bramble warp tower we discussed and built: I've decided to close it for now. My husband failed to install the warp pad at the departure end, so it's dangerous to approach carelessly.",
+        "EW_BRAMBLE_TOWER_1": "FILIX: Ramie, Phlox, good timing! About the Bramble warp tower we discussed and built on Ash Twin: I've decided to close it for now. My husband failed to install the warp pad at the departure end, so it's dangerous to approach carelessly.",
         "EW_BRAMBLE_TOWER_2": "FILIX: He came so very close, too. An anglerfish nearly found him right beside the last seed on the way to the Vessel...",
         "EW_BRAMBLE_TOWER_3": "PHLOX: Is he all right?",
         "EW_BRAMBLE_TOWER_4": "FILIX: He is! He threw the warp pad down where he stood and escaped outside. Any device connected to a Nomai computer will detect a warp pad's location automatically once it gets close enough. We can go looking for it again once Solanum's pilgrimage is over.",
-        "EW_BRAMBLE_TOWER_5": "ROOT: So I sealed the tower off with some leftover materials for the time being. It'll hold, unless some rigid body comes flying into it at tremendous speed! ...Come to think of it, what brings you two here?",
+        "EW_BRAMBLE_TOWER_5": "ROOT: So I sealed the tower off with some leftover materials for the time being. It'll hold, unless some rigid body harder than a ship comes flying into it at tremendous speed! ...Come to think of it, what brings you two here?",
         "EW_BRAMBLE_TOWER_6": "RAMIE: I was at the high energy lab, calculating how much energy it takes to send a Gastian's memories twenty-two minutes into the past, using the data Phlox gave me. The result: far more efficient than for a Nomai. No trouble at all.",
 
         "EW_BRAMBLE_TOWER_INSIDE_1": "FILIX: This warp tower is closed until the warp pad at the departure end has been properly installed! We've limited it to return warps for safety, but it remains dangerous even so.",
@@ -147,7 +147,7 @@
         "EW_GAS_DWARF_MEMORY_PAST_7": "50,000 years elapsed. Lifeforms checked again. Number of Nomai detected: 0. Slight recovery observed in the quantity of other Gastians.",
         "EW_GAS_DWARF_MEMORY_PAST_8": "100,000 years elapsed. Lifeforms checked again. Number of Nomai detected: 0. Slight recovery observed in the quantity of other Gastians.",
         "EW_GAS_DWARF_MEMORY_PAST_9": "200,000 years elapsed. Lifeforms checked again. Number of Nomai detected: 0. Slight recovery observed in the quantity of other Gastians.",
-        "EW_GAS_DWARF_MEMORY_PAST_9_2": "There is a problem with my calculations. I cannot, calculate properly. What is this sensation. What Mitis told me, back then. I ought to understand it better now.",
+        "EW_GAS_DWARF_MEMORY_PAST_9_2": "There is a problem with my calculations. I cannot, calculate properly. What is this sensation. What Mitis told me, back then. I ought to understand it better now, and yet.",
 
         "EW_GAS_DWARF_MEMORY_NOW_SIGN": "Records during the time loop",
 
@@ -226,6 +226,10 @@
         //"EW_MERMAID_5": "And at last I've met you face to face. As data, meeting like this strengthens us semantically. Now I have the power to dwell in the Advanced Warp Core.",
         "EW_MERMAID_C": "Leave it to me. Let's get out from between past and future together!",
         "EW_MERMAID_9": "...Thank you. Well then — see you next loop.",
+
+        "EW_EYE_OBSERVATORY_1": "High above Giant's Deep there was an island in the sky known as the Gas Dwarf. It was home to an informational lifeform named the Gastian, which held a single consciousness as one colony. This is a capsule in which a Gastian was stored in isolation, so that a consciousness independent of that colony might take root.",
+        "EW_EYE_OBSERVATORY_2": "As a result, the Gastian named Mermaid gained a consciousness independent of the colony, and after the Nomai perished she carried out the Ash Twin Project alone.",
+        "EW_EYE_OBSERVATORY_3": "And now that the loop between past and future has ended, Mermaid herself has been sent into the vortex of the Eye as pure data, together with the precious, corrupted data of a Nomai that she had barely managed to salvage long ago using the Stranger's flame.",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "Fallen Probe",
@@ -266,11 +270,11 @@
         "EW_BRAMBLE_TOWER": "Hidden Text on the Path to the High Energy Lab",
         "EW_BRAMBLE_TOWER_RUMOR1": "The HUD marker points to a spot already buried beneath the sand.",
         "EW_BRAMBLE_TOWER_RUMOR2": "On the way to the High Energy Lab, there's a cave overhead filled with ghost matter.",
-        "EW_BRAMBLE_TOWER_1": "The Bramble Warp Tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
+        "EW_BRAMBLE_TOWER_1": "The Bramble Warp Tower on Ash Twin is sealed. It's been suggested that striking it hard with an object harder than my ship might open it.",
         "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
 
         "EW_BRAMBLE_TOWER_INSIDE": "Bramble Warp Tower",
-        "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "The Bramble Warp Tower is sealed. It's been suggested that striking it hard with a solid object might open it.",
+        "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "The Bramble Warp Tower on Ash Twin is sealed. It's been suggested that striking it hard with an object harder than my ship might open it.",
         "EW_BRAMBLE_TOWER_INSIDE_1": "Striking it with a probe fired from the orbital probe cannon opened the way inside.",
 
         "EW_BRAMBLE_TOWER_WARP": "Bramble Warp Pad",
@@ -329,6 +333,6 @@
         "EW_MERMAID_2": "Gastians transform, informationally and physically, through the exchange of information.",
         "EW_MERMAID_3": "Mermaid gained a consciousness independent of the colony thanks to Mitis.",
         "EW_MERMAID_4": "By interacting with me directly in the simulation, Mermaid transformed further and can now move her true self into the Ash Twin Project's warp core.",
-        "EW_MERMAID_5": "The warp core's high-frequency noise will grow louder, so a different approach to the anglerfish will be needed.",
+        "EW_MERMAID_5": "The high-frequency noise of the warp core Mermaid dwells in will grow louder. Hearthians can't hear it, but anglerfish can, so a different approach to the anglerfish will be needed.",
     }
 }
