@@ -45,6 +45,11 @@
     <ID>ew_gas_dwarf_storage_a</ID>
     <Name>EW_GAS_DWARF_STORAGE_A</Name>
     <Curiosity>ew_mermaid</Curiosity>
+    <RumorFact>
+      <ID>ew_gas_dwarf_storage_a_rumor1</ID>
+      <SourceID>ew_gas_dwarf_lab</SourceID>
+      <Text>EW_GAS_DWARF_STORAGE_A_RUMOR1</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_gas_dwarf_storage_a_1</ID>
       <Text>EW_GAS_DWARF_STORAGE_A_1</Text>
@@ -58,6 +63,11 @@
     <ID>ew_gas_dwarf_storage_b</ID>
     <Name>EW_GAS_DWARF_STORAGE_B</Name>
     <Curiosity>ew_mermaid</Curiosity>
+    <RumorFact>
+      <ID>ew_gas_dwarf_storage_b_rumor1</ID>
+      <SourceID>ew_gas_dwarf_lab</SourceID>
+      <Text>EW_GAS_DWARF_STORAGE_B_RUMOR1</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_gas_dwarf_storage_b_1</ID>
       <Text>EW_GAS_DWARF_STORAGE_B_1</Text>

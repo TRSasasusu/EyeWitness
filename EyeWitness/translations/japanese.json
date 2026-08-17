@@ -300,10 +300,12 @@
         "EW_GAS_DWARF_LAB_4": "個体としての意識を目覚めさせるため、MitisはGastianのうち一個体を特別に育てることにした。",
 
         "EW_GAS_DWARF_STORAGE_A": "カプセル保管所1",
+        "EW_GAS_DWARF_STORAGE_A_RUMOR1": "カプセル保管所は2か所あるらしい。",
         "EW_GAS_DWARF_STORAGE_A_1": "たくさんのカプセルが設置されている。すべてのカプセルは空である。",
 		"EW_GAS_DWARF_STORAGE_A_2": "この空島は一つの天体としてみなすことが可能である。",
 
 		"EW_GAS_DWARF_STORAGE_B": "カプセル保管所2",
+        "EW_GAS_DWARF_STORAGE_B_RUMOR1": "カプセル保管所は2か所あるらしい。",
 		"EW_GAS_DWARF_STORAGE_B_1": "たくさんのカプセルが設置されている。1つのカプセルは空ではない。",
         "EW_GAS_DWARF_STORAGE_B_2": "水の中に1つだけ中身のあるカプセルを見つけた。",
 		"EW_GAS_DWARF_STORAGE_B_3": "軌道探査砲のコントロールモジュールで、砲のターゲットの制御が試みられていた。",

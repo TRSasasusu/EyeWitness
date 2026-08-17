@@ -300,10 +300,12 @@
         "EW_GAS_DWARF_LAB_4": "To awaken an individual consciousness, Mitis decided to raise one particular Gastian.",
 
         "EW_GAS_DWARF_STORAGE_A": "Capsule Storeroom 1",
+        "EW_GAS_DWARF_STORAGE_A_RUMOR1": "There appear to be two capsule storerooms.",
         "EW_GAS_DWARF_STORAGE_A_1": "Many capsules are set up here. Every one of them is empty.",
         "EW_GAS_DWARF_STORAGE_A_2": "This island in the sky can be regarded as a celestial body in its own right.",
 
         "EW_GAS_DWARF_STORAGE_B": "Capsule Storeroom 2",
+        "EW_GAS_DWARF_STORAGE_B_RUMOR1": "There appear to be two capsule storerooms.",
         "EW_GAS_DWARF_STORAGE_B_1": "Many capsules are set up here. One of them is not empty.",
         "EW_GAS_DWARF_STORAGE_B_2": "I found the one capsule with something inside it, down in the water.",
         "EW_GAS_DWARF_STORAGE_B_3": "Someone was attempting to control the cannon's target from the orbital probe cannon's control module.",

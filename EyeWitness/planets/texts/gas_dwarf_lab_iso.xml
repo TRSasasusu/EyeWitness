@@ -40,6 +40,14 @@
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
+      <FactID>ew_gas_dwarf_storage_a_rumor1</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>ew_gas_dwarf_storage_b_rumor1</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+    <RevealFact>
       <FactID>ew_gas_dwarf_lab_3</FactID>
       <Condition>2</Condition>
     </RevealFact>
