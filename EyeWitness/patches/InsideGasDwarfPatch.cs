@@ -38,7 +38,8 @@ namespace EyeWitness.patches {
         [HarmonyPatch(typeof(ShipLogEntryHUDMarker), nameof(ShipLogEntryHUDMarker.RefreshOwnVisibility))]
         public static bool ShipLogEntryHUDMarker_RefreshOwnVisibility_Prefix(ShipLogEntryHUDMarker __instance) {
             if (SkyIslandManager.Instance != null && SkyIslandManager.Instance.InsideGasDwarf) {
-                if(__instance.transform.root.name != "GasDwarf_Body") {
+                //if(__instance.transform.root.name != "GasDwarf_Body") {
+                if(ShipLogEntryHUDMarker.s_entryLocation == null || ShipLogEntryHUDMarker.s_entryLocation.transform.root.name != "GasDwarf_Body") {
                     __instance._isVisible = false;
                     if (__instance._canvasMarker != null) {
                         __instance._canvasMarker.SetVisibility(__instance._isVisible);

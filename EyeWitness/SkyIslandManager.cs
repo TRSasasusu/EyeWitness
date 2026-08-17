@@ -22,7 +22,7 @@ namespace EyeWitness {
         SpawnPoint _spawnPointInGasDwarf;
         SpawnPoint _spawnPointInGiantsDeep;
         ShipLogEntryLocation _entryLocationGasDwarf;
-        //ShipLogEntryHUDMarker _shipLogEntryHUDMarker;
+        ShipLogEntryHUDMarker _shipLogEntryHUDMarker;
 
         public bool InsideGasDwarf { get; private set; }
 
@@ -83,10 +83,14 @@ namespace EyeWitness {
                         EnableGasDwarf();
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
                             InsideGasDwarf = true;
+
+                            if(_shipLogEntryHUDMarker != null) {
+                                _shipLogEntryHUDMarker.RefreshOwnVisibility();
+                            }
                         }).AddTo(_gasDwarf);
 
                         _entryLocationGasDwarf.transform.parent = _gasDwarfSector;
-                        _entryLocationGasDwarf.transform.localPosition = Vector3.zero;
+                        _entryLocationGasDwarf.transform.localPosition = new Vector3(0.0093f, -5.65f, -23.8251f);
                         _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
                     }
                 });
@@ -100,12 +104,12 @@ namespace EyeWitness {
                         return;
                     }
 
-                    //if(_shipLogEntryHUDMarker == null) {
-                    //    var shipTransform = Locator.GetShipTransform();
-                    //    if(shipTransform != null) {
-                    //        _shipLogEntryHUDMarker = shipTransform.GetComponentInChildren<ShipLogEntryHUDMarker>();
-                    //    }
-                    //}
+                    if(_shipLogEntryHUDMarker == null) {
+                        var shipTransform = Locator.GetShipTransform();
+                        if(shipTransform != null) {
+                            _shipLogEntryHUDMarker = shipTransform.GetComponentInChildren<ShipLogEntryHUDMarker>();
+                        }
+                    }
                     //if(_shipLogEntryHUDMarker != null) {
                     //    if(_shipLogEntryHUDMarker.)
                     //}
@@ -164,6 +168,10 @@ namespace EyeWitness {
                         Observable.TimerFrame(2, FrameCountType.FixedUpdate).Subscribe(_ => {
                             _spawnPointInGiantsDeep.transform.localPosition = UnityEngine.Random.onUnitSphere * 800;
                         }).AddTo(_spawnPointInGiantsDeep);
+
+                        if(_shipLogEntryHUDMarker != null) {
+                            _shipLogEntryHUDMarker.RefreshOwnVisibility();
+                        }
                     }
                 });
 
