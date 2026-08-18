@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Vessel",
+  "starSystem": "EyeOfTheUniverse",
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_eye",
+        "path": "Assets/MyAssets/Prefabs/EyeFishtailEffect.prefab",
+        "position": {
+          "x": 0,
+          "y": -5.211,
+          "z": -21.705
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1,
+        "keepLoaded": true
+      }
+    ]
+  }
+}

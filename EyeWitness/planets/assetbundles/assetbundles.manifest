@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 180910222
+CRC: 2367884181
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -30,4 +30,5 @@ AssetBundleManifest:
       Dependencies: {}
     Info_8:
       Name: eyewitness_eye
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: eyewitness

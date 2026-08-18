@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2516666173
+CRC: 2341791328
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c9e0617e35f777cbcb665d9319358c0f
+    Hash: c2183dee3d26c54970ad10da18b2b383
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7a2e823fd745e7a2e33095db82f1448e
+    Hash: 9096875d7692a5de40c6d72b7ab145bb
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -37,7 +37,13 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 3764d89beefddfb963f973f9a1e29bad, type: 3}
 - Class: 115
   Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/MyAssets/Prefabs/EyeFishtailEffect.prefab
 - Assets/MyAssets/Prefabs/EyeCapsuleExhibit.prefab
-Dependencies: []
+Dependencies:
+- C:/Users/manyo/source/repos/EyeWitness/EyeWitness/planets/assetbundles/eyewitness
