@@ -8,9 +8,9 @@
         "assetBundle": "planets/assetbundles/eyewitness",
         "path": "Assets/MyAssets/Prefabs/SignalForIsland.prefab",
         "position": {
-          "x": 16.1316,
-          "y": 1.0064,
-          "z": 23.8314
+          "x": 5.919,
+          "y": 1.0067,
+          "z": 33.2937
         }
       }
     ],
@@ -18,7 +18,7 @@
       {
         "audio": "planets/sounds/signal_for_island.wav",
         "frequency": "Island Search",
-        "detectionRadius": 30,
+        "detectionRadius": 35,
         "rename": "signal_for_island_on_gabbro_island",
         "name": "Base Signal",
         "parentPath": "Sector_GabbroIsland/SignalForIsland",
@@ -33,14 +33,14 @@
         "xmlFile": "planets/texts/signal_for_island.xml",
         "rename": "text_signal_for_island",
         "position": {
-          "x": 18.7491,
-          "y": 2.3848,
-          "z": 23.5967
+          "x": 7.5145,
+          "y": 2.6852,
+          "z": 33.8439
         },
         "rotation": {
-          "x": 17.6275,
-          "y": 233.1718,
-          "z": 0
+          "x": 24.3819,
+          "y": 218.1635,
+          "z": 353.253
         },
         "seed": 1
       }
