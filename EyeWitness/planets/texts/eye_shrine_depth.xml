@@ -33,10 +33,15 @@
     <ParentID>6</ParentID>
     <Text>EW_EYE_SHRINE_DEPTH_7</Text>
   </TextBlock>
+  <TextBlock>
+    <ID>8</ID>
+    <ParentID>7</ParentID>
+    <Text>EW_EYE_SHRINE_DEPTH_8</Text>
+  </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>ew_eye_shrine_depth_1</FactID>
-      <Condition>6</Condition>
+      <Condition>7</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>
