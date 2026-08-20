@@ -6,8 +6,16 @@
         "SHIP_LOG_ERROR_NOTIFICATION": "<![CDATA[<color=red>エラー:航行記録に不正な入力</color>]]>",
         "WARP_DETECT_NOTIFICATION": "<![CDATA[<color=blue>情報:ワープパッドの位置を検知</color>]]>",
         "Gas Dwarf": "ガスの小人",
+
+        "Base Signal": "ベース信号",
+        "Island Search": "島の探知",
+        "Island Signal": "島の信号",
+
+        "Quantum Moon Depth": "量子の月の底",
     },
     "DialogueDictionary": {
+        "Mermaid": "マーメイド",
+
         "EW_SLATE_PROBE_OPTION": "ねぇSlate、大丈夫…？",
         "EW_SLATE_PROBE_1": "ひよっ子よ、マシュマロを焼くときはたとえどのようなことがあれど、マシュマロを焼くことにすべてを注ぐんだ。そうすればこの程度のことで慌てるのは避けられる。",
         "EW_SLATE_PROBE_2": "…決して腰が抜けて動けないというわけじゃないからな。",
