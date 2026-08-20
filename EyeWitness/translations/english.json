@@ -272,14 +272,14 @@
         "EW_BRAMBLE_TOWER_RUMOR1": "The HUD marker points to a spot already buried beneath the sand.",
         "EW_BRAMBLE_TOWER_RUMOR2": "On the way to the High Energy Lab, there's a cave overhead filled with ghost matter.",
         "EW_BRAMBLE_TOWER_1": "The Bramble Warp Tower on Ash Twin is sealed. It's been suggested that striking it hard with an object harder than my ship might open it.",
-        "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
+        "EW_BRAMBLE_TOWER_2": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the Vessel should detect its location automatically.",
 
         "EW_BRAMBLE_TOWER_INSIDE": "Bramble Warp Tower",
         "EW_BRAMBLE_TOWER_INSIDE_RUMOR1": "The Bramble Warp Tower on Ash Twin is sealed. It's been suggested that striking it hard with an object harder than my ship might open it.",
         "EW_BRAMBLE_TOWER_INSIDE_1": "Striking it with a probe fired from the Orbital Probe Cannon opened the way inside.",
 
         "EW_BRAMBLE_TOWER_WARP": "Bramble Warp Pad",
-        "EW_BRAMBLE_TOWER_WARP_RUMOR1": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the ship should detect its location automatically.",
+        "EW_BRAMBLE_TOWER_WARP_RUMOR1": "The warp pad leading to the Bramble Warp Tower was lost inside Dark Bramble. Getting close to the last seed on the way to the Vessel should detect its location automatically.",
         "EW_BRAMBLE_TOWER_WARP_1": "My ship's computer has detected the warp pad's location, so I can set a HUD marker for it.",
 
         "EW_OPC_CONTROL": "Orbital Probe Cannon Target Control",
