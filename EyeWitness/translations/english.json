@@ -135,7 +135,7 @@
         "EW_GAS_DWARF_GO_STRANGER_4": "PHLOX: In that case, how about I entrust you with a few capsules from the storeroom and you go take a little stroll through space? Mitis's experiment is the main effort, but I'd still like to test the effects of a change in environment on our end.",
         "EW_GAS_DWARF_GO_STRANGER_5": "CASSAVA: I have my post at the construction yard, so I'll leave it to you <![CDATA[<i>almost</i>]]>-adults. Lami seems to be at the storeroom just now, so go and call her.",
 
-        "EW_GAS_DWARF_WARNING": "Warning: <![CDATA[<TimeMinutes>]]>m <![CDATA[<TimeSeconds>]]>s ago, an impact from above Giant's Deep caused damage to a lightning rod.",
+        "EW_GAS_DWARF_WARNING": "Warning: <![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS ago, an impact from above Giant's Deep caused damage to a lightning rod.",
 
         "EW_GAS_DWARF_KEY_1": "MITIS: Mermaid, I've decided to build a room in the tower where we can share the record of the time you spend within the repetitions. I can't repeat them alongside you, but I believe it's my duty to know, at the very least, how you felt while you did.",
         "EW_GAS_DWARF_KEY_2": "MITIS: Since it is, in a sense, your own personal information, I'll place an authentication lock on that room's door, so that no one else may enter unless you or I are in the tower.",
@@ -269,10 +269,10 @@
         "EW_SIGNAL_FOR_ISLAND_2": "Following the signal without leaving the clouds of Giant's Deep leads to the island in the sky.",
 
         "EW_EYE_SHRINE": "Hidden Scroll at the White Hole Station",
-        "EW_EYE_SHRINE_1": "Observing the Nomai symbols at both Eye Shrines simultaneously opens the way deeper into the Hanging City's Eye Shrine.",
+        "EW_EYE_SHRINE_1": "Observing the Eye symbols at both Eye Shrines simultaneously opens the way deeper into the Hanging City's Eye Shrine.",
 
         "EW_EYE_SHRINE_DEPTH": "Depths of the Eye Shrine",
-        "EW_EYE_SHRINE_DEPTH_RUMOR1": "Observing the Nomai symbols at both Eye Shrines simultaneously opens the way deeper into the Hanging City's Eye Shrine.",
+        "EW_EYE_SHRINE_DEPTH_RUMOR1": "Observing the Eye symbols at both Eye Shrines simultaneously opens the way deeper into the Hanging City's Eye Shrine.",
         "EW_EYE_SHRINE_DEPTH_1": "Mermaid, the Gastian Mitis is raising, will ride inside a probe fired from the Orbital Probe Cannon and find the Eye of the universe. While Mermaid is inside it, a Nomai detector can sense her presence in that probe.",
         "EW_EYE_SHRINE_DEPTH_2": "Following the other quantum signal at the sixth location of the Quantum Moon leads to a laboratory.",
         "EW_EYE_SHRINE_DEPTH_3": "Along the way, something other than the Nomai's symbol for the Eye of the universe can apparently be seen.",
@@ -332,7 +332,7 @@
         "EW_MOON_RUMOR1": "Following the other quantum signal at the sixth location of the Quantum Moon leads to a laboratory.",
         "EW_MOON_1": "The Nomai theorized about the true nature of the Eye of the universe, and mentioned the possibility of using the Eye to send data to the next universe.",
         "EW_MOON_2": "They were considering ways to make the Ash Twin Project's search more efficient.",
-        "EW_MOON_3": "The wooden temple on the way to the Quantum Moon laboratory was thought to be a manifestation of something familiar to whoever last made contact with the Eye.",
+        "EW_MOON_3": "The wooden temple said to have stood on the way to the Quantum Moon laboratory was thought to be a manifestation of something familiar to whoever last made contact with the Eye.",
         "EW_MOON_4": "It was thought that a tower would manifest here once the Ash Twin Project succeeded. Mermaid was said to head for the top of a tower no matter where she is.",
 
         "EW_MOON_TOWER": "Tower on the Quantum Moon",
