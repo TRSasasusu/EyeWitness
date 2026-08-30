@@ -78,7 +78,8 @@
         "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX:そして年月は流れ、今やSolanumの巡礼のとき。もう私は若くないけれど、夫も脆い空洞に戻ってくるそうだし、せめて教師としてこの部族のために役に立とうと思う。&lt;i&gt;&lt;/i&gt;",
 
         "EW_BRAMBLE_COMPUTER_LOCK": "ワープ先は封鎖されており、現在ワープできません。&lt;i&gt;&lt;/i&gt;",
-        "EW_BRAMBLE_COMPUTER_SAND": "ワープ先はまだ砂で満たされており、現在ワープできません。ワープ可能になるまで<![CDATA[<EWMinutesDBWarp>]]>分<![CDATA[<EWSecondsDBWarp>]]>秒。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_COMPUTER_SAND_1": "ワープ先はまだ砂で満たされており、現在ワープできません。&lt;i&gt;&lt;/i&gt;",
+        "EW_BRAMBLE_COMPUTER_SAND_2": "ワープ可能になるまで<![CDATA[<EWMinutesDBWarp>]]>分<![CDATA[<EWSecondsDBWarp>]]>秒。&lt;i&gt;&lt;/i&gt;",
         "EW_BRAMBLE_COMPUTER_AVAILABLE": "ワープ可能です。&lt;i&gt;&lt;/i&gt;",
 
         "EW_GAS_DWARF_INITIAL_1": "MITIS:ここが<![CDATA[<color=orange>ガスの小人</color>]]>だ。名称自体は以前発見されたときにつけられていたが、これでようやく行き方が確立できたわけだ。&lt;i&gt;&lt;/i&gt;",
