@@ -15,7 +15,7 @@ namespace EyeWitness {
         GameObject _gasDwarf;
         Transform _gasDwarfSector;
         GameObject _giantsDeep;
-        GameObject _parentOfSignalForIslandOnSkyDummy;
+        public GameObject ParentOfSignalForIslandOnSkyDummy { get; private set; }
         GameObject _signalForIslandOnSkyDummy;
         GameObject _triggerForWarp;
         PlayerSpawner _playerSpawner;
@@ -53,19 +53,19 @@ namespace EyeWitness {
                 _spawnPointInGiantsDeep = spawnPoint.AddComponent<SpawnPoint>();
             }
 
-            _parentOfSignalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy");
+            ParentOfSignalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy");
             _signalForIslandOnSkyDummy = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/parent_of_signal_for_island_on_sky_dummy/signal_for_island_on_sky_dummy");
-            if(_parentOfSignalForIslandOnSkyDummy != null) {
-                _signalForIslandOnSkyDummy = _parentOfSignalForIslandOnSkyDummy.transform.Find("signal_for_island_on_sky_dummy").gameObject;
-                _parentOfSignalForIslandOnSkyDummy.transform.localPosition = new Vector3(299.7084f, -410.6536f, 743.6026f); //UnityEngine.Random.onUnitSphere * 900;
+            if(ParentOfSignalForIslandOnSkyDummy != null) {
+                _signalForIslandOnSkyDummy = ParentOfSignalForIslandOnSkyDummy.transform.Find("signal_for_island_on_sky_dummy").gameObject;
+                ParentOfSignalForIslandOnSkyDummy.transform.localPosition = new Vector3(299.7084f, -410.6536f, 743.6026f); //UnityEngine.Random.onUnitSphere * 900;
 
-                var entryLocationGasDwarf = _parentOfSignalForIslandOnSkyDummy.transform.Find("entrylocation_ew_gas_dwarf");
+                var entryLocationGasDwarf = ParentOfSignalForIslandOnSkyDummy.transform.Find("entrylocation_ew_gas_dwarf");
                 if(entryLocationGasDwarf != null) {
                     _entryLocationGasDwarf = entryLocationGasDwarf.GetComponent<ShipLogEntryLocation>();
                 }
 
                 _triggerForWarp = new GameObject("TriggerForWarp");
-                _triggerForWarp.transform.SetParent(_parentOfSignalForIslandOnSkyDummy.transform);
+                _triggerForWarp.transform.SetParent(ParentOfSignalForIslandOnSkyDummy.transform);
                 _triggerForWarp.transform.localPosition = Vector3.zero;
                 _triggerForWarp.transform.localEulerAngles = Vector3.zero;
                 var sphereCollider = _triggerForWarp.AddComponent<SphereCollider>();
@@ -95,7 +95,7 @@ namespace EyeWitness {
                     }
                 });
 
-                _parentOfSignalForIslandOnSkyDummy.UpdateAsObservable().Subscribe(_ => {
+                ParentOfSignalForIslandOnSkyDummy.UpdateAsObservable().Subscribe(_ => {
                     var playerBody = Locator.GetPlayerBody();
                     if (playerBody == null) {
                         return;
@@ -133,7 +133,7 @@ namespace EyeWitness {
                                     forwardPos = playerBody.transform.position + playerBody.transform.forward * (200f + UnityEngine.Random.value * 20);
                                 }
                                 var gdToForwardPosVector = forwardPos - _giantsDeep.transform.position;
-                                _parentOfSignalForIslandOnSkyDummy.transform.position = gdToForwardPosVector.normalized * 900 + _giantsDeep.transform.position;
+                                ParentOfSignalForIslandOnSkyDummy.transform.position = gdToForwardPosVector.normalized * 900 + _giantsDeep.transform.position;
                             }
                         }
                     }
@@ -159,7 +159,7 @@ namespace EyeWitness {
                         }
                         _playerSpawner.DebugWarp(_spawnPointInGiantsDeep);
 
-                        _entryLocationGasDwarf.transform.parent = _parentOfSignalForIslandOnSkyDummy.transform;
+                        _entryLocationGasDwarf.transform.parent = ParentOfSignalForIslandOnSkyDummy.transform;
                         _entryLocationGasDwarf.transform.localPosition = Vector3.zero;
                         _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
 
