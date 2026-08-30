@@ -34,7 +34,13 @@ namespace EyeWitness.patches {
             if(probe == null) {
                 return;
             }
-            __instance.transform.LookAt(probe.transform);
+
+            if(probe == ModifyObjects.Instance.ProbeGasDwarf && SkyIslandManager.Instance.ParentOfSignalForIslandOnSkyDummy != null) {
+                __instance.transform.LookAt(SkyIslandManager.Instance.ParentOfSignalForIslandOnSkyDummy.transform);
+            }
+            else {
+                __instance.transform.LookAt(probe.transform);
+            }
         }
 
         [HarmonyPrefix]

@@ -75,7 +75,8 @@
     "EW_BRAMBLE_TOWER_INSIDE_4": "费利克斯：岁月流逝，现在到了所莱内姆朝圣的时候了。我虽然已不再年轻，但听说我丈夫也会返回碎空星，就希望至少能以教师的身份对这个家族有所贡献。",
 
     "EW_BRAMBLE_COMPUTER_LOCK": "跃迁目的地已被封存。当前无法进行跃迁。",
-    "EW_BRAMBLE_COMPUTER_SAND": "跃迁目的地仍被沙子填满。当前无法进行跃迁。",
+    "EW_BRAMBLE_COMPUTER_SAND_1": "跃迁目的地仍被沙子填满。当前无法进行跃迁。",
+    "EW_BRAMBLE_COMPUTER_SAND_2": "距离可以跃迁还有<![CDATA[<EWMinutesDBWarp>]]>分<![CDATA[<EWSecondsDBWarp>]]>秒。",
     "EW_BRAMBLE_COMPUTER_AVAILABLE": "跃迁可用。",
 
     "EW_GAS_DWARF_INITIAL_1": "米提斯：这里是<![CDATA[<color=orange>气云岛</color>]]>。这个名字是在它被发现时起的，但直到现在我们才终于找到了一种稳定到达这里的方法。",
