@@ -6,8 +6,16 @@
         "SHIP_LOG_ERROR_NOTIFICATION": "<![CDATA[<color=red>ERROR: INVALID ENTRY IN SHIP LOG</color>]]>",
         "WARP_DETECT_NOTIFICATION": "<![CDATA[<color=blue>INFO: WARP PAD LOCATION DETECTED</color>]]>",
         "Gas Dwarf": "Gas Dwarf",
+
+        "Base Signal": "Base Signal",
+        "Island Search": "Island Search",
+        "Island Signal": "Island Signal",
+
+        "Quantum Moon Depth": "Quantum Moon Depths",
     },
     "DialogueDictionary": {
+        "Mermaid": "Mermaid",
+
         "EW_SLATE_PROBE_OPTION": "Uh, Slate, are you okay...?",
         "EW_SLATE_PROBE_1": "Hatchling, when you're roasting a marshmallow, no matter what else is going on, you put everything you've got into roasting that marshmallow. Do that and a little thing like this won't rattle you.",
         "EW_SLATE_PROBE_2": "...It's not like my legs have gone out from under me or anything.",
@@ -70,7 +78,8 @@
         "EW_BRAMBLE_TOWER_INSIDE_4": "FILIX: The years have passed, and now it's time for Solanum's pilgrimage. I'm not young anymore, but my husband is returning to Brittle Hollow, and I intend to be of use to this clan as a teacher, at the very least.",
 
         "EW_BRAMBLE_COMPUTER_LOCK": "The warp destination is sealed. Warping is not currently possible.",
-        "EW_BRAMBLE_COMPUTER_SAND": "The warp destination is still filled with sand. Warping is not currently possible.",
+        "EW_BRAMBLE_COMPUTER_SAND_1": "The warp destination is still filled with sand. Warping is not currently possible.",
+        "EW_BRAMBLE_COMPUTER_SAND_2": "Time until warping is possible: <![CDATA[<EWMinutesDBWarp>]]> MINUTES, <![CDATA[<EWSecondsDBWarp>]]> SECONDS",
         "EW_BRAMBLE_COMPUTER_AVAILABLE": "Warping is possible.",
 
         "EW_GAS_DWARF_INITIAL_1": "MITIS: This is the <![CDATA[<color=orange>Gas Dwarf</color>]]>. The name itself was given upon its discovery, but only now have we finally established a way to reach it.",
