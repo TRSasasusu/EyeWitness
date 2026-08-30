@@ -76,7 +76,7 @@
 
     "EW_BRAMBLE_COMPUTER_LOCK": "跃迁目的地已被封存。当前无法进行跃迁。",
     "EW_BRAMBLE_COMPUTER_SAND_1": "跃迁目的地仍被沙子填满。当前无法进行跃迁。",
-    "EW_BRAMBLE_COMPUTER_SAND_2": "距离可以跃迁还有<![CDATA[<EWMinutesDBWarp>]]>分<![CDATA[<EWSecondsDBWarp>]]>秒。",
+    "EW_BRAMBLE_COMPUTER_SAND_2": "距离跃迁可用还有<![CDATA[<EWMinutesDBWarp>]]>分<![CDATA[<EWSecondsDBWarp>]]>秒。",
     "EW_BRAMBLE_COMPUTER_AVAILABLE": "跃迁可用。",
 
     "EW_GAS_DWARF_INITIAL_1": "米提斯：这里是<![CDATA[<color=orange>气云岛</color>]]>。这个名字是在它被发现时起的，但直到现在我们才终于找到了一种稳定到达这里的方法。",
@@ -268,7 +268,7 @@
     "EW_EYE_SHRINE_DEPTH_RUMOR1": "同时观测两座眼祭坛上的挪麦宇宙之眼符号，就可以打开通往悬空城眼祭坛更深处的道路。",
     "EW_EYE_SHRINE_DEPTH_1": "米提斯培育的加斯人——美人鱼，将搭乘轨道探测炮发射的探测器去寻找宇宙之眼。当美人鱼在其中时，挪麦人的探测器能感知到她的存在。",
     "EW_EYE_SHRINE_DEPTH_2": "在量子卫星的第六个位置跟随另一个量子信号，可以到达一座实验室。",
-    "EW_EYE_SHRINE_DEPTH_3": "显然，沿途曾经可以看到一些不同于挪麦宇宙之眼符号的东西。",
+    "EW_EYE_SHRINE_DEPTH_3": "显然，沿途曾经可以看到一个与其挪麦版本不同的宇宙之眼符号。",
 
     "EW_BRAMBLE_TOWER": "通往高能实验室的路上的隐藏文本",
     "EW_BRAMBLE_TOWER_RUMOR1": "抬头显示标记指向一个已经被沙子掩埋的位置。",
@@ -325,7 +325,7 @@
     "EW_MOON_RUMOR1": "在量子卫星的第六个位置跟随另一个量子信号可以到达一座实验室。",
     "EW_MOON_1": "挪麦人推测了宇宙之眼的真实本质，并提到了利用宇宙之眼将数据发送到下一个宇宙的可能性。",
     "EW_MOON_2": "他们正在思考如何让灰烬双星计划的搜索更高效。",
-    "EW_MOON_3": "通往量子卫星实验室路上的木制神殿，被认为是最后接触宇宙之眼的人所熟悉事物的显化。",
+    "EW_MOON_3": "曾经坐落于通往量子卫星实验室路上的木制神殿，被认为是最后接触宇宙之眼的人所熟悉事物的显化。",
     "EW_MOON_4": "有人认为，一旦灰烬双星计划成功，这里将显化出一座塔。<![CDATA[<color=orange>据说，无论身在何处，美人鱼都会前往塔顶</color>]]>。",
 
     "EW_MOON_TOWER": "量子卫星上的塔",
