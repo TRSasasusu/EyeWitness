@@ -36,7 +36,8 @@
         "path": "Assets/MyAssets/Prefabs/MermaidAtEye.prefab",
         "position": {
           "y": 0.5,
-        }
+        },
+        "requiredPersistentCondition": "EW_MET_MERMAID",
       }
     ],
     "quantumInstruments": [
@@ -61,7 +62,8 @@
           },
           "isRelativeToParent": true,
           "volume": 0.2
-        }
+        },
+        "activationCondition": "EW_MET_MERMAID",
       }
     ],
     "instrumentZones": [
@@ -74,7 +76,8 @@
           "x": -43.30302,
           "y": 0,
           "z": 7507.822
-        }
+        },
+        "activationCondition": "EW_MET_MERMAID",
       }
     ]
   },
