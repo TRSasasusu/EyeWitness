@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1164527661
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7aad2ee5cfb95eb1da8ec3f49e31abc6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ab310a5a3900a8d61c58a6e78f2fc9eb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: dab2fbc1d63988697a57c20e75208116, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MyAssets/Prefabs/EyeGasDwarfTower.prefab
+Dependencies: []

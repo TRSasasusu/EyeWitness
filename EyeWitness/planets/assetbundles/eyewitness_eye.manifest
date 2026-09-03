@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 113745715
+CRC: 3922995929
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6482946f14e1c1517ade6d6f453534b6
+    Hash: bb6f18b15961e4a63eba8c7d0b2205ea
   TypeTreeHash:
     serializedVersion: 2
     Hash: 34698c3d6b60281e7a384fbf0ff625ed
@@ -51,6 +51,7 @@ SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/MyAssets/Prefabs/EyeFishtailEffect.prefab
 - Assets/MyAssets/Prefabs/EyeCapsuleExhibit.prefab
+- Assets/MyAssets/Prefabs/EWEyeInstrumentZoneParent.prefab
 - Assets/MyAssets/Prefabs/EyeGatheredCapsuleItem.prefab
 - Assets/MyAssets/Prefabs/MermaidAtEye.prefab
 Dependencies:

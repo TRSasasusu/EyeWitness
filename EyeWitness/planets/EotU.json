@@ -48,9 +48,12 @@
         "assetBundle": "planets/assetbundles/eyewitness_eye",
         "path": "Assets/MyAssets/Prefabs/EyeGatheredCapsuleItem.prefab",
         "position": {
-          "x": -43.94369,
-          "y": 0,
-          "z": 7506.436
+          //"x": -74.3307,
+          //"y": 80.271,
+          //"z": 7573.689
+          "x": -54.5319,
+          "y": 2.9755,
+          "z": 7547.75
         },
         "signal": {
           "detectionRadius": 0,
@@ -64,23 +67,63 @@
           "volume": 0.2
         },
         "activationCondition": "EW_MET_MERMAID",
+        "physicsRadius": 0,
       }
     ],
     "instrumentZones": [
       {
-        "id": "Slate",
-        "deactivationCondition": "EyeSlateGather",
-        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteLogAssets",
-        "removeChildren": [ "Props_HEA_MarshmallowCanOpened" ],
+        "id": "ew_mermaid",
+        "assetBundle": "planets/assetbundles/eyewitness_eye",
+        "path": "Assets/MyAssets/Prefabs/EWEyeInstrumentZoneParent.prefab",
         "position": {
-          "x": -43.30302,
-          "y": 0,
-          "z": 7507.822
+          "x": -54.5319,
+          "y": 2.9755,
+          "z": 7547.75
+        },
+        "rotation": {
+          "x": 0,
+          "y": 152.6883,
+          "z": 0
         },
         "activationCondition": "EW_MET_MERMAID",
       }
     ]
   },
+  "Volumes": {
+    "forces": {
+      "directionalVolumes": [
+        {
+          "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent",
+          "isRelativeToParent": true,
+          "shape": {
+            "type": "cylinder",
+            "radius": 80,
+            "height": 200
+          },
+          "force": 6,
+          "affectsAlignment": true,
+          "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 180
+          },
+          "alignmentPriority": 10,
+          "priority": 10,
+        }
+      ]
+    },
+  },
+  "AmbientLights": [
+    {
+      "outerRadius": 80,
+      "position": {
+        "x": -55.7473,
+        "y": 53.3168,
+        "z": 7557.922
+      },
+      "intensity": 0.6
+    }
+  ],
   "Props": {
     "details": [
       {
@@ -117,7 +160,95 @@
           "y": 118.8587,
           "z": 0
         }
-      }
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_eye_owlk",
+        "path": "Assets/orclecleprefabs/OwlkEyeTemple.prefab",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent",
+        "isRelativeToParent": true
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_eye_tower",
+        "path": "Assets/MyAssets/Prefabs/EyeGasDwarfTower.prefab",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.0863,
+          "y": -3.9508,
+          "z": -37.8146
+        },
+        "rotation": {
+          "x": 0,
+          "y": 262.3769,
+          "z": 0
+        },
+        "removeChildren": [
+          "AuthDoor",
+        ]
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_CanyonObvious/Structures_CanyonObvious/AbandonedTemple_Zone3/Interactables_AbandonedTemple_Zone3/SecretTempleDoor/Effects_IP_EyeTempleLightShaft",
+        "rename": "LightShaft",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/OwlkEyeTemple",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 2.8275,
+          "y": 155.576,
+          "z": -7.8865
+        },
+        "stretch": {
+          "x": 3,
+          "y": 20,
+          "z": 3
+        }
+      },
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "rename": "Mitis",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 5.2526,
+          "y": 81.1475,
+          "z": -5.7275
+        },
+        "rotation": {
+          "x": 0,
+          "y": 151.6816,
+          "z": 0
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Geometry_Village/OtherComponentsGroup/ControlledByProxy_Structures",
+        "rename": "LaunchTower",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -36.9593,
+          "y": -17.5063,
+          "z": -48.8075
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 12
+        },
+        "removeChildren": [
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_0",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_1",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_3",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_4",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_5",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_8",
+          "Architecture_Village/BatchedGroup/BatchedMeshRenderers_10",
+        ]
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Geometry_Village/BatchedGroup/BatchedMeshColliders_7",
+        "rename": "LaunchTowerWoodCollider",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/LaunchTower",
+        "isRelativeToParent": true,
+      },
     ],
     "dialogue": [
       {
@@ -137,6 +268,71 @@
         },
         "radius": 0.5
       }
+    ],
+    "translatorText": [
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_past_sign.xml",
+        "rename": "text_gas_dwarf_memory_past_sign",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 6.1357,
+          "y": 59.125,
+          "z": -8.0671
+        },
+        "rotation": {
+          "x": 0,
+          "y": 136.4461,
+          "z": 0
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_now_sign.xml",
+        "rename": "text_gas_dwarf_memory_now_sign",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -8.7799,
+          "y": 66.4213,
+          "z": 3.501
+        },
+        "rotation": {
+          "x": 0,
+          "y": 310.7852,
+          "z": 0
+        }
+      },
+      {
+        "type": "trailmarker",
+        "xmlFile": "planets/texts/gas_dwarf_memory_future_sign.xml",
+        "rename": "text_gas_dwarf_memory_future_sign",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 8.6893,
+          "y": 73.6631,
+          "z": -2.7825
+        },
+        "rotation": {
+          "x": 0,
+          "y": 140.8358,
+          "z": 0
+        }
+      },
+      {
+        "type": "computer",
+        "xmlFile": "planets/texts/eye_tower_future_1.xml",
+        "rename": "text_eye_tower_future_1",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.3285971,
+          "y": 73.66,
+          "z": -0.4362001
+        }
+      },
     ]
   }
 }
