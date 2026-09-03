@@ -240,6 +240,25 @@
         "EW_EYE_OBSERVATORY_1": "High above Giant's Deep there was an island in the sky known as the Gas Dwarf. It was home to an informational lifeform named the Gastian, which held a single consciousness as one colony. This is a capsule in which a Gastian was stored in isolation, so that a consciousness independent of that colony might take root.",
         "EW_EYE_OBSERVATORY_2": "As a result, the Gastian named Mermaid gained a consciousness independent of the colony, and after the Nomai perished she carried out the Ash Twin Project alone.",
         "EW_EYE_OBSERVATORY_3": "And now that the loop between past and future has ended, Mermaid herself has been sent into the vortex of the Eye as pure data, together with the precious, corrupted data of a Nomai that she had barely managed to salvage long ago using the Stranger's flame.",
+
+        "EW_EYE_TOWER_FUTURE_1": "I watched my time buddy of a brief while enter the coordinates into the Vessel. All that's left is to ride the momentum of the completed warp and throw myself into the vortex of the Eye. Nothing here holds me back.",
+        "EW_EYE_TOWER_FUTURE_1_2": "Mitis's data can no longer be separated from mine by any reversible means. Now I will never have to let it go... Warp complete. Past the place where I crashed in that one loop, on toward the vortex.",
+        "EW_EYE_TOWER_FUTURE_1_3": "...From here on, I won't be able to stay myself any longer. Observing is neither my role nor my purpose. I have to erase my consciousness......... With Mitis beside me, I'm not afraid.",
+
+        "EW_EYE_MERMAID_WAITING_1": "Before we begin — there must be others who matter to you. Isn't that so?",
+        "EW_EYE_MERMAID_WAITING_2": "Not everyone is here, and besides... they may not be the real ones anymore. But that doesn't change what they mean to you. For that, I can wait.",
+        "EW_EYE_MERMAID_1": "Thank you for bringing me this far. The one standing here is no longer the real me, but I'm grateful all the same.",
+        "EW_EYE_MERMAID_2": "I'm glad the probe fell where it did, before you made up your mind to go to the Eye. Having my records read was honestly embarrassing, but there were things that had to be done more than that.",
+        "EW_EYE_MERMAID_3": "My heart is still back in the past, even now. But I think there was meaning in the three of us spending this loop together. The time I spent watching you wasn't bad at all. And surely it meant something to you too, having a partner swaying in a hammock?",
+        "EW_EYE_MERMAID_4": "Now then — shall we play the melody that takes us out from between past and future?",
+        "EW_EYE_MERMAID_A": "Go ahead.",
+        "EW_EYE_MERMAID_B": "Not yet.",
+        "EW_EYE_MERMAID_A_1": "The melody I wanted to sing together with him, back then.",
+        "EW_EYE_MERMAID_B_1": "That's fine. Though I do hope you won't go and forget your spacesuit or something, not here.",
+
+        "EW_EYE_MERMAID_FINAL_1": "With this, the past is over. Now you are the only one left who holds a consciousness.",
+        "EW_EYE_MERMAID_FINAL_2": "I'm sorry. This must be hard on you too, truly. And yet I've pushed this role onto you and you alone, while I... Of course there's no telling how any of it will turn out, but I do feel wrong for trying to send what's precious to me on to what comes next.",
+        "EW_EYE_MERMAID_FINAL_3": "But even so, I'm going to let myself go on to the future. That's what I decided. So... thank you. And goodbye, my beloved partners of the loop.",
     },
     "ShipLogDictionary": {
         "EW_CAMP_PROBE": "Fallen Probe",
