@@ -2,6 +2,82 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "EyeOfTheUniverse",
   "starSystem": "EyeOfTheUniverse",
+  "EyeOfTheUniverse": {
+    "eyeTravelers": [
+      {
+        "id": "ew_mermaid",
+        "signal": {
+          "name": "Mermaid",
+          "audio": "planets/sounds/mermaid_eye_repeat.wav",
+          "detectionRadius": 0,
+          "identificationRadius": 10,
+          "onlyAudibleToScope": false,
+          "position": {
+            "x": 0,
+            "y": 0.75,
+            "z": 0
+          },
+          "isRelativeToParent": true,
+          "volume": 0.2
+        },
+        "finaleAudio": "planets/sounds/mermaid_eye_final.wav",
+        "startPlayingCondition": "EW_EYE_MERMAID_PLAYING",
+        "participatingCondition": "EW_EYE_MERMAID_PARTICIPATING",
+        "dialogue": {
+          "xmlFile": "planets/dialogues/eye_mermaid.xml",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "isRelativeToParent": true
+        },
+        "assetBundle": "planets/assetbundles/eyewitness_eye",
+        "path": "Assets/MyAssets/Prefabs/MermaidAtEye.prefab",
+        "position": {
+          "y": 0.5,
+        }
+      }
+    ],
+    "quantumInstruments": [
+      {
+        "id": "ew_mermaid",
+        "gatherWithScope": false,
+        "gatherCondition": "EW_EYE_MERMAID_GATHERED",
+        "assetBundle": "planets/assetbundles/eyewitness_eye",
+        "path": "Assets/MyAssets/Prefabs/EyeGatheredCapsuleItem.prefab",
+        "position": {
+          "x": -43.94369,
+          "y": 0,
+          "z": 7506.436
+        },
+        "signal": {
+          "detectionRadius": 0,
+          "identificationRadius": 0,
+          "position": {
+            "x": 0,
+            "y": 0.5,
+            "z": 0
+          },
+          "isRelativeToParent": true,
+          "volume": 0.2
+        }
+      }
+    ],
+    "instrumentZones": [
+      {
+        "id": "Slate",
+        "deactivationCondition": "EyeSlateGather",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteLogAssets",
+        "removeChildren": [ "Props_HEA_MarshmallowCanOpened" ],
+        "position": {
+          "x": -43.30302,
+          "y": 0,
+          "z": 7507.822
+        }
+      }
+    ]
+  },
   "Props": {
     "details": [
       {
