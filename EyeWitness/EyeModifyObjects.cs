@@ -33,6 +33,7 @@ namespace EyeWitness {
         public GameObject InstrumentZoneParent { get; private set; }
         public GameObject Mitis { get; private set; }
         public NomaiComputer FutureComputer { get; private set; }
+        public AudioSource MermaidAudioFinal { get; private set; }
 
         public EyeModifyObjects() {
             CapsuleExhibit = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/EyeCapsuleExhibit");
@@ -240,6 +241,14 @@ namespace EyeWitness {
                             GlobalMessenger<float, float>.FireEvent("FlickerOffAndOn", 0.5f, 1.5f);
                         }
                     });
+                }
+
+                var mermaidAudioFinal = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/AudioSource");
+                if (mermaidAudioFinal != null) {
+                    MermaidAudioFinal = mermaidAudioFinal.GetComponent<AudioSource>();
+                    Observable.NextFrame().Subscribe(_ => {
+                        MermaidAudioFinal.volume = 0.3f;
+                    }).AddTo(MermaidAudioFinal);
                 }
             }
         }

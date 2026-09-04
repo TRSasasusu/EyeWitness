@@ -18,7 +18,7 @@
             "z": 0
           },
           "isRelativeToParent": true,
-          "volume": 0.2
+          "volume": 0.3
         },
         "finaleAudio": "planets/sounds/mermaid_eye_final.wav",
         "startPlayingCondition": "EW_EYE_MERMAID_PLAYING",
@@ -97,11 +97,16 @@
           "isRelativeToParent": true,
           "shape": {
             "type": "cylinder",
-            "radius": 80,
+            "radius": 60,
             "height": 200
           },
           "force": 6,
           "affectsAlignment": true,
+          "position": {
+            "x": 0.0863,
+            "y": -3.9508,
+            "z": -37.8146
+          },
           "rotation": {
             "x": 0,
             "y": 180,
