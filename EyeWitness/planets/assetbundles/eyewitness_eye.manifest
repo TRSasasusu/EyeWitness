@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3922995929
+CRC: 1176979007
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bb6f18b15961e4a63eba8c7d0b2205ea
+    Hash: 27e814bca6ebf7650eeed24ca3d3cd04
   TypeTreeHash:
     serializedVersion: 2
     Hash: 34698c3d6b60281e7a384fbf0ff625ed
@@ -54,5 +54,6 @@ Assets:
 - Assets/MyAssets/Prefabs/EWEyeInstrumentZoneParent.prefab
 - Assets/MyAssets/Prefabs/EyeGatheredCapsuleItem.prefab
 - Assets/MyAssets/Prefabs/MermaidAtEye.prefab
+- Assets/MyAssets/Prefabs/EyeLaunchTowerColliders.prefab
 Dependencies:
 - C:/Users/manyo/source/repos/EyeWitness/EyeWitness/planets/assetbundles/eyewitness

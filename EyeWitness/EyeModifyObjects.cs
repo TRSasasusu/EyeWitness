@@ -34,6 +34,8 @@ namespace EyeWitness {
         public GameObject Mitis { get; private set; }
         public NomaiComputer FutureComputer { get; private set; }
         public AudioSource MermaidAudioFinal { get; private set; }
+        public CylinderShape ForestOxygenAudioVolume { get; private set; }
+        public Transform LaunchTowerWarpPoint { get; private set; }
 
         public EyeModifyObjects() {
             CapsuleExhibit = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/EyeCapsuleExhibit");
@@ -115,6 +117,12 @@ namespace EyeWitness {
                     EndlessCylinderForest.height = 285;
                     EndlessCylinderForest.radius = 135;//200;
                 }
+                var forestOxygenAudioVolume = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Volumes_Campfire/ForestOxygenAudioVolume");
+                if(forestOxygenAudioVolume != null) {
+                    ForestOxygenAudioVolume = forestOxygenAudioVolume.GetComponent<CylinderShape>();
+                    ForestOxygenAudioVolume.height = 285;
+                    ForestOxygenAudioVolume.radius = 135;
+                }
 
                 InstrumentZoneParent = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent");
                 MermaidCapsule = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EyeGatheredCapsuleItem");
@@ -135,17 +143,23 @@ namespace EyeWitness {
                 }
                 if (LaunchTower != null) {
                     LaunchTower.SetActive(false);
-                    foreach(var child in LaunchTower.GetComponentsInChildren<MeshFilter>(true)) {
-                        if(child.gameObject.activeSelf) {
-                            child.gameObject.AddComponent<MeshCollider>();
-                        }
-                    }
-                    var childCollider = new GameObject("LaunchTowerCollider");
-                    childCollider.transform.parent = LaunchTower.transform;
-                    childCollider.transform.localPosition = new Vector3(50.4861f, 45.0792f, 1.0775f);
-                    childCollider.transform.localEulerAngles = new Vector3(0, 0, 347.3517f);
-                    var boxCollider = childCollider.AddComponent<BoxCollider>();
-                    boxCollider.size = new Vector3(3, 1, 10);
+                    //foreach(var child in LaunchTower.GetComponentsInChildren<MeshFilter>(true)) {
+                    //    if(child.gameObject.activeSelf) {
+                    //        child.gameObject.AddComponent<MeshCollider>();
+                    //    }
+                    //}
+                    //var childCollider = new GameObject("LaunchTowerCollider");
+                    //childCollider.transform.parent = LaunchTower.transform;
+                    //childCollider.transform.localPosition = new Vector3(50.4861f, 45.0792f, 1.0775f);
+                    //childCollider.transform.localEulerAngles = new Vector3(0, 0, 347.3517f);
+                    //var boxCollider = childCollider.AddComponent<BoxCollider>();
+                    //boxCollider.size = new Vector3(3, 1, 10);
+
+                    var childWarpPoint = new GameObject("LaunchTowerWarpPoint");
+                    childWarpPoint.transform.parent = LaunchTower.transform;
+                    childWarpPoint.transform.localPosition = new Vector3(50.7678f, 46.3428f, 13.5802f);
+                    childWarpPoint.transform.localEulerAngles = new Vector3(0, 180, 10);
+                    LaunchTowerWarpPoint = childWarpPoint.transform;
                 }
                 if(MermaidCapsule != null) {
                     MermaidCapsuleRender = MermaidCapsule.transform.Find("capsule_gas").gameObject;
@@ -182,6 +196,9 @@ namespace EyeWitness {
                             if (LaunchTower != null) {
                                 if (!LaunchTower.activeSelf) {
                                     LaunchTower.SetActive(true);
+
+                                    Locator.GetPlayerBody().WarpToPositionRotation(LaunchTowerWarpPoint.position, LaunchTowerWarpPoint.rotation);
+                                    Locator.GetPlayerBody().SetVelocity(Vector3.zero);
                                 }
                             }
                             if(!InstrumentZoneParent.activeSelf) {

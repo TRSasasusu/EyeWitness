@@ -229,13 +229,13 @@
         "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent",
         "isRelativeToParent": true,
         "position": {
-          "x": -36.9593,
-          "y": -17.5063,
-          "z": -48.8075
+          "x": 39.7841,
+          "y": -18.1647,
+          "z": -0.3459
         },
         "rotation": {
           "x": 0,
-          "y": 0,
+          "y": 162,
           "z": 12
         },
         "removeChildren": [
@@ -246,7 +246,14 @@
           "Architecture_Village/BatchedGroup/BatchedMeshRenderers_5",
           "Architecture_Village/BatchedGroup/BatchedMeshRenderers_8",
           "Architecture_Village/BatchedGroup/BatchedMeshRenderers_10",
-        ]
+        ],
+      },
+      {
+        "assetBundle": "planets/assetbundles/eyewitness_eye",
+        "path": "Assets/MyAssets/Prefabs/EyeLaunchTowerColliders.prefab",
+        "parentPath": "Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/LaunchTower",
+        "isRelativeToParent": true,
+        "scale": 0.01,
       },
       {
         "path": "TimberHearth_Body/Sector_TH/Sector_Village/Geometry_Village/BatchedGroup/BatchedMeshColliders_7",
