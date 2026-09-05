@@ -29,6 +29,7 @@ namespace EyeWitness {
         public GameObject EyeTower { get; private set; }
         public GameObject MermaidCapsule { get; private set; }
         public GameObject MermaidCapsuleRender { get; private set; }
+        public AudioSignal MermaidCapsuleSignal { get; private set; }
         public GameObject LaunchTower { get; private set; }
         public GameObject InstrumentZoneParent { get; private set; }
         public GameObject Mitis { get; private set; }
@@ -165,6 +166,11 @@ namespace EyeWitness {
                     MermaidCapsuleRender = MermaidCapsule.transform.Find("capsule_gas").gameObject;
                     MermaidCapsuleRender.SetActive(false);
                     MermaidCapsule.GetComponent<BoxCollider>().enabled = false;
+
+                    MermaidCapsuleSignal = MermaidCapsule.transform.Find("AudioSource").GetComponent<AudioSignal>();
+                    MermaidCapsuleSignal._preventIdentification = true;
+                    MermaidCapsuleSignal._name = SignalName.Default; // prevent showing the learned signal name
+                    GameObject.Destroy(MermaidCapsuleSignal.GetComponent<AudioSignalDetectionTrigger>()); // prevent notification of unidentified signal
                 }
 
                 if (InstrumentZoneParent != null) {
