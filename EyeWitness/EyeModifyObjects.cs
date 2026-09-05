@@ -34,6 +34,7 @@ namespace EyeWitness {
         public GameObject InstrumentZoneParent { get; private set; }
         public GameObject Mitis { get; private set; }
         public NomaiComputer FutureComputer { get; private set; }
+        public AudioSignal MermaidAudioRepeat { get; private set; }
         public AudioSource MermaidAudioFinal { get; private set; }
         public CylinderShape ForestOxygenAudioVolume { get; private set; }
         public Transform LaunchTowerWarpPoint { get; private set; }
@@ -272,6 +273,12 @@ namespace EyeWitness {
                     Observable.NextFrame().Subscribe(_ => {
                         MermaidAudioFinal.volume = 0.3f;
                     }).AddTo(MermaidAudioFinal);
+                }
+
+                var mermaidAudioRepeat = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/MermaidAtEye/AudioSource");
+                if (mermaidAudioRepeat != null) {
+                    MermaidAudioRepeat = mermaidAudioRepeat.GetComponent<AudioSignal>();
+                    GameObject.Destroy(mermaidAudioRepeat.GetComponent<AudioSignalDetectionTrigger>()); // prevent notification of unidentified signal
                 }
             }
         }
