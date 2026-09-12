@@ -93,6 +93,36 @@ namespace EyeWitness {
                 }
                 // only OPC marker
             }
+
+            // disable the marker if the player hasn't touched the probe yet
+            if (!EyeWitness.HasShipLog("ew_camp_probe_2")) {
+                var computerObj = SearchUtilities.Find("OrbitalProbeCannon_Body/Sector_OrbitalProbeCannon/Sector_Module_Intact/text_opc_control_computer");
+                if(computerObj != null) {
+                    var computer = computerObj.GetComponent<NomaiComputer>();
+                    computer.ClearAllEntries();
+                    foreach(var renderer in GetComponentsInChildren<MeshRenderer>()) {
+                        renderer.enabled = false;
+                    }
+                    //var collider = GetComponent<Collider>();
+                    //collider.enabled = false;
+                    EnableInteraction(false);
+                    IDisposable disposable = null;
+                    disposable = computer.ObserveEveryValueChanged(x => EyeWitness.HasShipLog("ew_camp_probe_2")).Subscribe(touched => {
+                        if (touched) {
+                            computer.DisplayAllEntries();
+                            foreach (var renderer in GetComponentsInChildren<MeshRenderer>()) {
+                                renderer.enabled = true;
+                            }
+                            //collider.enabled = true;
+                            EnableInteraction(true);
+
+                            if(disposable != null) {
+                                disposable.Dispose();
+                            }
+                        }
+                    }).AddTo(computerObj);
+                }
+            }
         }
 
         public override string GetDisplayName() {
