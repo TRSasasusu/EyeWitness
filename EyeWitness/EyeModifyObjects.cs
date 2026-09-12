@@ -38,6 +38,7 @@ namespace EyeWitness {
         public AudioSource MermaidAudioFinal { get; private set; }
         public CylinderShape ForestOxygenAudioVolume { get; private set; }
         public Transform LaunchTowerWarpPoint { get; private set; }
+        public GameObject LightShaft { get; private set; }
 
         public EyeModifyObjects() {
             CapsuleExhibit = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/EyeCapsuleExhibit");
@@ -130,6 +131,7 @@ namespace EyeWitness {
                 MermaidCapsule = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EyeGatheredCapsuleItem");
                 Mitis = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower/Mitis");
                 OwlkEyeTemple = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/OwlkEyeTemple");
+                LightShaft = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/OwlkEyeTemple/LightShaft");
                 OwlkEyeSymbolTrigger = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/OwlkEyeTemple/Prop_IP_EyeSymbol/COL_EyeSymbol");
                 EyeTower = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/EyeGasDwarfTower");
                 LaunchTower = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/EWEyeInstrumentZoneParent/LaunchTower");
@@ -137,8 +139,11 @@ namespace EyeWitness {
                 if (futureComputer != null) {
                     FutureComputer = futureComputer.GetComponent<NomaiComputer>();
                 }
-                if (OwlkEyeTemple != null) {
-                    OwlkEyeTemple.SetActive(false);
+                //if (OwlkEyeTemple != null) {
+                //    OwlkEyeTemple.SetActive(false);
+                //}
+                if(LightShaft != null) {
+                    LightShaft.SetActive(false);
                 }
                 if (EyeTower != null) {
                     EyeTower.SetActive(false);
@@ -182,8 +187,16 @@ namespace EyeWitness {
                         EyeWitness.Log("InstrumentZoneParent collided with " + collider.name);
                         var root = collider.transform.root;
                         if (root == Locator.GetPlayerTransform()) {
-                            if (OwlkEyeTemple != null) {
-                                OwlkEyeTemple.SetActive(true);
+                            //if (OwlkEyeTemple != null) {
+                            //    OwlkEyeTemple.SetActive(true);
+                            //}
+                            if(OwlkEyeTemple != null && !OwlkEyeTemple.activeSelf) { // for those touching the eye symbol before activating the light shaft
+                                sphereCollider.enabled = false;
+                                return;
+                            }
+
+                            if (LightShaft != null) {
+                                LightShaft.SetActive(true);
                             }
                             if(MermaidCapsule != null) {
                                 MermaidCapsule.transform.parent = OwlkEyeSymbolTrigger.transform.parent;
