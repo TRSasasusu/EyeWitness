@@ -113,6 +113,12 @@ namespace EyeWitness.patches {
                 if (ModifyObjects.Instance.FireProbe != null) {
                     ModifyObjects.Instance.FireProbe.SetActive(true);
                 }
+                if(ModifyObjects.Instance.DoorBodyNotBrokenByProbe != null) {
+                    ModifyObjects.Instance.DoorBodyNotBrokenByProbe.SetActive(false);
+                }
+                if(ModifyObjects.Instance.DoorBodyBrokenByProbe != null) {
+                    ModifyObjects.Instance.DoorBodyBrokenByProbe.SetActive(true);
+                }
             }
 
             return false;

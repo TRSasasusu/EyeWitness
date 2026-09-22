@@ -42,6 +42,8 @@ namespace EyeWitness {
         public GameObject GasDwarfCapsulesToKeep { get; private set; }
         public MermaidConversation Mermaid { get; private set; }
         public GameObject FireProbe { get; private set; }
+        public GameObject DoorBodyNotBrokenByProbe { get; private set; }
+        public GameObject DoorBodyBrokenByProbe { get; private set; }
         public MermaidNoiseMaker MermaidNoiseMaker { get; private set; }
         public GameObject AuthDoor { get; private set; }
         public GameObject AuthComputerClose { get; private set; }
@@ -215,6 +217,12 @@ namespace EyeWitness {
             FireProbe = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/FireProbe");
             if (FireProbe != null) {
                 FireProbe.SetActive(false);
+            }
+
+            DoorBodyNotBrokenByProbe = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Prefab_IP_Door_Metal");
+            DoorBodyBrokenByProbe = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/DoorBodyBrokenByProbe");
+            if (DoorBodyBrokenByProbe != null) {
+                DoorBodyBrokenByProbe.SetActive(false);
             }
 
             var mermaidNoiseMaker = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/FishtailEffect");

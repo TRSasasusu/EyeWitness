@@ -35,12 +35,91 @@
         "parentPath": "Sector_RingWorld/Sector_SecretEntrance",
         "isRelativeToParent": true,
         "rename": "FireProbe",
-        "scale": 7.8334,
+        "scale": 15,
         "position": {
-          "x": 2.4121,
-          "y": 3.6092,
-          "z": -15.8891
+          "x": -0.2953,
+          "y": 0.3039,
+          "z": -15.992
         }
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Prefab_IP_DreamCampfire/Props_IP_DreamFire/DreamFire_Flames",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/FireProbe/Props_IP_DreamFire",
+        "isRelativeToParent": true,
+        "scale": 1,
+        "rotation": {
+          "x": 0,
+          "y": 120,
+          "z": 0
+        }
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Prefab_IP_DreamCampfire/Props_IP_DreamFire/DreamFire_Flames",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/FireProbe/Props_IP_DreamFire",
+        "isRelativeToParent": true,
+        "scale": 1,
+        "rotation": {
+          "x": 0,
+          "y": 240,
+          "z": 0
+        }
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Prefab_IP_Door_Metal",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -2,
+          "y": 0,
+          "z": 5.65
+        },
+        "rotation": {
+          "x": -0.0001,
+          "y": -0.0002,
+          "z": 0.0001
+        },
+        "rename": "DoorBodyBrokenByProbe",
+        "removeComponents": true,
+        "removeChildren": [
+          "DoorInterface_IP/Door_A",
+          "DoorAudio",
+        ]
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/DoorBodyBrokenByProbe/DoorInterface_IP/Door_A",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/DoorBodyBrokenByProbe",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 2.5047,
+          "y": 0.1028,
+          "z": 5.6466
+        },
+        "rotation": {
+          "x": 270,
+          "y": 24.251,
+          "z": 0
+        },
+        "rename": "DoorABrokenByProbe",
+        "removeComponents": true,
+        "removeChildren": [
+          "Front_Door_A/Rotating_Ring 1",
+        ]
+      },
+      {
+        "path": "RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/DoorBodyBrokenByProbe/DoorInterface_IP/Door_A/Front_Door_A/Rotating_Ring 1",
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/DoorBodyBrokenByProbe/DoorABrokenByProbe/Front_Door_A",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.4452,
+          "y": 3.1777,
+          "z": -0.0578
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0.9325,
+          "z": 126.0271
+        },
+        "rename": "DoorRotatingRingBrokenByProbe",
       }
     ],
     "translatorText": [
@@ -51,9 +130,9 @@
         "parentPath": "Sector_RingWorld/Sector_SecretEntrance",
         "isRelativeToParent": true,
         "position": {
-          "x": 4.8937,
-          "y": 5.9579,
-          "z": -14.7798
+          "x": 3.9857,
+          "y": 6.9052,
+          "z": -9.0181
         },
         "rotation": {
           "x": 0,
