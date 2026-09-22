@@ -10,6 +10,7 @@
   "Base": {
     "surfaceSize": 101,
     "surfaceGravity": 0,
+    "hideProxy": true,
   },
   //"Cloak": {
   //  "radius": 2000,

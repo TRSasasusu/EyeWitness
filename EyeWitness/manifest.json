@@ -4,7 +4,7 @@
   "author": "orclecle",
   "name": "EyeWitness",
   "uniqueName": "orclecle.EyeWitness",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "owmlVersion": "2.15.1",
   "dependencies": ["xen.NewHorizons"]
 }
