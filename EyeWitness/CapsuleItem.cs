@@ -39,6 +39,11 @@ namespace EyeWitness {
             PickedOne = this;
         }
 
+        public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget) {
+            base.DropItem(position, normal, parent, sector, customDropTarget);
+            PickedOne = null;
+        }
+
         public void UseLiquid() {
             if(_usingLiquid) {
                 return;
