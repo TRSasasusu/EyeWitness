@@ -96,6 +96,23 @@
           "z": 343.4054
         },
         "keepLoaded": true
+      },
+      {
+        "rename": "Ernesto",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish",
+        "parentPath": "Sector_TH/Sector_NomaiCrater",
+        "isRelativeToParent": true,
+        "scale": 0.025,
+        "position": {
+          "x": -106.9715,
+          "y": -135.352,
+          "z": -159.3641
+        },
+        "rotation": {
+          "x": 30.2175,
+          "y": 328.3313,
+          "z": 133.0527
+        }
       }
     ],
     "dialogue": [
