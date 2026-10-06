@@ -14,6 +14,7 @@ namespace EyeWitness {
         PathToHighEnergyLabManager _pathToHighEnergyLabManager;
         PostCreditsHelper _postCreditsHelper;
         EyeModifyObjects _eyeModifyObjects;
+        ErnestoManager _ernestoManager;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -52,6 +53,7 @@ namespace EyeWitness {
                     _skyIslandManager = new SkyIslandManager();
                     _eyeShrineDepthManager = new EyeShrineDepthManager();
                     _pathToHighEnergyLabManager = new PathToHighEnergyLabManager();
+                    _ernestoManager = new ErnestoManager();
                 }
                 else if(loadScene == "EyeOfTheUniverse") {
                     _eyeModifyObjects = new EyeModifyObjects();
