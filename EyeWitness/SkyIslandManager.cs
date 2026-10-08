@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 using NewHorizons.Utility;
 using UniRx;
 using UniRx.Triggers;
@@ -21,10 +22,23 @@ namespace EyeWitness {
         PlayerSpawner _playerSpawner;
         SpawnPoint _spawnPointInGasDwarf;
         SpawnPoint _spawnPointInGiantsDeep;
-        ShipLogEntryLocation _entryLocationGasDwarf;
+        public ShipLogEntryLocation EntryLocationGasDwarf { get; private set; }
         ShipLogEntryHUDMarker _shipLogEntryHUDMarker;
+        Material _uiMaterialWithQueueLargerThanCloud;
+        Material _arrowMaterialWithQueueLargerThanCloud;
 
         public bool InsideGasDwarf { get; private set; }
+
+        public void DestroyResources() {
+            if(_uiMaterialWithQueueLargerThanCloud != null) {
+                GameObject.Destroy(_uiMaterialWithQueueLargerThanCloud);
+                _uiMaterialWithQueueLargerThanCloud = null;
+            }
+            if(_arrowMaterialWithQueueLargerThanCloud != null) {
+                GameObject.Destroy(_arrowMaterialWithQueueLargerThanCloud);
+                _arrowMaterialWithQueueLargerThanCloud = null;
+            }
+        }
 
         public SkyIslandManager() {
             Instance = this;
@@ -61,7 +75,7 @@ namespace EyeWitness {
 
                 var entryLocationGasDwarf = ParentOfSignalForIslandOnSkyDummy.transform.Find("entrylocation_ew_gas_dwarf");
                 if(entryLocationGasDwarf != null) {
-                    _entryLocationGasDwarf = entryLocationGasDwarf.GetComponent<ShipLogEntryLocation>();
+                    EntryLocationGasDwarf = entryLocationGasDwarf.GetComponent<ShipLogEntryLocation>();
                 }
 
                 _triggerForWarp = new GameObject("TriggerForWarp");
@@ -89,9 +103,9 @@ namespace EyeWitness {
                             }
                         }).AddTo(_gasDwarf);
 
-                        _entryLocationGasDwarf.transform.parent = _gasDwarfSector;
-                        _entryLocationGasDwarf.transform.localPosition = new Vector3(0.0093f, -5.65f, -23.8251f);
-                        _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
+                        EntryLocationGasDwarf.transform.parent = _gasDwarfSector;
+                        EntryLocationGasDwarf.transform.localPosition = new Vector3(0.0093f, -5.65f, -23.8251f);
+                        EntryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
                     }
                 });
 
@@ -113,7 +127,7 @@ namespace EyeWitness {
                     //if(_shipLogEntryHUDMarker != null) {
                     //    if(_shipLogEntryHUDMarker.)
                     //}
-                    if(ShipLogEntryHUDMarker.s_entryLocation == _entryLocationGasDwarf) {
+                    if(ShipLogEntryHUDMarker.s_entryLocation == EntryLocationGasDwarf) {
                         _triggerForWarp.SetActive(true);
                     }
 
@@ -123,7 +137,7 @@ namespace EyeWitness {
                             _signalForIslandOnSkyDummy.SetActive(true);
                             _triggerForWarp.SetActive(true);
 
-                            if (ShipLogEntryHUDMarker.s_entryLocation != _entryLocationGasDwarf) {
+                            if (ShipLogEntryHUDMarker.s_entryLocation != EntryLocationGasDwarf) {
                                 Vector3 forwardPos;
                                 EyeWitness.Log($"dot: {Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)}");
                                 if (Mathf.Abs(Vector3.Dot(playerBody.transform.forward, (playerBody.transform.position - _giantsDeep.transform.position).normalized)) > 0.8f) {
@@ -140,7 +154,7 @@ namespace EyeWitness {
                     else {
                         if (_signalForIslandOnSkyDummy.activeSelf) {
                             _signalForIslandOnSkyDummy.SetActive(false);
-                            if (ShipLogEntryHUDMarker.s_entryLocation != _entryLocationGasDwarf) {
+                            if (ShipLogEntryHUDMarker.s_entryLocation != EntryLocationGasDwarf) {
                                 _triggerForWarp.SetActive(false);
                             }
                         }
@@ -159,9 +173,9 @@ namespace EyeWitness {
                         }
                         _playerSpawner.DebugWarp(_spawnPointInGiantsDeep);
 
-                        _entryLocationGasDwarf.transform.parent = ParentOfSignalForIslandOnSkyDummy.transform;
-                        _entryLocationGasDwarf.transform.localPosition = Vector3.zero;
-                        _entryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
+                        EntryLocationGasDwarf.transform.parent = ParentOfSignalForIslandOnSkyDummy.transform;
+                        EntryLocationGasDwarf.transform.localPosition = Vector3.zero;
+                        EntryLocationGasDwarf.transform.localEulerAngles = Vector3.zero;
 
                         DisableGasDwarf();
                         InsideGasDwarf = false;
@@ -193,6 +207,46 @@ namespace EyeWitness {
                 foreach (Transform child in _gasDwarf.transform) {
                     child.gameObject.SetActive(true);
                 }
+            }
+        }
+
+        public void ReplaceMarkerMaterialWithQueueLargerThanCloud(CanvasMarker canvasMarker) {
+            var offScreenIndicatorTextObj = canvasMarker.transform.Find("OffScreenIndicator/Arrow/Text");
+            if(offScreenIndicatorTextObj != null) {
+                var offScreenIndicatorText = offScreenIndicatorTextObj.GetComponent<Text>();
+                if(_uiMaterialWithQueueLargerThanCloud == null) {
+                    _uiMaterialWithQueueLargerThanCloud = new Material(offScreenIndicatorText.materialForRendering);
+                    _uiMaterialWithQueueLargerThanCloud.renderQueue = 3601;
+                }
+                offScreenIndicatorText.material = _uiMaterialWithQueueLargerThanCloud;
+            }
+            var arrowFullTextBlockObj = canvasMarker.transform.Find("Arrow/FullTextBlock/TextInfoBlock");
+            if (arrowFullTextBlockObj != null) {
+                var arrowFullTextBlock = arrowFullTextBlockObj.GetComponent<Text>();
+                if (_uiMaterialWithQueueLargerThanCloud == null) {
+                    _uiMaterialWithQueueLargerThanCloud = new Material(arrowFullTextBlock.materialForRendering);
+                    _uiMaterialWithQueueLargerThanCloud.renderQueue = 3601;
+                }
+                arrowFullTextBlock.material = _uiMaterialWithQueueLargerThanCloud;
+            }
+
+            var offScreenIndicatorArrowObj = canvasMarker.transform.Find("OffScreenIndicator/Arrow/ScaleAndRotate/CenteringPivot/Arrow");
+            if (offScreenIndicatorArrowObj != null) {
+                var offScreenIndicatorArrow = offScreenIndicatorArrowObj.GetComponent<Renderer>();
+                if (_arrowMaterialWithQueueLargerThanCloud == null) {
+                    _arrowMaterialWithQueueLargerThanCloud = new Material(offScreenIndicatorArrow.sharedMaterial);
+                    _arrowMaterialWithQueueLargerThanCloud.renderQueue = 3601;
+                }
+                offScreenIndicatorArrow.material = _arrowMaterialWithQueueLargerThanCloud;
+            }
+            var arrowArrowObj = canvasMarker.transform.Find("Arrow/ScaleAndRotate/CenteringPivot/Arrow");
+            if(arrowArrowObj != null) {
+                var arrowArrow = arrowArrowObj.GetComponent<Renderer>();
+                if (_arrowMaterialWithQueueLargerThanCloud == null) {
+                    _arrowMaterialWithQueueLargerThanCloud = new Material(arrowArrow.sharedMaterial);
+                    _arrowMaterialWithQueueLargerThanCloud.renderQueue = 3601;
+                }
+                arrowArrow.material = _arrowMaterialWithQueueLargerThanCloud;
             }
         }
     }

@@ -48,6 +48,11 @@ namespace EyeWitness {
             //LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
             NewHorizons.GetStarSystemLoadedEvent().AddListener(loadScene => {
                 EyeWitness.Log($"current loadScene: {loadScene}");
+                if(_skyIslandManager != null) {
+                    _skyIslandManager.DestroyResources();
+                    _skyIslandManager = null;
+                }
+
                 if (loadScene == "SolarSystem") {
                     _modifyObjects = new ModifyObjects();
                     _skyIslandManager = new SkyIslandManager();

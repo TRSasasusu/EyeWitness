@@ -27,5 +27,13 @@ namespace EyeWitness.patches {
             __result = "QUANTUM_MOON";
             return false;
         }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(ShipLogEntryHUDMarker), nameof(ShipLogEntryHUDMarker.SetEntryLocation))]
+        public static void ShipLogEntryHUDMarker_SetEntryLocation_Postfix(ShipLogEntryHUDMarker __instance, ShipLogEntryLocation entryLocation) {
+            if(SkyIslandManager.Instance != null && entryLocation == SkyIslandManager.Instance.EntryLocationGasDwarf) {
+                SkyIslandManager.Instance.ReplaceMarkerMaterialWithQueueLargerThanCloud(__instance._canvasMarker);
+            }
+        }
     }
 }
