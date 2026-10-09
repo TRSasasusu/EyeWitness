@@ -26,6 +26,7 @@ namespace EyeWitness {
         ShipLogEntryHUDMarker _shipLogEntryHUDMarker;
         Material _uiMaterialWithQueueLargerThanCloud;
         Material _arrowMaterialWithQueueLargerThanCloud;
+        public AudioSignalDetectionTrigger BaseAudioSignalDetectionTrigger { get; private set; }
 
         public bool InsideGasDwarf { get; private set; }
 
@@ -191,6 +192,11 @@ namespace EyeWitness {
 
                 _signalForIslandOnSkyDummy.SetActive(false);
                 _triggerForWarp.SetActive(false);
+            }
+
+            var baseAudioSignalDetectionTriggerObj = SearchUtilities.Find("GabbroIsland_Body/Sector_GabbroIsland/SignalForIsland/signal_for_island_on_gabbro_island");
+            if(baseAudioSignalDetectionTriggerObj != null) {
+                BaseAudioSignalDetectionTrigger = baseAudioSignalDetectionTriggerObj.GetComponent<AudioSignalDetectionTrigger>();
             }
         }
 
