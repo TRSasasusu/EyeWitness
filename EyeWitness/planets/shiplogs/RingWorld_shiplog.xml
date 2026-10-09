@@ -14,6 +14,10 @@
       <SourceID>ew_moon</SourceID>
       <Text>EW_MERMAID_RUMOR2</Text>
     </RumorFact>
+    <RumorFact>
+      <ID>ew_mermaid_rumor3</ID>
+      <Text>EW_MERMAID_RUMOR3</Text>
+    </RumorFact>
     <ExploreFact>
       <ID>ew_mermaid_1</ID>
       <Text>EW_MERMAID_1</Text>
