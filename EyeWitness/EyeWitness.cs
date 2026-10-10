@@ -15,6 +15,7 @@ namespace EyeWitness {
         PostCreditsHelper _postCreditsHelper;
         EyeModifyObjects _eyeModifyObjects;
         ErnestoManager _ernestoManager;
+        DialogueManager _dialogueManager;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -59,6 +60,7 @@ namespace EyeWitness {
                     _eyeShrineDepthManager = new EyeShrineDepthManager();
                     _pathToHighEnergyLabManager = new PathToHighEnergyLabManager();
                     _ernestoManager = new ErnestoManager();
+                    _dialogueManager = new DialogueManager();
                 }
                 else if(loadScene == "EyeOfTheUniverse") {
                     _eyeModifyObjects = new EyeModifyObjects();
