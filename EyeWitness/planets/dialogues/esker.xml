@@ -1,0 +1,34 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Esker</NameField>
+
+  <DialogueNode>
+    <Name>Esker1</Name>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <RequiredLogCondition>ew_gas_dwarf_tower_3</RequiredLogCondition>
+        <Text>EW_ESKER_A</Text>
+        <DialogueTarget>EskerLoneliness</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  <DialogueNode>
+    <Name>Esker2</Name>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <RequiredLogCondition>ew_gas_dwarf_tower_3</RequiredLogCondition>
+        <Text>EW_ESKER_A</Text>
+        <DialogueTarget>EskerLoneliness</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>EskerLoneliness</Name>
+    <Dialogue>
+      <Page>EW_ESKER_A_1</Page>
+      <Page>EW_ESKER_A_2</Page>
+      <Page>EW_ESKER_A_3</Page>
+      <Page>EW_ESKER_A_4</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

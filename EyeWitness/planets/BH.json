@@ -130,7 +130,7 @@
         },
         "scale": 0.25,
         "keepLoaded": true
-      },
+      }
     ],
     "translatorText": [
       {
@@ -167,6 +167,12 @@
           "y": 270,
           "z": 0
         }
+      }
+    ],
+    "dialogue": [
+      {
+        "pathToExistingDialogue": "Sector_BH/Sector_Crossroads/Characters_Crossroads/Traveller_HEA_Riebeck/ConversationZone_Riebeck",
+        "xmlFile": "planets/dialogues/riebeck.xml"
       }
     ]
   },

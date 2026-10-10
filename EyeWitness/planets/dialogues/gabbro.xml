@@ -1,0 +1,49 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Gabbro</NameField>
+
+  <DialogueNode>
+    <Name>FoundSomethingMenu</Name>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <RequiredLogCondition>ew_camp_probe_1</RequiredLogCondition>
+        <Text>EW_GABBRO_A</Text>
+        <DialogueTarget>GabbroProbeStart</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>EW_MET_MERMAID</RequiredPersistentCondition>
+        <Text>EW_GABBRO_B</Text>
+        <DialogueTarget>GabbroMermaid</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>GabbroProbeStart</Name>
+    <Dialogue>
+      <Page>EW_GABBRO_A_1</Page>
+    </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>EW_GABBRO_A_A</Text>
+        <DialogueTarget>GabbroProbe</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>GabbroProbe</Name>
+    <Dialogue>
+      <Page>EW_GABBRO_A_A_1</Page>
+      <Page>EW_GABBRO_A_A_2</Page>
+    </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>GabbroMermaid</Name>
+    <Dialogue>
+      <Page>EW_GABBRO_B_1</Page>
+      <Page>EW_GABBRO_B_2</Page>
+      <Page>EW_GABBRO_B_3</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

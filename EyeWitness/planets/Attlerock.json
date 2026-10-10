@@ -20,7 +20,13 @@
         },
         "scale": 0.25,
         "keepLoaded": true
-      },
+      }
+    ],
+    "dialogue": [
+      {
+        "pathToExistingDialogue": "Sector_THM/Characters_THM/Villager_HEA_Esker/ConversationZone_Esker",
+        "xmlFile": "planets/dialogues/esker.xml"
+      }
     ]
   }
 }

@@ -1,0 +1,23 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Chert</NameField>
+
+  <DialogueNode>
+    <Name>FoundSomethingMenu</Name>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <RequiredLogCondition>ew_moon_1</RequiredLogCondition>
+        <Text>EW_CHERT_A</Text>
+        <DialogueTarget>ChertQuantumMoonLab</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>ChertQuantumMoonLab</Name>
+    <Dialogue>
+      <Page>EW_CHERT_A_1</Page>
+      <Page>EW_CHERT_A_2</Page>
+      <Page>EW_CHERT_A_3</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>

@@ -1,0 +1,24 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Feldspar</NameField>
+
+  <DialogueNode>
+    <Name>FoundSomethingMenu</Name>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <RequiredLogCondition>ew_bramble_tower_warp_1</RequiredLogCondition>
+        <Text>EW_FELDSPAR_A</Text>
+        <DialogueTarget>FeldsparWarp</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>FeldsparWarp</Name>
+    <Dialogue>
+      <Page>EW_FELDSPAR_A_1</Page>
+      <Page>EW_FELDSPAR_A_2</Page>
+      <Page>EW_FELDSPAR_A_3</Page>
+      <Page>EW_FELDSPAR_A_4</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>
