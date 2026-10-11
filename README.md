@@ -2,7 +2,7 @@
 
 # EyeWitness
 
-Lore of your *another time buddy*.
+Lore of your *other time buddy*.
 
 Second-place winner of [Outer Wilds modding Jam 6](https://outerwildsmods.com/jam/aug-2026/).
 
@@ -19,7 +19,7 @@ It has been suggested that there may be a compatibility issue with Ship Enhancem
 Translations
 
 * orclecle: Japanese (original)
-* deerboymabbs and Little Stranger: English correction
+* deerboymabbs, Little Stranger, and xen: English correction
 * [GeBlaster](https://github.com/GeBlaster) and [SanBaiMing](https://github.com/SanBaiMing): Chinese
 
 Playtests
