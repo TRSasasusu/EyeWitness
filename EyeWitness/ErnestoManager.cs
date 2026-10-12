@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NewHorizons.Utility;
 using UnityEngine;
+using UniRx;
 
 namespace EyeWitness {
     public class ErnestoManager {
@@ -45,6 +46,32 @@ namespace EyeWitness {
         GameObject _bedBells;
         GameObject _strangerEyeSymbol;
         SpawnPoint _spBhEyeShrine;
+        QuantumMoon _quantumMoon;
+        GameObject _moon6thLocation;
+        GameObject _signalMoonGap;
+        SpawnPoint _spSignalMoonGap;
+        GameObject _moon1stWhiteboard;
+        GameObject _moonSCPart;
+        SpawnPoint _spMoonLab;
+        GameObject _centerComputer;
+        SpawnPoint _spGasDwarfTower;
+        GameObject _mitis;
+        SpawnPoint _spGasDwarfTowerTop;
+        GameObject _sandET;
+        GameObject _helCave;
+        GameObject _helText;
+        GameObject _helSwitch;
+        SpawnPoint _spHel;
+        GameObject _sandAT;
+        GameObject _sandColumnEffect;
+        GameObject _sandColumnVolume;
+        GameObject _at;
+        GameObject _warpReceiver;
+        SpawnPoint _spAt;
+        GameObject _brambleRocks;
+        GameObject _brambleRocksBroken;
+        GameObject _probeAT;
+        bool _probeATActive;
 
         public ErnestoManager() {
             Instance = this;
@@ -94,13 +121,43 @@ namespace EyeWitness {
 
             _whiteholeStationSuperStructure = SearchUtilities.Find("WhiteholeStationSuperstructure_Body/Sector");
             _whiteholeScroll = SearchUtilities.Find("WhiteholeStationSuperstructure_Body/Sector/text_eye_shrine");
-            _spWhiteholeStationSuperStructure = MakeSpawnPoint("sp_whitehole_station_superstructure", _whiteholeStationSuperStructure.transform, new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f), true);
+            _spWhiteholeStationSuperStructure = MakeSpawnPoint("sp_whitehole_station_superstructure", _whiteholeStationSuperStructure.transform, new Vector3(-2.8654f, 35.2288f, -8.6227f), new Vector3(60f, 180f, 180f), true);
 
             _bhEyeShrine = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3");
             _bhEyeVisibilityTracker = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/HangingCityEyeSymbolVisibilityTracker");
             _bedBells = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/Bed");
             _strangerEyeSymbol = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_District3/EyeShrineDepth/Prop_IP_EyeSymbol");
-            _spBhEyeShrine = MakeSpawnPoint("sp_bh_eye_shrine", _bhEyeShrine.transform, new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 0f), true);
+            _spBhEyeShrine = MakeSpawnPoint("sp_bh_eye_shrine", _bhEyeShrine.transform, new Vector3(96.5063f, 196.8519f, 0.3324f), new Vector3(338f, 283f, 356f), true);
+
+            _quantumMoon = SearchUtilities.Find("QuantumMoon_Body").GetComponent<QuantumMoon>();
+            _moon6thLocation = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE");
+            _signalMoonGap = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/signal_qm_depth");
+            _spSignalMoonGap = MakeSpawnPoint("sp_signal_moon_gap", _moon6thLocation.transform.parent, new Vector3(9.0542f, -40.0642f, 64.2634f), new Vector3(320f, 300f, 235f), true);
+            _moon1stWhiteboard = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/QMDepth/GameObject/text_moon");
+            _moonSCPart = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/QMDepth/GameObject/Main/Floor (33)");
+            _spMoonLab = MakeSpawnPoint("sp_moon_lab", _moon6thLocation.transform.parent, new Vector3(55.9546f, 17.2699f, 5.8926f), new Vector3(15f, 305f, 245f));
+
+            _centerComputer = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/text_gas_dwarf_memory_now_5");
+            _spGasDwarfTower = MakeSpawnPoint("sp_gas_dwarf_tower", _gasDwarf.transform, new Vector3(20.783f, 50.2835f, 35.22f), new Vector3(20f, 140f, 0f), true);
+            _mitis = SearchUtilities.Find("GasDwarf_Body/Sector/GasDwarfTower/Mitis");
+            _spGasDwarfTowerTop = MakeSpawnPoint("sp_gas_dwarf_tower_top", _gasDwarf.transform, new Vector3(19.1979f, 64.9822f, 29.6869f), new Vector3(0, 150, 0));
+
+            _sandET = SearchUtilities.Find("CaveTwin_Body/SandSphere_Rising");
+            _helCave = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_SpeedCave");
+            _helText = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/text_bramble_tower");
+            _helSwitch = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/bottom_switch_tractorbeam");
+            _spHel = MakeSpawnPoint("sp_hel", _helCave.transform, new Vector3(39.2969f, -27.7762f, 11.7172f), new Vector3(350f, 350f, 230f));
+            _spHel._triggerVolumes = new OWTriggerVolume[] { _helCave.GetComponent<Sector>()._owTriggerVolume, _helCave.transform.parent.GetComponent<Sector>()._owTriggerVolume };
+
+            _sandAT = SearchUtilities.Find("TowerTwin_Body/SandSphere_Draining");
+            _sandColumnEffect = SearchUtilities.Find("SandFunnel_Body/ScaleRoot/Geo_SandFunnel/Effects_HT_SandColumn");
+            _sandColumnVolume = SearchUtilities.Find("SandFunnel_Body/ScaleRoot/Volumes_SandFunnel");
+            _warpReceiver = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken/Prefab_NOM_WarpReceiver");
+            _at = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin");
+            _brambleRocks = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocks");
+            _brambleRocksBroken = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken");
+            _probeAT = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Probe_AT");
+            _spAt = MakeSpawnPoint("sp_at", _at.transform, new Vector3(88.1632f, -0.1838f, -15.2526f), new Vector3(90f, 100f, 0f), true);
         }
 
         public void StartConversation() {
@@ -192,6 +249,99 @@ namespace EyeWitness {
             else if (pageNum == 17) {
                 LockOn(_ernesto.transform, new Vector3(0f, 0f, 0f));
             }
+            else if(pageNum == 18) {
+                _playerSpawner.DebugWarp(_spWhiteholeStationSuperStructure);
+                _ernesto.transform.parent = _spWhiteholeStationSuperStructure.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 20f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_whiteholeScroll.transform, new Vector3(0f, 0f, 0f));
+            }
+            else if (pageNum == 20) {
+                _playerSpawner.DebugWarp(_spBhEyeShrine);
+                _ernesto.transform.parent = _spBhEyeShrine.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 6f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_ernesto.transform, new Vector3(0f, 0f, 0f));
+            }
+            else if(pageNum == 21) {
+                LockOn(_bhEyeVisibilityTracker.transform, new Vector3(0f, 0f, 0f));
+            }
+            else if(pageNum == 22) {
+                LockOn(_strangerEyeSymbol.transform, new Vector3(0f, 0f, 0f));
+            }
+            else if (pageNum == 23) {
+                LockOn(_bedBells.transform, new Vector3(0f, 0f, 0f));
+            }
+            else if(pageNum == 24) {
+                _playerSpawner.DebugWarp(_spSignalMoonGap);
+                _ernesto.transform.parent = _spSignalMoonGap.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 5f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_signalMoonGap.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 25) {
+                _playerSpawner.DebugWarp(_spMoonLab);
+                _ernesto.transform.parent = _spMoonLab.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_moon1stWhiteboard.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 26) {
+                LockOn(_moonSCPart.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 27) {
+                SkyIslandManager.Instance.WarpToGasDwarf();
+                _playerSpawner.DebugWarp(_spGasDwarfTower);
+                _ernesto.transform.parent = _spGasDwarfTower.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_centerComputer.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 28) {
+                _playerSpawner.DebugWarp(_spGasDwarfTowerTop);
+                _ernesto.transform.parent = _spGasDwarfTowerTop.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_mitis.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 30) {
+                _sandET.SetActive(false);
+                SkyIslandManager.Instance.WarpToGiantsDeep();
+                _playerSpawner.DebugWarp(_spHel);
+                _ernesto.transform.parent = _spHel.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_helText.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 31) {
+                LockOn(_ernesto.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 32) {
+                LockOn(_helSwitch.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 33) {
+                _sandAT.SetActive(false);
+                _sandColumnEffect.SetActive(false);
+                _sandColumnVolume.SetActive(false);
+                _probeATActive = _probeAT.activeSelf;
+                _brambleRocks.SetActive(false);
+                _brambleRocksBroken.SetActive(true);
+                _probeAT.SetActive(true);
+                _warpReceiver.SetActive(true);
+                _playerSpawner.DebugWarp(_spAt);
+                _ernesto.transform.parent = _spAt.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_warpReceiver.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 34) {
+                _sandET.SetActive(true);
+            }
+            else if(pageNum == 35) {
+                LockOn(_probeAT.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 36) {
+            }
         }
 
         SpawnPoint MakeSpawnPoint(string name, Transform parent, Vector3 pos, Vector3 rot, bool setOWTriggerVolume = false) {
@@ -200,6 +350,9 @@ namespace EyeWitness {
                 spawnPoint._triggerVolumes = new OWTriggerVolume[] {
                     parent.GetComponent<Sector>()._owTriggerVolume,
                 };
+            }
+            else {
+                spawnPoint._triggerVolumes = new OWTriggerVolume[] { };
             }
             return spawnPoint;
         }

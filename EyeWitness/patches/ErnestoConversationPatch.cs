@@ -25,5 +25,13 @@ namespace EyeWitness.patches {
             }
             return true;
         }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(QuantumMoon), nameof(QuantumMoon.OnWarpPlayer))]
+        public static void QuantumMoon_OnWarpPlayer_Prefix(QuantumMoon __instance) {
+            if (ErnestoManager.Instance != null && ErnestoManager.Instance.InConversation) {
+                __instance._stateIndex = QuantumMoon.EYE_INDEX;
+            }
+        }
     }
 }
