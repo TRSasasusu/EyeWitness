@@ -45,6 +45,9 @@
       <Page>EW_ERNESTO_GAS_DWARF_2</Page>
       <Page>EW_ERNESTO_GAS_DWARF_3</Page>
       <Page>EW_ERNESTO_GAS_DWARF_4</Page>
+      <Page>EW_ERNESTO_MARKER_1</Page>
+      <Page>EW_ERNESTO_MARKER_2</Page>
+      <Page>EW_ERNESTO_MARKER_3</Page>
     </Dialogue>
   </DialogueNode>
 </DialogueTree>
