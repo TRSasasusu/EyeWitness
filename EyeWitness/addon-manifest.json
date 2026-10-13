@@ -2,6 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
   "credits": [
     "orclecle#Program, Art, Music, Story",
+    " # ",
+    "orclecle#Japanese (original)",
+    "deerboymabbs\nLittle Stranger\nxen#English Correction",
+    "GeBlaster\nSanBaiMing#Chinese Translation",
+    " # ",
+    "ApocalypticMessage\nLittle Stranger\nMr. Thomas\nEssquilache#Playtesters",
+    " # ",
     "Outer Wilds Modding Discord#Special Thanks",
+    " # ",
+    "Ernesto#loves facing each other atop the two pairs of\n#jagged stumps near the waterfall."
   ]
 }
