@@ -206,7 +206,7 @@ namespace EyeWitness {
         }
 
         void AdvancePage(string nodeName, int pageNum) {
-            EyeWitness.Log($"ErnestoManager.AdvancePage: nodeName={nodeName}, pageNum={pageNum}");
+            //EyeWitness.Log($"ErnestoManager.AdvancePage: nodeName={nodeName}, pageNum={pageNum}");
             if (nodeName != "ErnestoGo") {
                 return;
             }
