@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NewHorizons.Utility;
 using UnityEngine;
 using UniRx;
+using UniRx.Triggers;
 
 namespace EyeWitness {
     public class ErnestoManager {
@@ -16,6 +17,8 @@ namespace EyeWitness {
         GameObject _ernesto;
         PlayerSpawner _playerSpawner;
 
+        SphereCollider _startColliderA;
+        SphereCollider _startColliderB;
         GameObject _probeTH;
         GameObject _startingCamp;
         SpawnPoint _spCamp;
@@ -72,13 +75,19 @@ namespace EyeWitness {
         GameObject _brambleRocksBroken;
         GameObject _probeAT;
         bool _probeATActive;
+        GameObject _warpTransmitter;
+        GameObject _anglerfish;
+        GameObject _dimensionDB;
+        SpawnPoint _spDB;
+        GameObject _thNomaiCrater;
+        SpawnPoint _spBackToTH;
 
         public ErnestoManager() {
             Instance = this;
 
             _ernesto = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater/Ernesto");
             if(_ernesto != null) {
-                //_ernesto.SetActive(false); // TODO
+                _ernesto.SetActive(false);
             }
 
             if (!PlayerData.GetPersistentCondition("EW_MET_MERMAID")) {
@@ -92,6 +101,32 @@ namespace EyeWitness {
                 };
                 DialogueTree.OnAdvancePage += AdvancePage;
             }
+
+            _thNomaiCrater = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_NomaiCrater");
+            _startColliderA = MakePoint("ernesto_start_collider_a", _thNomaiCrater.transform, new Vector3(-105.9661f, -150.95f, -145.4184f), new Vector3(0, 0, 0)).AddComponent<SphereCollider>();
+            _startColliderB = MakePoint("ernesto_start_collider_b", _thNomaiCrater.transform, new Vector3(-122.1299f, -141.7106f, -140.5177f), new Vector3(0, 0, 0)).AddComponent<SphereCollider>();
+            _startColliderA.isTrigger = true;
+            _startColliderB.isTrigger = true;
+            _startColliderA.radius = 2;
+            _startColliderB.radius = 2;
+            _startColliderA.OnTriggerEnterAsObservable().Subscribe(other => {
+                if (other.transform.root == Locator.GetPlayerTransform()) {
+                    _ernesto.SetActive(true);
+                    _ernesto.transform.localPosition = new Vector3(-122.1299f, -141.7106f, -140.5177f);
+                    _ernesto.transform.localEulerAngles = new Vector3(40f, 120f, 235f);
+                    _startColliderA.gameObject.SetActive(false);
+                    _startColliderB.gameObject.SetActive(false);
+                }
+            });
+            _startColliderB.OnTriggerEnterAsObservable().Subscribe(other => {
+                if (other.transform.root == Locator.GetPlayerTransform()) {
+                    _ernesto.SetActive(true);
+                    _ernesto.transform.localPosition = new Vector3(-105.9661f, -150.95f, -145.4184f);
+                    _ernesto.transform.localEulerAngles = new Vector3(340f, 280f, 135f);
+                    _startColliderA.gameObject.SetActive(false);
+                    _startColliderB.gameObject.SetActive(false);
+                }
+            });
 
             _probeTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Probe_TH");
             _startingCamp = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp");
@@ -158,6 +193,12 @@ namespace EyeWitness {
             _brambleRocksBroken = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/BrambleRocksBroken");
             _probeAT = SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Probe_AT");
             _spAt = MakeSpawnPoint("sp_at", _at.transform, new Vector3(88.1632f, -0.1838f, -15.2526f), new Vector3(90f, 100f, 0f), true);
+            _dimensionDB = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension");
+            _spDB = MakeSpawnPoint("sp_db", _dimensionDB.transform, new Vector3(258.4823f, -471.5805f, -218.1129f), new Vector3(20f, 200f, 240f));
+            _warpTransmitter = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/warpTransmitter_db_datura");
+            _anglerfish = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/UNSORTED").GetComponentsInChildren<AnglerfishController>().OrderBy(x => Vector3.SqrMagnitude(_warpTransmitter.transform.position - x.transform.position)).First().gameObject;
+
+            _spBackToTH = MakeSpawnPoint("sp_back_to_th", _thNomaiCrater.transform, new Vector3(-105.9661f, -150.95f, -145.4186f), new Vector3(330f, 275f, 140f));
         }
 
         public void StartConversation() {
@@ -336,11 +377,44 @@ namespace EyeWitness {
             }
             else if(pageNum == 34) {
                 _sandET.SetActive(true);
+                _playerSpawner.DebugWarp(_spDB);
+                _ernesto.transform.parent = _spDB.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 60f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_warpTransmitter.transform, new Vector3(0, 0, 0));
             }
             else if(pageNum == 35) {
-                LockOn(_probeAT.transform, new Vector3(0, 0, 0));
+                LockOn(_anglerfish.transform, new Vector3(0, 0, 0));
             }
             else if(pageNum == 36) {
+                var fogWarpDetector = Locator.GetPlayerDetector().GetComponent<FogWarpDetector>();
+                fogWarpDetector._warpVolumes.Clear();
+                fogWarpDetector._outerWarpVolume = null;
+                fogWarpDetector._closestFogWarp = null;
+                _playerSpawner.DebugWarp(_spAt);
+                _ernesto.transform.parent = _spAt.transform;
+                _ernesto.transform.localPosition = new Vector3(0f, 0f, 9f);
+                _ernesto.transform.localEulerAngles = new Vector3(0f, 180f, 0f);
+                LockOn(_probeAT.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 39) {
+                _playerSpawner.DebugWarp(_spBackToTH);
+                _ernesto.transform.parent = _spBackToTH.transform.parent;
+                _ernesto.transform.localPosition = new Vector3(-122.1299f, -141.7106f, -140.5177f);
+                _ernesto.transform.localEulerAngles = new Vector3(40f, 120f, 235f);
+                LockOn(_ernesto.transform, new Vector3(0, 0, 0));
+            }
+            else if(pageNum == 40) {
+                _sandAT.SetActive(true);
+                _sandColumnEffect.SetActive(true);
+                _sandColumnVolume.SetActive(true);
+                _brambleRocks.SetActive(!_probeATActive);
+                _brambleRocksBroken.SetActive(_probeATActive);
+                _probeAT.SetActive(_probeATActive);
+                _warpReceiver.SetActive(_probeATActive);
+
+                var facePlayerWhenTalking = _ernesto.GetComponent<FacePlayerWhenTalking>();
+                facePlayerWhenTalking._origLocalRotation = _ernesto.transform.localRotation;
             }
         }
 
