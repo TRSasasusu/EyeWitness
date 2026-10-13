@@ -28,3 +28,7 @@ Playtests
 * Little Stranger
 * Mr. Thomas (Unc)
 * Essquilache
+
+Others
+
+* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall* (available only after completing this mod once).
