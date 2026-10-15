@@ -31,4 +31,4 @@ Playtests
 
 Others
 
-* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall* (available only after completing this mod once).
+* *Ernesto loves facing each other atop the two pairs of jagged stumps near the waterfall.* Ernesto provides the narration of the developer commentary (available only after completing this mod once).
