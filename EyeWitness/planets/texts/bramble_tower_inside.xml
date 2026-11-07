@@ -18,4 +18,10 @@
     <ParentID>3</ParentID>
     <Text>EW_BRAMBLE_TOWER_INSIDE_4</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>ew_bramble_tower_inside_2</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

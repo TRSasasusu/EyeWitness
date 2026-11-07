@@ -13,5 +13,9 @@
       <ID>ew_bramble_tower_inside_1</ID>
       <Text>EW_BRAMBLE_TOWER_INSIDE_1</Text>
     </ExploreFact>
+    <ExploreFact>
+      <ID>ew_bramble_tower_inside_2</ID>
+      <Text>EW_BRAMBLE_TOWER_INSIDE_2</Text>
+    </ExploreFact>
   </Entry>
 </AstroObjectEntry>
