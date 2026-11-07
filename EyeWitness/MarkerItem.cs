@@ -1,4 +1,5 @@
 ﻿using NewHorizons.Utility;
+using OWML.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ using IEnumerator = System.Collections.IEnumerator;
 namespace EyeWitness {
     public class MarkerItem : OWItem {
         public static string ParentRootName { get; private set; }
+        static ItemType ItemType = EnumUtils.Create<ItemType>("OPCMarker");
         static Vector3 _prevPos;
 
         GameObject _markerBeam;
@@ -57,7 +59,7 @@ namespace EyeWitness {
 
         public override void Awake() {
             base.Awake();
-            _type = (ItemType)2048;
+            _type = ItemType;
             _localDropOffset = new Vector3(0, 0.2f, 0);
         }
 

@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using DG.Tweening;
+using OWML.Utils;
 
 namespace EyeWitness {
     public class CapsuleItem : OWItem {
         public static CapsuleItem PickedOne;
+        static ItemType ItemType = EnumUtils.Create<ItemType>("Capsule");
 
         public bool _hasLiquid;
 
@@ -17,7 +19,7 @@ namespace EyeWitness {
 
         public override void Awake() {
             base.Awake();
-            _type = (ItemType)2048;
+            _type = ItemType;
             _localDropOffset = new Vector3(0, 0.1f, 0);
         }
 
