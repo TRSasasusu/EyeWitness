@@ -8,8 +8,6 @@ Second-place winner of [Outer Wilds modding Jam 6](https://outerwildsmods.com/ja
 
 **Please do not remove the sand or the anglerfish using another mod; doing so will cause a sequence break.**
 
-Also, the Immersion mod is incompatible with this mod (a fix is ​​planned after the jam ends).
-
 It has been suggested that there may be a compatibility issue with Ship Enhancements mod, so I plan to investigate.
 
 ## Credits
