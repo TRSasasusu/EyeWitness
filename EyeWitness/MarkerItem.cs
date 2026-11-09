@@ -12,8 +12,15 @@ using IEnumerator = System.Collections.IEnumerator;
 namespace EyeWitness {
     public class MarkerItem : OWItem {
         public static string ParentRootName { get; private set; }
+        public static bool HasBeenUsed {
+            get {
+                return PlayerData.GetPersistentCondition("EW_MARKER_HAS_BEEN_USED");
+            }
+            set {
+                PlayerData.SetPersistentCondition("EW_MARKER_HAS_BEEN_USED", value);
+            }
+        }
         static ItemType ItemType = EnumUtils.Create<ItemType>("OPCMarker");
-        static Vector3 _prevPos;
 
         GameObject _markerBeam;
 
@@ -68,7 +75,8 @@ namespace EyeWitness {
             _markerBeam.transform.localScale = new Vector3(50, 50, 1000);
 
             var probe = GetProbeBasedOnMarker();
-            if (probe != null) {
+            if(HasBeenUsed) {
+            //if (probe != null) {
                 if(transform.root.name == "OrbitalProbeCannon_Body") {
                     var thMarker = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/OPCMarker");
                     var entrylocation = transform.Find("entrylocation_ew_opc_control");
@@ -82,11 +90,13 @@ namespace EyeWitness {
                 }
 
                 // only TH marker
-                _markerBeam.transform.parent = probe.transform;
-                _markerBeam.transform.localPosition = Vector3.zero;
-                _markerBeam.transform.localEulerAngles = new Vector3(0, 90, 0);
-                _markerBeam.transform.parent = probe.transform.parent;
-                _markerBeam.SetActive(true);
+                if (probe != null) {
+                    _markerBeam.transform.parent = probe.transform;
+                    _markerBeam.transform.localPosition = Vector3.zero;
+                    _markerBeam.transform.localEulerAngles = new Vector3(0, 90, 0);
+                    _markerBeam.transform.parent = probe.transform.parent;
+                    _markerBeam.SetActive(true);
+                }
             }
             else {
                 if(transform.root.name == "TimberHearth_Body") {
@@ -150,7 +160,9 @@ namespace EyeWitness {
 
             if(GetProbeBasedOnMarker() != null) {
                 _markerBeam.SetActive(true);
-                _prevPos = position;
+                if(!HasBeenUsed) {
+                    HasBeenUsed = true;
+                }
             }
         }
     }
